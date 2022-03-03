@@ -1,0 +1,28 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+
+AlignEscapedNewlines: Right
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+BinPackArguments: false
+BinPackParameters: false
+BreakInheritanceList: AfterColon
+BreakConstructorInitializers: AfterColon
+BreakAfterJavaFieldAnnotations: true
+ColumnLimit: 160
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+DerivePointerAlignment: false
+IndentPPDirectives: BeforeHash
+IndentWidth: 4
+MaxEmptyLinesToKeep: 2
+PointerAlignment: Right
+SpaceAfterCStyleCast: true
+SpaceAfterTemplateKeyword: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeRangeBasedForLoopColon: false
+SpacesInContainerLiterals: false
+BitFieldColonSpacing: After
+
+TabWidth: 4

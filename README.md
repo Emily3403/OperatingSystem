@@ -4,6 +4,8 @@ This is an implementation of a Posix-compliant operating system written in C and
 
 Note that this Operating system is currently in unstable alpha. Anything may or may not work.
 
+In order to clone this repository you will need to install `git-lfs`. Install it with your favorite package manager.
+
 ## Running with QEMU
 
 This is the most common use case: Run the kernel with QEMU.

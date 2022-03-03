@@ -1,7 +1,6 @@
 # Build artifacts
 build/
 zig-cache
-compiler
 
 # Editors
 .idea

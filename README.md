@@ -8,9 +8,7 @@ This operating system is work in progress. Anything can change at any moment wit
 
 ## Cloning the repository
 
-Since we are hosting a version of zig with 126 MiB, you'll need `git-lfs` to download it.
-
-Install it with
+If you havent already installed `git-lfs` you can do so with the following commands
 - `sudo pacman -S git-lfs`
 - `sudo dnf install git-lfs`
 - `sudo apt install git-lfs`

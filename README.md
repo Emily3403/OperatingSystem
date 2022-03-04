@@ -1,4 +1,4 @@
-# X, the Operating system
+# The Operating system
 
 This is an implementation of a fairly Posix-compliant operating system written in zig (and sometimes C).
 

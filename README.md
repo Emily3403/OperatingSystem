@@ -14,10 +14,9 @@ Install it with
 - `sudo pacman -S git-lfs`
 - `sudo dnf install git-lfs`
 - `sudo apt install git-lfs`
+- ...
 
-...
-
-Now you will be able to clone.
+Now you will be able to clone the repository.
 
 ## Running with QEMU
 
@@ -29,7 +28,7 @@ If you want to run a debugger like `gdb`, you can run `./debug.sh` to attach wit
 
 For detailed installation instruction please consult the [installation manual](./doc/INSTALL.md).
 
-## Running with Hardware
+## Running on Hardware
 
 This is currently not supported.
 
@@ -41,13 +40,20 @@ but it also provides native support for cross-compiling.
 Also supported is linking against glibc and musl, two implementations of a libc. While we strive to
 implement libc on our own, it is a monumental challenge. Maybe we will include musl in a later release of the kernel.
 
+It is done by the `./qemu.sh` and `./debug.sh` scripts before executing `qemu`. If you want to do it yourself type the following into your favorite shell
+```shell
+./compiler/zig build
+```
+
+Now the kernel is located under `./build/kernel`
+
 ## Documentation
 
 Making an Operating system on your own is *very* hard and takes a lot of time.
 
 There are quite a few good guides on bare metal Arm programming, often times we felt lost in not knowing what to do.
-This is what the directory `./doc` is about. You will find a detailed pdf, which describes the process of gathering information,
-getting a `"Hello, World"` printed on the Terminal and going further than that.
+This is what the directory `./doc` is for. You will find a detailed pdf, which describes the process of gathering information,
+getting a `"Hello, World"` printed on the Terminal and going even further than that.
 
 
 

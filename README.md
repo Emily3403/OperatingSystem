@@ -3,7 +3,7 @@
 This is an implementation of a fairly Posix-compliant operating system written in zig (and sometimes C).
 
 ### Attention
-This operating system is work in progress. Anything can change at any moment without any notice. Use it at your own risk!
+This operating system is currently work in progress. Anything can change at any moment without any notice. Use it at your own risk!
 
 
 ## Cloning the repository
@@ -14,7 +14,6 @@ If you havent already installed `git-lfs` you can do so with the following comma
 - `sudo apt install git-lfs`
 - ...
 
-Now you will be able to clone the repository.
 
 ## Running with QEMU
 

@@ -8,11 +8,14 @@ This operating system is currently work in progress. Anything can change at any 
 
 ## Cloning the repository
 
-If you havent already installed `git-lfs` you can do so with the following commands
+If the output of `cat compiler/zig` starts with `version https://git-lfs.github.com/spec/v1`, then you have to setup `git-lfs`.
+
 - `sudo pacman -S git-lfs`
 - `sudo dnf install git-lfs`
 - `sudo apt install git-lfs`
 - ...
+
+Now clone remove the old version and clone the repository once more.
 
 
 ## Running with QEMU

@@ -4,7 +4,17 @@ This is an implementation of a Posix-compliant operating system written in C and
 
 Note that this Operating system is currently in unstable alpha. Anything may or may not work.
 
-In order to clone this repository you will need to install `git-lfs`. Install it with your favorite package manager.
+## Cloning the repository
+
+Since you'll have to clone a > 100 MiB compiler you need `git-lfs`.
+
+Get it with
+- `sudo pacman -S git-lfs`
+- `sudo dnf install git-lfs`
+- `sudo apt install git-lfs`
+...
+
+Now you will be able to clone.
 
 ## Running with QEMU
 

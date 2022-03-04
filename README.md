@@ -2,7 +2,7 @@
 
 This is an implementation of a fairly Posix-compliant operating system written in zig (and sometimes C).
 
-#### !! Attention !! 
+### Attention
 This operating system is work in progress. Anything can change at any moment without any notice. Use it at your own risk!
 
 

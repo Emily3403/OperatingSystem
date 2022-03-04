@@ -1,8 +1,10 @@
 # X, the Operating system
 
-This is an implementation of a Posix-compliant operating system written in C and zig.
+This is an implementation of a fairly Posix-compliant operating system written in zig (and sometimes C).
 
-Note that this Operating system is currently in unstable alpha. Anything may or may not work.
+** !! Attention !! **
+This operating system is work in progress. Anything can change at any moment without any notice. Use it at your own risk!
+
 
 ## Cloning the repository
 

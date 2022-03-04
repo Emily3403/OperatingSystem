@@ -8,9 +8,9 @@ This operating system is work in progress. Anything can change at any moment wit
 
 ## Cloning the repository
 
-Since you'll have to clone a > 100 MiB compiler you need `git-lfs`.
+Since we are hosting a version of zig with 126 MiB, you'll need `git-lfs` to download it.
 
-Get it with
+Install it with
 - `sudo pacman -S git-lfs`
 - `sudo dnf install git-lfs`
 - `sudo apt install git-lfs`

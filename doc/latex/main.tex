@@ -1,0 +1,59 @@
+%&clatex/templateAll
+\endofdump
+
+%\documentclass[11pt]{article}
+
+%\usepackage{template}
+%\useTemplateStatic[a]
+
+%\usepackage{src/template}
+
+%! Generated with commit hash: "2d577c1673fa5e6ab29b67ee03427398457bea80"
+%! sha1sum of templateAll.fmt: "c21f92af7c81cf9d5f7bc68ab2fa7446e9198660"
+
+\date{2022 -- 02 -- 28}
+\title{Making an operating system on bare-metal ARM}
+\useTemplate[english]
+
+\usepackage[outputdir=out]{minted}
+
+\def\shell#1{\mintinline{shell}{#1}}
+
+
+\begin{document}
+    \maketitle
+
+    \section{Installing the toolchain}
+
+    First of all I am assuming you are running linux.
+    If you are feeling lucky, you can also try this on any posix-like environment, but beware that things might not work.
+
+    If you are developing under windows you can use \href{https://docs.microsoft.com/en-us/windows/wsl/install}{WSL}.
+    Bare in mind that things also might not work as expected.
+
+    With this disclaimer out of the way we can start the first steps in compiling a program for ARM!
+
+    \subsection{Installing the compiler}
+
+    Installing the compiler should be as easy as running the command \shell{pacman -S arm-none-eabi-gcc}.
+    The package is even available under Debian, so your package manager \textit{should} have it.
+
+    If you want to compile it manually you have to execute the following commands:
+
+    \begin{minted}{shell}
+
+    \end{minted}
+
+    \subsection{Installing a debugger}
+
+    \subsection{Installing QEMU}
+
+    \subsection{Installing mkimage and UBoot}
+
+
+    \section{\shell{make}-ing first contact}
+
+
+
+\end{document}
+

@@ -15,8 +15,8 @@ pub fn build(b: *std.build.Builder) void {
     kernel.setBuildMode(std.builtin.Mode.Debug);
 
     kernel.setTarget(std.zig.CrossTarget{
-        .cpu_arch = std.Target.Cpu.Arch.arm,
-        .cpu_model = std.zig.CrossTarget.CpuModel{ .explicit = &std.Target.arm.cpu.cortex_a7 },
+        .cpu_arch = std.Target.Cpu.Arch.aarch64,
+        .cpu_model = std.zig.CrossTarget.CpuModel{ .explicit = &std.Target.arm.cpu.cortex_a53 },
         .os_tag = std.Target.Os.Tag.freestanding,
         .abi = std.Target.Abi.eabi,
     });

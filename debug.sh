@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export QEMU=qemu-system-arm
-export QEMU_FLAGS="-nographic -M raspi2b -s -S"
+export QEMU=qemu-system-aarch64
+export QEMU_FLAGS="-nographic -M raspi3b -s -S"
 
 ./compiler/zig build
 

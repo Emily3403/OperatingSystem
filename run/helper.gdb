@@ -3,4 +3,7 @@ target remote localhost:1234
 set confirm off 
 set pagination off
 
-layout asm
+layout split
+
+b main
+c

@@ -70,7 +70,6 @@ How to name the init dir?
 - boot
 - ?
 
-Do we need the memory management dir?
 
 Where do put the drivers: ./drivers/{function}/{soc}.zig or ./arch/{arch}/bsp/{function}.zig
 

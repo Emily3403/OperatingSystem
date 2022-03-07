@@ -20,13 +20,20 @@ Now clone remove the old version and clone the repository once more.
 
 ## Running with QEMU
 
-This is the most common use case: Run the kernel with QEMU.
+Running the operating system is as easy as executing
 
-This is done by executing `./qemu.sh`.
+```shell
+./compiler/zig build qemu
+```
 
-If you want to run a debugger like `gdb`, you can run `./debug.sh` to attach with target remote
+### Debugging 
+```shell
+./compiler/zig build qemu -Ddebug
+```
 
-For detailed installation instruction please consult the [installation manual](./doc/INSTALL.md).
+Now start up your favorite debugger.
+
+
 
 ## Running on Hardware
 

@@ -4,5 +4,3 @@ set confirm off
 set pagination off
 
 layout asm
-b main
-

@@ -63,4 +63,17 @@ This is what the directory `./doc` is for. You will find a detailed pdf, which d
 getting a `"Hello, World"` printed on the Terminal and going even further than that.
 
 
+## Questions:
+
+How to name the init dir? 
+- init
+- boot
+- ?
+
+Do we need the memory management dir?
+
+Where do put the drivers: ./drivers/{function}/{soc}.zig or ./arch/{arch}/bsp/{function}.zig
+
+Is the network part more of the driver?
+
 

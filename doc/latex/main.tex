@@ -12,12 +12,15 @@
 %! sha1sum of templateAll.fmt: "c21f92af7c81cf9d5f7bc68ab2fa7446e9198660"
 
 \date{2022 -- 02 -- 28}
-\title{Making an operating system on bare-metal ARM}
+\title{Making an operating system on a Raspberry PI 3b with C and Zig}
 \useTemplate[english]
 
 \usepackage[outputdir=out]{minted}
 
 \def\shell#1{\mintinline{shell}{#1}}
+\def\sh#1{\mintinline{shell}{#1}}
+\def\zig{\sh{zig}}
+
 
 
 \begin{document}
@@ -33,16 +36,40 @@
 
     With this disclaimer out of the way we can start the first steps in compiling a program for ARM!
 
-    \subsection{Installing the compiler}
+    \subsection{Choosing a compiler}
 
-    Installing the compiler should be as easy as running the command \shell{pacman -S arm-none-eabi-gcc}.
-    The package is even available under Debian, so your package manager \textit{should} have it.
+    \subsubsection{GCC}
 
-    If you want to compile it manually you have to execute the following commands:
+    Unfortunately you cannot use the standard \shell{gcc} to compile your Operating system. If you are running any sort of desktop PC, the CPU architecture of the Raspberry 3b is
+    different from that you are running on. To check it run the command \sh{gcc -dumpmachine}. I get \sh{x86_64-pc-linux-gnu}, yours is probably similar.
 
-    \begin{minted}{shell}
+    The toolchain we need is the \sh{gcc-arm-none-eabi}. You can get your own by executing one of the following
+    % TODO: Test if this actually works
+    \begin{itemize}
+        \item \sh{sudo pacman -S arm-none-eabi-gcc}
+        \item \sh{sudo apt install gcc-arm-none-eabi}
+        \item \sh{sudo dnf install arm-none-eabi-gcc}
+    \end{itemize}
 
-    \end{minted}
+    You can also download the \href{https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads}{official toolchain} from ARM.
+
+    With \sh{gcc} you should have everything up and running to compile your first ARM program.
+
+    \subsubsection{Zig}
+
+    \zig{} is a programming language and compiler, which aims at replacing C\@.
+
+    The \zig{} compiler ships with everything needed to compile for all target architectures and even libc and musl.
+    This provides the benefit of easily migrating to a different CPU version or even architecture.
+
+    In the linked git repository you will find a up-to-date version of the zig compiler, which is used in our toolchain.
+    This may or may not be better for your usecase.
+
+
+    \subsubsection{Clang}
+
+    % TODO: Document clang
+    Clang is currently untested and undocumented.
 
     \subsection{Installing a debugger}
 
@@ -51,8 +78,9 @@
     \subsection{Installing mkimage and UBoot}
 
 
-    \section{\shell{make}-ing first contact}
-
+    
+    \section{First contact}
+    
 
 
 \end{document}

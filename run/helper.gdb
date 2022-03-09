@@ -5,5 +5,5 @@ set pagination off
 
 layout split
 
-b main
+b drivers.uart.init
 c

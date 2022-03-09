@@ -1,0 +1,4807 @@
+----------DISASSEMBLY OF ALL SECTIONS---------
+
+/home/emily/Documents/Programs/Zig/OperatingSystem/run/../zig-out/kernel.elf:	file format elf64-littleaarch64
+
+Disassembly of section .rodata:
+
+0000000000200120 <panic>:
+  200120: 30 03 21 00  	<unknown>
+  200124: 00 00 00 00  	udf	#0
+
+0000000000200128 <zig_is_stage2>:
+  200128: 00 00 00 00  	udf	#0
+
+0000000000200129 <output_mode>:
+  200129: 00 00 00 00  	udf	#0
+
+000000000020012a <link_libc>:
+  20012a: 00 00 00 00  	udf	#0
+
+000000000020012c <os>:
+		...
+
+0000000000200158 <native_os>:
+		...
+
+0000000000200160 <featureSet>:
+  200160: 50 03 21 00  	<unknown>
+  200164: 00 00 00 00  	udf	#0
+
+0000000000200168 <cortex_a53>:
+  200168: 70 02 20 00  	<unknown>
+  20016c: 00 00 00 00  	udf	#0
+  200170: 0a 00 00 00  	udf	#10
+  200174: 00 00 00 00  	udf	#0
+  200178: 7b 02 20 00  	<unknown>
+  20017c: 00 00 00 00  	udf	#0
+  200180: 0a 00 00 00  	udf	#10
+  200184: 00 00 00 00  	udf	#0
+  200188: 01 00 00 00  	udf	#1
+  20018c: 00 00 00 00  	udf	#0
+  200190: 00 20 00 00  	udf	#8192
+  200194: 1c 00 40 00  	<unknown>
+  200198: 00 00 08 00  	<unknown>
+  20019c: 00 00 00 00  	udf	#0
+  2001a0: 00 00 40 80  	<unknown>
+		...
+
+00000000002001b8 <cpu>:
+  2001b8: 02 00 00 00  	udf	#2
+  2001bc: 00 00 00 00  	udf	#0
+  2001c0: 68 01 20 00  	<unknown>
+  2001c4: 00 00 00 00  	udf	#0
+  2001c8: 04 20 00 00  	udf	#8196
+  2001cc: 1c 00 44 00  	<unknown>
+  2001d0: 80 00 08 00  	<unknown>
+  2001d4: 00 00 00 01  	<unknown>
+  2001d8: 00 00 40 80  	<unknown>
+		...
+
+00000000002001f0 <native_arch>:
+  2001f0: 02 00 00 00  	udf	#2
+  2001f4: 00 00 00 00  	udf	#0
+
+00000000002001f8 <__unnamed_1>:
+  2001f8: 86 02 20 00  	<unknown>
+  2001fc: 00 00 00 00  	udf	#0
+  200200: 18 00 00 00  	udf	#24
+  200204: 00 00 00 00  	udf	#0
+
+0000000000200208 <__unnamed_2>:
+		...
+
+0000000000200230 <__unnamed_3>:
+  200230: 9f 02 20 00  	<unknown>
+  200234: 00 00 00 00  	udf	#0
+  200238: 10 00 00 00  	udf	#16
+  20023c: 00 00 00 00  	udf	#0
+
+0000000000200240 <__unnamed_4>:
+  200240: b0 02 20 00  	<unknown>
+  200244: 00 00 00 00  	udf	#0
+  200248: 2c 00 00 00  	udf	#44
+  20024c: 00 00 00 00  	udf	#0
+
+0000000000200250 <__unnamed_5>:
+  200250: dd 02 20 00  	<unknown>
+  200254: 00 00 00 00  	udf	#0
+  200258: 1b 00 00 00  	udf	#27
+  20025c: 00 00 00 00  	udf	#0
+
+0000000000200260 <__unnamed_6>:
+  200260: f9 02 20 00  	<unknown>
+  200264: 00 00 00 00  	udf	#0
+  200268: 13 00 00 00  	udf	#19
+  20026c: 00 00 00 00  	udf	#0
+
+0000000000200270 <__unnamed_7>:
+  200270: 63 6f 72 74  	<unknown>
+  200274: 65 78 5f 61  	<unknown>
+  200278: 35 33 00 63  	<unknown>
+
+000000000020027b <__unnamed_8>:
+  20027b: 63 6f 72 74  	<unknown>
+  20027f: 65 78 2d 61  	<unknown>
+  200283: 35 33 00 72  	ands	w21, w25, #0x1fff
+
+0000000000200286 <__unnamed_9>:
+  200286: 72 65 61 63  	<unknown>
+  20028a: 68 65 64 20  	<unknown>
+  20028e: 75 6e 72 65  	<unknown>
+  200292: 61 63 68 61  	<unknown>
+  200296: 62 6c 65 20  	<unknown>
+  20029a: 63 6f 64 65  	<unknown>
+  20029e: 00 64 69 76  	<unknown>
+
+000000000020029f <__unnamed_10>:
+  20029f: 64 69 76 69  	ldpsw	x4, x26, [x11, #-80]
+  2002a3: 73 69 6f 6e  	<unknown>
+  2002a7: 20 62 79 20  	<unknown>
+  2002ab: 7a 65 72 6f  	sqshlu	v26.2d, v11.2d, #50
+  2002af: 00 72 65 6d  	ldp	d0, d28, [x16, #-432]
+
+00000000002002b0 <__unnamed_11>:
+  2002b0: 72 65 6d 61  	<unknown>
+  2002b4: 69 6e 64 65  	<unknown>
+  2002b8: 72 20 64 69  	ldpsw	x18, x8, [x3, #-224]
+  2002bc: 76 69 73 69  	ldpsw	x22, x26, [x11, #-104]
+  2002c0: 6f 6e 20 62  	<unknown>
+  2002c4: 79 20 7a 65  	<unknown>
+  2002c8: 72 6f 20 6f  	<unknown>
+  2002cc: 72 20 6e 65  	<unknown>
+  2002d0: 67 61 74 69  	ldpsw	x7, x24, [x11, #-96]
+  2002d4: 76 65 20 76  	<unknown>
+  2002d8: 61 6c 75 65  	<unknown>
+  2002dc: 00 69 6e 74  	<unknown>
+
+00000000002002dd <__unnamed_12>:
+  2002dd: 69 6e 74 65  	<unknown>
+  2002e1: 67 65 72 20  	<unknown>
+  2002e5: 63 61 73 74  	<unknown>
+  2002e9: 20 74 72 75  	<unknown>
+  2002ed: 6e 63 61 74  	<unknown>
+  2002f1: 65 64 20 62  	<unknown>
+  2002f5: 69 74 73 00  	<unknown>
+
+00000000002002f9 <__unnamed_13>:
+  2002f9: 69 6e 64 65  	<unknown>
+  2002fd: 78 20 6f 75  	<unknown>
+  200301: 74 20 6f 66  	<unknown>
+  200305: 20 62 6f 75  	<unknown>
+  200309: 6e 64 73 00  	<unknown>
+
+Disassembly of section .init:
+
+000000000021030d <_start>:
+  21030d: a0 00 38 d5  	mrs	x0, MPIDR_EL1
+  210311: 00 04 40 92  	and	x0, x0, #0x3
+  210315: 60 00 00 b5  	cbnz	x0, 0x210321 <_doNothing>
+  210319: ff 03 6c b2  	orr	sp, xzr, #0x100000
+  21031d: 34 00 00 14  	b	0x2103ed <std.target.Feature.feature_set_fns(std.target.aarch64.Feature).featureSet+0x9d>
+
+0000000000210321 <_doNothing>:
+  210321: 7f 20 03 d5  	wfi
+  210325: ff ff ff 17  	b	0x210321 <_doNothing>
+
+Disassembly of section .text:
+
+0000000000210330 <std.builtin.default_panic>:
+  210330: ff 83 00 d1  	sub	sp, sp, #32             // =32
+  210334: fd 7b 01 a9  	stp	x29, x30, [sp, #16]
+  210338: fd 43 00 91  	add	x29, sp, #16            // =16
+  21033c: e1 07 00 f9  	str	x1, [sp, #8]
+  210340: 00 00 3e d4  	brk	#0xf000
+  210344: ff ff ff 17  	b	0x210340 <std.builtin.default_panic+0x10>
+  210348: 1f 20 03 d5  	nop
+  21034c: 1f 20 03 d5  	nop
+
+0000000000210350 <std.target.Feature.feature_set_fns(std.target.aarch64.Feature).featureSet>:
+  210350: ff c3 01 d1  	sub	sp, sp, #112            // =112
+  210354: fd 7b 06 a9  	stp	x29, x30, [sp, #96]
+  210358: fd 83 01 91  	add	x29, sp, #96            // =96
+  21035c: e8 0b 00 f9  	str	x8, [sp, #16]
+  210360: e0 0f 00 f9  	str	x0, [sp, #24]
+  210364: a8 a3 00 d1  	sub	x8, x29, #40            // =40
+  210368: 96 00 00 94  	bl	0x2105c0 <std.target.Set.empty_workaround>
+  21036c: e0 0f 40 f9  	ldr	x0, [sp, #24]
+  210370: ff 1b 00 f9  	str	xzr, [sp, #48]
+  210374: 08 04 40 f9  	ldr	x8, [x0, #8]
+  210378: e8 13 00 f9  	str	x8, [sp, #32]
+  21037c: e9 13 40 f9  	ldr	x9, [sp, #32]
+  210380: e8 1b 40 f9  	ldr	x8, [sp, #48]
+  210384: e8 07 00 f9  	str	x8, [sp, #8]
+  210388: 08 01 09 eb  	subs	x8, x8, x9
+  21038c: c2 01 00 54  	b.hs	0x2103c4 <std.target.Feature.feature_set_fns(std.target.aarch64.Feature).featureSet+0x74>
+  210390: e9 07 40 f9  	ldr	x9, [sp, #8]
+  210394: e8 0f 40 f9  	ldr	x8, [sp, #24]
+  210398: 08 01 40 f9  	ldr	x8, [x8]
+  21039c: 08 01 09 8b  	add	x8, x8, x9
+  2103a0: 08 01 40 39  	ldrb	w8, [x8]
+  2103a4: e8 bf 00 39  	strb	w8, [sp, #47]
+  2103a8: e1 bf 40 39  	ldrb	w1, [sp, #47]
+  2103ac: a0 a3 00 d1  	sub	x0, x29, #40            // =40
+  2103b0: 90 00 00 94  	bl	0x2105f0 <std.target.Set.addFeature>
+  2103b4: e8 07 40 f9  	ldr	x8, [sp, #8]
+  2103b8: 08 05 00 91  	add	x8, x8, #1              // =1
+  2103bc: e8 1b 00 f9  	str	x8, [sp, #48]
+  2103c0: ef ff ff 17  	b	0x21037c <std.target.Feature.feature_set_fns(std.target.aarch64.Feature).featureSet+0x2c>
+  2103c4: e0 0b 40 f9  	ldr	x0, [sp, #16]
+  2103c8: a1 a3 00 d1  	sub	x1, x29, #40            // =40
+  2103cc: 08 05 80 52  	mov	w8, #40
+  2103d0: e2 03 08 2a  	mov	w2, w8
+  2103d4: e3 00 00 94  	bl	0x210760 <memcpy>
+  2103d8: fd 7b 46 a9  	ldp	x29, x30, [sp, #96]
+  2103dc: ff c3 01 91  	add	sp, sp, #112            // =112
+  2103e0: c0 03 5f d6  	ret
+  2103e4: 1f 20 03 d5  	nop
+  2103e8: 1f 20 03 d5  	nop
+  2103ec: 1f 20 03 d5  	nop
+
+00000000002103f0 <main>:
+  2103f0: ff 03 05 d1  	sub	sp, sp, #320            // =320
+  2103f4: fd 7b 12 a9  	stp	x29, x30, [sp, #288]
+  2103f8: fc 9b 00 f9  	str	x28, [sp, #304]
+  2103fc: fd 83 04 91  	add	x29, sp, #288           // =288
+  210400: e0 23 00 91  	add	x0, sp, #8              // =8
+  210404: ff 07 00 f9  	str	xzr, [sp, #8]
+  210408: 09 20 00 91  	add	x9, x0, #8              // =8
+  21040c: e8 83 00 91  	add	x8, sp, #32             // =32
+  210410: e8 0b 00 f9  	str	x8, [sp, #16]
+  210414: 08 04 80 52  	mov	w8, #32
+  210418: 28 05 00 f9  	str	x8, [x9, #8]
+  21041c: 0d 00 00 94  	bl	0x210450 <drivers.uart.init>
+  210420: e0 0f 00 79  	strh	w0, [sp, #6]
+  210424: 08 3c 00 12  	and	w8, w0, #0xffff
+  210428: a8 00 00 34  	cbz	w8, 0x21043c <main+0x4c>
+  21042c: 80 ff ff 90  	adrp	x0, 0x200000 <std.target.Feature.feature_set_fns(std.target.aarch64.Feature).featureSet+0x9c>
+  210430: 00 e0 07 91  	add	x0, x0, #504            // =504
+  210434: e1 03 1f aa  	mov	x1, xzr
+  210438: be ff ff 97  	bl	0x210330 <std.builtin.default_panic>
+  21043c: 40 0c 80 52  	mov	w0, #98
+  210440: 54 00 00 94  	bl	0x210590 <drivers.uart.putchar>
+  210444: 00 00 00 14  	b	0x210444 <main+0x54>
+  210448: 1f 20 03 d5  	nop
+  21044c: 1f 20 03 d5  	nop
+
+0000000000210450 <drivers.uart.init>:
+  210450: ff c3 00 d1  	sub	sp, sp, #48             // =48
+  210454: fd 7b 02 a9  	stp	x29, x30, [sp, #32]
+  210458: fd 83 00 91  	add	x29, sp, #32            // =32
+  21045c: 08 00 82 52  	mov	w8, #4096
+  210460: 08 e4 a7 72  	movk	w8, #16160, lsl #16
+  210464: e8 07 00 f9  	str	x8, [sp, #8]
+  210468: 08 11 00 91  	add	x8, x8, #4              // =4
+  21046c: e8 0b 00 f9  	str	x8, [sp, #16]
+  210470: e9 0b 40 f9  	ldr	x9, [sp, #16]
+  210474: e8 07 40 f9  	ldr	x8, [sp, #8]
+  210478: 08 41 40 f8  	ldur	x8, [x8, #4]
+  21047c: 2f 05 40 f9  	ldr	x15, [x9, #8]
+  210480: 2b 09 40 f9  	ldr	x11, [x9, #16]
+  210484: ee 03 1f aa  	mov	x14, xzr
+  210488: 09 10 80 52  	mov	w9, #128
+  21048c: aa 17 80 52  	mov	w10, #189
+  210490: 4d 01 02 f1  	subs	x13, x10, #128          // =128
+  210494: 30 f5 02 f1  	subs	x16, x9, #189           // =189
+  210498: 09 08 80 52  	mov	w9, #64
+  21049c: ec 03 09 2a  	mov	w12, w9
+  2104a0: 51 01 01 f1  	subs	x17, x10, #64           // =64
+  2104a4: 89 f5 02 f1  	subs	x9, x12, #189           // =189
+  2104a8: e9 21 c9 9a  	lsl	x9, x15, x9
+  2104ac: 29 f5 48 aa  	orr	x9, x9, x8, lsr #61
+  2104b0: ef 25 d1 9a  	lsr	x15, x15, x17
+  2104b4: 51 01 01 f1  	subs	x17, x10, #64           // =64
+  2104b8: 29 31 8f 9a  	csel	x9, x9, x15, lo
+  2104bc: 4f 01 00 f1  	subs	x15, x10, #0            // =0
+  2104c0: 09 01 89 9a  	csel	x9, x8, x9, eq
+  2104c4: 6f 21 d0 9a  	lsl	x15, x11, x16
+  2104c8: 10 02 01 f1  	subs	x16, x16, #64           // =64
+  2104cc: ef 31 8e 9a  	csel	x15, x15, x14, lo
+  2104d0: 29 01 0f aa  	orr	x9, x9, x15
+  2104d4: af 01 01 f1  	subs	x15, x13, #64           // =64
+  2104d8: 90 01 0d eb  	subs	x16, x12, x13
+  2104dc: 6c 25 cd 9a  	lsr	x12, x11, x13
+  2104e0: d0 21 d0 9a  	lsl	x16, x14, x16
+  2104e4: 8c 01 10 aa  	orr	x12, x12, x16
+  2104e8: ce 25 cf 9a  	lsr	x14, x14, x15
+  2104ec: af 01 01 f1  	subs	x15, x13, #64           // =64
+  2104f0: 8c 31 8e 9a  	csel	x12, x12, x14, lo
+  2104f4: ad 01 00 f1  	subs	x13, x13, #0            // =0
+  2104f8: 6b 01 8c 9a  	csel	x11, x11, x12, eq
+  2104fc: 4c 01 02 f1  	subs	x12, x10, #128          // =128
+  210500: 29 31 8b 9a  	csel	x9, x9, x11, lo
+  210504: 4a 01 00 f1  	subs	x10, x10, #0            // =0
+  210508: 08 01 89 9a  	csel	x8, x8, x9, eq
+  21050c: 48 00 00 36  	tbz	w8, #0, 0x210514 <drivers.uart.init+0xc4>
+  210510: d8 ff ff 17  	b	0x210470 <drivers.uart.init+0x20>
+  210514: e9 07 40 f9  	ldr	x9, [sp, #8]
+  210518: 28 31 40 b9  	ldr	w8, [x9, #48]
+  21051c: 0a 79 00 12  	and	w10, w8, #0x7fffffff
+  210520: e8 03 1f 2a  	mov	w8, wzr
+  210524: 08 01 0a 2a  	orr	w8, w8, w10
+  210528: 28 31 00 b9  	str	w8, [x9, #48]
+  21052c: 28 2d 40 b9  	ldr	w8, [x9, #44]
+  210530: 0a 79 04 12  	and	w10, w8, #0xf7ffffff
+  210534: 08 00 a1 52  	mov	w8, #134217728
+  210538: 08 01 0a 2a  	orr	w8, w8, w10
+  21053c: 28 2d 00 b9  	str	w8, [x9, #44]
+  210540: 28 31 40 b9  	ldr	w8, [x9, #48]
+  210544: 0a 79 09 12  	and	w10, w8, #0xffbfffff
+  210548: 08 08 a0 52  	mov	w8, #4194304
+  21054c: 08 01 0a 2a  	orr	w8, w8, w10
+  210550: 28 31 00 b9  	str	w8, [x9, #48]
+  210554: 28 31 40 b9  	ldr	w8, [x9, #48]
+  210558: 0a 79 08 12  	and	w10, w8, #0xff7fffff
+  21055c: 08 10 a0 52  	mov	w8, #8388608
+  210560: 08 01 0a 2a  	orr	w8, w8, w10
+  210564: 28 31 00 b9  	str	w8, [x9, #48]
+  210568: 28 31 40 b9  	ldr	w8, [x9, #48]
+  21056c: 0a 79 00 12  	and	w10, w8, #0x7fffffff
+  210570: 08 00 b0 52  	mov	w8, #-2147483648
+  210574: 08 01 0a 2a  	orr	w8, w8, w10
+  210578: 28 31 00 b9  	str	w8, [x9, #48]
+  21057c: bf e3 1f 78  	sturh	wzr, [x29, #-2]
+  210580: e0 03 1f 2a  	mov	w0, wzr
+  210584: fd 7b 42 a9  	ldp	x29, x30, [sp, #32]
+  210588: ff c3 00 91  	add	sp, sp, #48             // =48
+  21058c: c0 03 5f d6  	ret
+
+0000000000210590 <drivers.uart.putchar>:
+  210590: ff 83 00 d1  	sub	sp, sp, #32             // =32
+  210594: fd 7b 01 a9  	stp	x29, x30, [sp, #16]
+  210598: fd 43 00 91  	add	x29, sp, #16            // =16
+  21059c: a0 f3 1f 38  	sturb	w0, [x29, #-1]
+  2105a0: a8 f3 5f 38  	ldurb	w8, [x29, #-1]
+  2105a4: 09 00 82 52  	mov	w9, #4096
+  2105a8: 09 e4 a7 72  	movk	w9, #16160, lsl #16
+  2105ac: 28 01 00 b9  	str	w8, [x9]
+  2105b0: fd 7b 41 a9  	ldp	x29, x30, [sp, #16]
+  2105b4: ff 83 00 91  	add	sp, sp, #32             // =32
+  2105b8: c0 03 5f d6  	ret
+  2105bc: 1f 20 03 d5  	nop
+
+00000000002105c0 <std.target.Set.empty_workaround>:
+  2105c0: fd 7b bf a9  	stp	x29, x30, [sp, #-16]!
+  2105c4: fd 03 00 91  	mov	x29, sp
+  2105c8: e0 03 08 aa  	mov	x0, x8
+  2105cc: 81 ff ff 90  	adrp	x1, 0x200000 <drivers.uart.init+0x13c>
+  2105d0: 21 20 08 91  	add	x1, x1, #520            // =520
+  2105d4: 08 05 80 52  	mov	w8, #40
+  2105d8: e2 03 08 2a  	mov	w2, w8
+  2105dc: 61 00 00 94  	bl	0x210760 <memcpy>
+  2105e0: fd 7b c1 a8  	ldp	x29, x30, [sp], #16
+  2105e4: c0 03 5f d6  	ret
+  2105e8: 1f 20 03 d5  	nop
+  2105ec: 1f 20 03 d5  	nop
+
+00000000002105f0 <std.target.Set.addFeature>:
+  2105f0: ff 03 01 d1  	sub	sp, sp, #64             // =64
+  2105f4: fd 7b 03 a9  	stp	x29, x30, [sp, #48]
+  2105f8: fd c3 00 91  	add	x29, sp, #48            // =48
+  2105fc: a0 03 1f f8  	stur	x0, [x29, #-16]
+  210600: 28 20 00 12  	and	w8, w1, #0x1ff
+  210604: a8 c3 1e 78  	sturh	w8, [x29, #-20]
+  210608: a8 c3 5e 78  	ldurh	w8, [x29, #-20]
+  21060c: e8 1b 00 b9  	str	w8, [sp, #24]
+  210610: 28 00 80 52  	mov	w8, #1
+  210614: c8 00 00 35  	cbnz	w8, 0x21062c <std.target.Set.addFeature+0x3c>
+  210618: 01 00 00 14  	b	0x21061c <std.target.Set.addFeature+0x2c>
+  21061c: 80 ff ff 90  	adrp	x0, 0x200000 <std.target.Set.empty_workaround+0x1c>
+  210620: 00 c0 08 91  	add	x0, x0, #560            // =560
+  210624: e1 03 1f aa  	mov	x1, xzr
+  210628: 42 ff ff 97  	bl	0x210330 <std.builtin.default_panic>
+  21062c: e8 1b 40 b9  	ldr	w8, [sp, #24]
+  210630: 08 21 06 53  	ubfx	w8, w8, #6, #3
+  210634: a8 c3 1f 78  	sturh	w8, [x29, #-4]
+  210638: a8 c3 5e 78  	ldurh	w8, [x29, #-20]
+  21063c: e8 17 00 b9  	str	w8, [sp, #20]
+  210640: e8 03 1f 2a  	mov	w8, wzr
+  210644: 08 01 00 35  	cbnz	w8, 0x210664 <std.target.Set.addFeature+0x74>
+  210648: 01 00 00 14  	b	0x21064c <std.target.Set.addFeature+0x5c>
+  21064c: e8 17 40 b9  	ldr	w8, [sp, #20]
+  210650: 08 15 00 12  	and	w8, w8, #0x3f
+  210654: e8 13 00 b9  	str	w8, [sp, #16]
+  210658: 28 00 80 52  	mov	w8, #1
+  21065c: c8 00 00 35  	cbnz	w8, 0x210674 <std.target.Set.addFeature+0x84>
+  210660: 0f 00 00 14  	b	0x21069c <std.target.Set.addFeature+0xac>
+  210664: 80 ff ff 90  	adrp	x0, 0x200000 <std.target.Set.addFeature+0x34>
+  210668: 00 00 09 91  	add	x0, x0, #576            // =576
+  21066c: e1 03 1f aa  	mov	x1, xzr
+  210670: 30 ff ff 97  	bl	0x210330 <std.builtin.default_panic>
+  210674: e8 13 40 b9  	ldr	w8, [sp, #16]
+  210678: 08 15 00 12  	and	w8, w8, #0x3f
+  21067c: a8 83 1f 38  	sturb	w8, [x29, #-8]
+  210680: a8 03 5f f8  	ldur	x8, [x29, #-16]
+  210684: e8 03 00 f9  	str	x8, [sp]
+  210688: a8 c3 5f 78  	ldurh	w8, [x29, #-4]
+  21068c: e8 07 00 f9  	str	x8, [sp, #8]
+  210690: 08 15 00 71  	subs	w8, w8, #5              // =5
+  210694: 43 01 00 54  	b.lo	0x2106bc <std.target.Set.addFeature+0xcc>
+  210698: 05 00 00 14  	b	0x2106ac <std.target.Set.addFeature+0xbc>
+  21069c: 80 ff ff 90  	adrp	x0, 0x200000 <std.target.Set.addFeature+0x6c>
+  2106a0: 00 40 09 91  	add	x0, x0, #592            // =592
+  2106a4: e1 03 1f aa  	mov	x1, xzr
+  2106a8: 22 ff ff 97  	bl	0x210330 <std.builtin.default_panic>
+  2106ac: 80 ff ff 90  	adrp	x0, 0x200000 <std.target.Set.addFeature+0x7c>
+  2106b0: 00 80 09 91  	add	x0, x0, #608            // =608
+  2106b4: e1 03 1f aa  	mov	x1, xzr
+  2106b8: 1e ff ff 97  	bl	0x210330 <std.builtin.default_panic>
+  2106bc: e9 03 40 f9  	ldr	x9, [sp]
+  2106c0: e8 07 40 f9  	ldr	x8, [sp, #8]
+  2106c4: 0a f1 7d d3  	lsl	x10, x8, #3
+  2106c8: 28 69 6a f8  	ldr	x8, [x9, x10]
+  2106cc: ab 83 5f 38  	ldurb	w11, [x29, #-8]
+  2106d0: ec 03 0b 2a  	mov	w12, w11
+  2106d4: 2b 00 80 52  	mov	w11, #1
+  2106d8: 6b 21 cc 9a  	lsl	x11, x11, x12
+  2106dc: 08 01 0b aa  	orr	x8, x8, x11
+  2106e0: 28 69 2a f8  	str	x8, [x9, x10]
+  2106e4: fd 7b 43 a9  	ldp	x29, x30, [sp, #48]
+  2106e8: ff 03 01 91  	add	sp, sp, #64             // =64
+  2106ec: c0 03 5f d6  	ret
+
+00000000002106f0 <std.target.Arch.isWasm>:
+  2106f0: ff 83 00 d1  	sub	sp, sp, #32             // =32
+  2106f4: fd 7b 01 a9  	stp	x29, x30, [sp, #16]
+  2106f8: fd 43 00 91  	add	x29, sp, #16            // =16
+  2106fc: 08 14 00 12  	and	w8, w0, #0x3f
+  210700: a8 e3 1f 38  	sturb	w8, [x29, #-2]
+  210704: a8 e3 5f 38  	ldurb	w8, [x29, #-2]
+  210708: 08 c5 00 71  	subs	w8, w8, #49             // =49
+  21070c: 08 15 00 12  	and	w8, w8, #0x3f
+  210710: 29 00 80 52  	mov	w9, #1
+  210714: 29 15 00 12  	and	w9, w9, #0x3f
+  210718: 08 01 09 6b  	subs	w8, w8, w9
+  21071c: c9 00 00 54  	b.ls	0x210734 <std.target.Arch.isWasm+0x44>
+  210720: e8 03 1f 2a  	mov	w8, wzr
+  210724: 08 01 00 12  	and	w8, w8, #0x1
+  210728: 08 01 00 12  	and	w8, w8, #0x1
+  21072c: a8 f3 1f 38  	sturb	w8, [x29, #-1]
+  210730: 05 00 00 14  	b	0x210744 <std.target.Arch.isWasm+0x54>
+  210734: 28 00 80 52  	mov	w8, #1
+  210738: 08 01 00 12  	and	w8, w8, #0x1
+  21073c: 08 01 00 12  	and	w8, w8, #0x1
+  210740: a8 f3 1f 38  	sturb	w8, [x29, #-1]
+  210744: a8 f3 5f 38  	ldurb	w8, [x29, #-1]
+  210748: 00 01 00 12  	and	w0, w8, #0x1
+  21074c: fd 7b 41 a9  	ldp	x29, x30, [sp, #16]
+  210750: ff 83 00 91  	add	sp, sp, #32             // =32
+  210754: c0 03 5f d6  	ret
+		...
+
+0000000000210760 <memcpy>:
+  210760: fd 7b bf a9  	stp	x29, x30, [sp, #-16]!
+  210764: fd 03 00 91  	mov	x29, sp
+  210768: 22 05 00 b4  	cbz	x2, 0x21080c <memcpy+0xac>
+  21076c: 5f 20 00 f1  	cmp	x2, #8                  // =8
+  210770: 62 00 00 54  	b.hs	0x21077c <memcpy+0x1c>
+  210774: e8 03 1f aa  	mov	x8, xzr
+  210778: 1e 00 00 14  	b	0x2107f0 <memcpy+0x90>
+  21077c: 5f 80 00 f1  	cmp	x2, #32                 // =32
+  210780: 62 00 00 54  	b.hs	0x21078c <memcpy+0x2c>
+  210784: e8 03 1f aa  	mov	x8, xzr
+  210788: 0f 00 00 14  	b	0x2107c4 <memcpy+0x64>
+  21078c: 48 e8 7b 92  	and	x8, x2, #0xffffffffffffffe0
+  210790: 09 40 00 91  	add	x9, x0, #16             // =16
+  210794: 2a 40 00 91  	add	x10, x1, #16            // =16
+  210798: eb 03 08 aa  	mov	x11, x8
+  21079c: 40 85 7f ad  	ldp	q0, q1, [x10, #-16]
+  2107a0: 4a 81 00 91  	add	x10, x10, #32           // =32
+  2107a4: 6b 81 00 f1  	subs	x11, x11, #32           // =32
+  2107a8: 20 85 3f ad  	stp	q0, q1, [x9, #-16]
+  2107ac: 29 81 00 91  	add	x9, x9, #32             // =32
+  2107b0: 61 ff ff 54  	b.ne	0x21079c <memcpy+0x3c>
+  2107b4: 1f 01 02 eb  	cmp	x8, x2
+  2107b8: a0 02 00 54  	b.eq	0x21080c <memcpy+0xac>
+  2107bc: 5f 04 7d f2  	tst	x2, #0x18
+  2107c0: 80 01 00 54  	b.eq	0x2107f0 <memcpy+0x90>
+  2107c4: eb 03 08 aa  	mov	x11, x8
+  2107c8: 48 f0 7d 92  	and	x8, x2, #0xfffffffffffffff8
+  2107cc: 09 00 0b 8b  	add	x9, x0, x11
+  2107d0: 2a 00 0b 8b  	add	x10, x1, x11
+  2107d4: 6b 01 08 cb  	sub	x11, x11, x8
+  2107d8: 40 85 40 fc  	ldr	d0, [x10], #8
+  2107dc: 6b 21 00 b1  	adds	x11, x11, #8            // =8
+  2107e0: 20 85 00 fc  	str	d0, [x9], #8
+  2107e4: a1 ff ff 54  	b.ne	0x2107d8 <memcpy+0x78>
+  2107e8: 1f 01 02 eb  	cmp	x8, x2
+  2107ec: 00 01 00 54  	b.eq	0x21080c <memcpy+0xac>
+  2107f0: 49 00 08 cb  	sub	x9, x2, x8
+  2107f4: 2a 00 08 8b  	add	x10, x1, x8
+  2107f8: 08 00 08 8b  	add	x8, x0, x8
+  2107fc: 4b 15 40 38  	ldrb	w11, [x10], #1
+  210800: 29 05 00 f1  	subs	x9, x9, #1              // =1
+  210804: 0b 15 00 38  	strb	w11, [x8], #1
+  210808: a1 ff ff 54  	b.ne	0x2107fc <memcpy+0x9c>
+  21080c: fd 7b c1 a8  	ldp	x29, x30, [sp], #16
+  210810: c0 03 5f d6  	ret
+
+Disassembly of section .debug_loc:
+
+0000000000000000 <$d.4>:
+       0: 34 00 00 00  	udf	#52
+       4: 00 00 00 00  	udf	#0
+       8: b0 00 00 00  	udf	#176
+       c: 00 00 00 00  	udf	#0
+      10: 03 00 8f 18  	ldr	w3, 0xfffffffffff1e010 <memcpy+0xffffffffffd0d8b0>
+      14: 06 00 00 00  	udf	#6
+		...
+      24: 00           	<unknown>
+
+Disassembly of section .debug_abbrev:
+
+0000000000000000 <$d.5>:
+       0: 01 11 01 25  	<unknown>
+       4: 0e 13 05 03  	<unknown>
+       8: 0e 10 17 1b  	madd	w14, w0, w23, w4
+       c: 0e b4 42 19  	<unknown>
+      10: 11 01 12 06  	<unknown>
+      14: 00 00 02 34  	cbz	w0, 0x4014 <$d.7+0x4014>
+      18: 00 03 0e 49  	<unknown>
+      1c: 13 3a 0b 3b  	<unknown>
+      20: 0b 6e 0e 00  	<unknown>
+      24: 00 03 24 00  	<unknown>
+      28: 03 0e 3e 0b  	add	w3, w16, w30, uxtb #3
+      2c: 0b 0b 00 00  	udf	#2827
+      30: 04 04 01 49  	<unknown>
+      34: 13 03 0e 0b  	add	w19, w24, w14
+      38: 0b 3a 0b 3b  	<unknown>
+      3c: 05 88 01 0f  	<unknown>
+      40: 00 00 05 28  	stnp	w0, w0, [x0, #40]
+      44: 00 03 0e 1c  	ldr	s0, 0x1c0a4 <$d.7+0x1c0a4>
+      48: 0f 00 00 06  	<unknown>
+      4c: 13 01 03 0e  	tbl	v19.8b, { v8.16b }, v3.8b
+      50: 0b 0b 3a 0b  	add	w11, w24, w26, uxtb #2
+      54: 3b 0b 88 01  	<unknown>
+      58: 0f 00 00 07  	<unknown>
+      5c: 0d 00 03 0e  	tbl	v13.8b, { v0.16b }, v3.8b
+      60: 49 13 3a 0b  	add	w9, w26, w26, uxtb #4
+      64: 3b 0b 88 01  	<unknown>
+      68: 0f 38 0b 00  	<unknown>
+      6c: 00 08 04 01  	<unknown>
+      70: 49 13 03 0e  	tbx	v9.8b, { v26.16b }, v3.8b
+      74: 0b 0b 3a 0b  	add	w11, w24, w26, uxtb #2
+      78: 3b 0b 88 01  	<unknown>
+      7c: 0f 00 00 09  	<unknown>
+      80: 17 01 03 0e  	tbl	v23.8b, { v8.16b }, v3.8b
+      84: 0b 0b 3a 0b  	add	w11, w24, w26, uxtb #2
+      88: 3b 0b 88 01  	<unknown>
+      8c: 0f 00 00 0a  	and	w15, w0, w0
+      90: 0d 00 03 0e  	tbl	v13.8b, { v0.16b }, v3.8b
+      94: 49 13 3a 0b  	add	w9, w26, w26, uxtb #4
+      98: 3b 0b 0b 0b  	add	w27, w25, w11, lsl #2
+      9c: 0d 0b 0c 0b  	add	w13, w24, w12, lsl #2
+      a0: 38 0b 00 00  	udf	#2872
+      a4: 0b 13 01 03  	<unknown>
+      a8: 0e 0b 0b 3a  	<unknown>
+      ac: 0b 3b 05 88  	stxr	w5, w11, [x24]
+      b0: 01 0f 00 00  	udf	#3841
+      b4: 0c 0d 00 03  	<unknown>
+      b8: 0e 49 13 3a  	<unknown>
+      bc: 0b 3b 05 88  	stxr	w5, w11, [x24]
+      c0: 01 0f 38 0b  	add	w1, w24, w24, uxtb #3
+      c4: 00 00 0d 34  	cbz	w0, 0x1a0c4 <$d.7+0x1a0c4>
+      c8: 00 03 0e 49  	<unknown>
+      cc: 13 3a 0b 3b  	<unknown>
+      d0: 05 6e 0e 00  	<unknown>
+      d4: 00 0e 2e 00  	<unknown>
+      d8: 11 01 12 06  	<unknown>
+      dc: 40 18 03 0e  	uzp1	v0.8b, v2.8b, v3.8b
+      e0: 3a 0b 3b 05  	<unknown>
+      e4: 00 00 0f 2e  	ext	v0.8b, v0.8b, v15.8b, #0
+      e8: 01 11 01 12  	and	w1, w8, #0x8000000f
+      ec: 06 40 18 03  	<unknown>
+      f0: 0e 3a 0b 3b  	<unknown>
+      f4: 05 00 00 10  	adr	x5, #0
+      f8: 05 00 02 18  	ldr	w5, 0x40f8 <$d.7+0x40f8>
+      fc: 03 0e 3a 0b  	add	w3, w16, w26, uxtb #3
+     100: 3b 05 49 13  	<unknown>
+     104: 00 00 11 0b  	add	w0, w0, w17
+     108: 01 11 01 12  	and	w1, w8, #0x8000000f
+     10c: 06 00 00 12  	and	w6, w0, #0x1
+     110: 34 00 02 18  	ldr	w20, 0x4114 <$d.7+0x4114>
+     114: 03 0e 3a 0b  	add	w3, w16, w26, uxtb #3
+     118: 3b 05 49 13  	<unknown>
+     11c: 00 00 13 01  	<unknown>
+     120: 01 49 13 00  	<unknown>
+     124: 00 14 21 00  	<unknown>
+     128: 49 13 37 0b  	add	w9, w26, w23, uxtb #4
+     12c: 00 00 15 24  	<unknown>
+     130: 00 03 0e 0b  	add	w0, w24, w14
+     134: 0b 3e 0b 00  	<unknown>
+     138: 00 16 13 01  	<unknown>
+     13c: 03 0e 0b 0b  	add	w3, w16, w11, lsl #3
+     140: 3a 0b 3b 05  	<unknown>
+     144: 00 00 17 0d  	<unknown>
+     148: 00 03 0e 49  	<unknown>
+     14c: 13 3a 0b 3b  	<unknown>
+     150: 05 0b 0b 0d  	<unknown>
+     154: 0b 0c 0b 38  	strb	w11, [x0, #176]!
+     158: 0b 00 00 18  	ldr	w11, 0x158 <$d.7+0x158>
+     15c: 13 01 03 0e  	tbl	v19.8b, { v8.16b }, v3.8b
+     160: 0b 0b 88 01  	<unknown>
+     164: 0f 00 00 19  	<unknown>
+     168: 0d 00 03 0e  	tbl	v13.8b, { v0.16b }, v3.8b
+     16c: 49 13 88 01  	<unknown>
+     170: 0f 38 0b 00  	<unknown>
+     174: 00 1a 0f 00  	<unknown>
+     178: 49 13 03 0e  	tbx	v9.8b, { v26.16b }, v3.8b
+     17c: 00 00 1b 2e  	ext	v0.8b, v0.8b, v27.8b, #0
+     180: 01 11 01 12  	and	w1, w8, #0x8000000f
+     184: 06 40 18 03  	<unknown>
+     188: 0e 3a 0b 3b  	<unknown>
+     18c: 05 49 13 00  	<unknown>
+     190: 00 1c 04 01  	<unknown>
+     194: 49 13 03 0e  	tbx	v9.8b, { v26.16b }, v3.8b
+     198: 0b 0b 88 01  	<unknown>
+     19c: 0f 00 00 1d  	<unknown>
+     1a0: 05 00 03 0e  	tbl	v5.8b, { v0.16b }, v3.8b
+     1a4: 3a 0b 3b 05  	<unknown>
+     1a8: 49 13 00 00  	udf	#4937
+     1ac: 1e 05 00 02  	<unknown>
+     1b0: 17 03 0e 3a  	adcs	w23, w24, w14
+     1b4: 0b 3b 05 49  	<unknown>
+     1b8: 13 00 00 1f  	fmadd	s19, s0, s0, s0
+     1bc: 2e 00 11 01  	<unknown>
+     1c0: 12 06 40 18  	ldr	w18, 0x80280 <$d.7+0x80280>
+     1c4: 03 0e 3a 0b  	add	w3, w16, w26, uxtb #3
+     1c8: 3b 0b 3f 19  	<unknown>
+     1cc: 00 00 20 2e  	uaddl	v0.8h, v0.8b, v0.8b
+     1d0: 00 11 01 12  	and	w0, w8, #0x8000000f
+     1d4: 06 40 18 03  	<unknown>
+     1d8: 0e 3a 0b 3b  	<unknown>
+     1dc: 0b 49 13 00  	<unknown>
+     1e0: 00 21 2e 01  	<unknown>
+     1e4: 11 01 12 06  	<unknown>
+     1e8: 40 18 03 0e  	uzp1	v0.8b, v2.8b, v3.8b
+     1ec: 3a 0b 3b 0b  	add	w26, w25, w27, uxtb #2
+     1f0: 00 00 22 05  	<unknown>
+     1f4: 00 02 18 03  	<unknown>
+     1f8: 0e 3a 0b 3b  	<unknown>
+     1fc: 0b 49 13 00  	<unknown>
+     200: 00           	<unknown>
+     201: 00           	<unknown>
+
+Disassembly of section .debug_info:
+
+0000000000000000 <$d.6>:
+       0: ad 0e 00 00  	udf	#3757
+       4: 04 00 00 00  	udf	#4
+       8: 00 00 08 01  	<unknown>
+       c: 00 00 00 00  	udf	#0
+      10: 0c 00 0a 00  	<unknown>
+      14: 00 00 00 00  	udf	#0
+      18: 00 00 15 00  	<unknown>
+      1c: 00 00 30 03  	<unknown>
+      20: 21 00 00 00  	udf	#33
+      24: 00 00 28 04  	<unknown>
+      28: 00 00 02 4c  	<unknown>
+      2c: 00 00 00 39  	strb	w0, [x0]
+      30: 00 00 00 01  	<unknown>
+      34: 06 4c 00 00  	udf	#19462
+      38: 00 03 5a 00  	<unknown>
+      3c: 00 00 02 01  	<unknown>
+      40: 02 5f 00 00  	udf	#24322
+      44: 00 4f 00 00  	udf	#20224
+      48: 00 01 0c 5f  	<unknown>
+      4c: 00 00 00 04  	<unknown>
+      50: 70 00 00 00  	udf	#112
+      54: 7a 00 00 00  	udf	#122
+      58: 01 02 ca 01  	<unknown>
+      5c: 01 05 6e 00  	<unknown>
+      60: 00 00 00 05  	<unknown>
+      64: 72 00 00 00  	udf	#114
+      68: 01 05 76 00  	<unknown>
+      6c: 00 00 02 00  	<unknown>
+      70: 03 6b 00 00  	udf	#27395
+      74: 00 07 01 02  	<unknown>
+      78: 91 00 00 00  	udf	#145
+      7c: 39 00 00 00  	udf	#57
+      80: 01 2e 91 00  	<unknown>
+      84: 00 00 02 9b  	madd	x0, x0, x2, x0
+      88: 00 00 00 95  	bl	0x4000088 <memcpy+0x3def928>
+      8c: 00 00 00 01  	<unknown>
+      90: 23 9b 00 00  	udf	#39715
+      94: 00 06 6d 03  	<unknown>
+      98: 00 00 2c 03  	<unknown>
+      9c: 0d 04 07 9e  	<unknown>
+      a0: 00 00 00 b9  	str	w0, [x0]
+      a4: 00 00 00 03  	<unknown>
+      a8: 0e 01 00 07  	<unknown>
+      ac: ca 01 00 00  	udf	#458
+      b0: c4 01 00 00  	udf	#452
+      b4: 03 0f 04 04  	<unknown>
+      b8: 00 08 bd 01  	<unknown>
+      bc: 00 00 bb 01  	<unknown>
+      c0: 00 00 01 03  	<unknown>
+      c4: 11 01 05 a5  	<unknown>
+      c8: 00 00 00 00  	udf	#0
+      cc: 05 b2 00 00  	udf	#45573
+      d0: 00 01 05 b9  	str	w0, [x8, #1280]
+      d4: 00 00 00 02  	<unknown>
+      d8: 05 c2 00 00  	udf	#49669
+      dc: 00 03 05 cc  	<unknown>
+      e0: 00 00 00 04  	<unknown>
+      e4: 05 d4 00 00  	udf	#54277
+      e8: 00 05 05 dc  	<unknown>
+      ec: 00 00 00 06  	<unknown>
+      f0: 05 e0 00 00  	udf	#57349
+      f4: 00 07 05 e9  	<unknown>
+      f8: 00 00 00 08  	stxrb	w0, w0, [x0]
+      fc: 05 ef 00 00  	udf	#61189
+     100: 00 09 05 f3  	<unknown>
+     104: 00 00 00 0a  	and	w0, w0, w0
+     108: 05 f9 00 00  	udf	#63749
+     10c: 00 0b 05 00  	<unknown>
+     110: 01 00 00 0c  	st4	{ v1.8b, v2.8b, v3.8b, v4.8b }, [x0]
+     114: 05 08 01 00  	<unknown>
+     118: 00 0d 05 10  	adr	x0, #41376
+     11c: 01 00 00 0e  	tbl	v1.8b, { v0.16b }, v0.8b
+     120: 05 18 01 00  	<unknown>
+     124: 00 0f 05 1c  	ldr	s0, 0xa304 <$d.7+0xa304>
+     128: 01 00 00 10  	adr	x1, #0
+     12c: 05 22 01 00  	<unknown>
+     130: 00 11 05 28  	stnp	w0, w4, [x8, #40]
+     134: 01 00 00 12  	and	w1, w0, #0x1
+     138: 05 2e 01 00  	<unknown>
+     13c: 00 13 05 33  	bfi	w0, w24, #27, #5
+     140: 01 00 00 14  	b	0x144 <$d.7+0x144>
+     144: 05 37 01 00  	<unknown>
+     148: 00 15 05 3c  	str	b0, [x8], #81
+     14c: 01 00 00 16  	b	0xfffffffff8000150 <memcpy+0xfffffffff7def9f0>
+     150: 05 41 01 00  	<unknown>
+     154: 00 17 05 48  	stxrh	w5, w0, [x24]
+     158: 01 00 00 18  	ldr	w1, 0x158 <$d.7+0x158>
+     15c: 05 4c 01 00  	<unknown>
+     160: 00 19 05 55  	<unknown>
+     164: 01 00 00 1a  	adc	w1, w0, w0
+     168: 05 5a 01 00  	<unknown>
+     16c: 00 1b 05 62  	<unknown>
+     170: 01 00 00 1c  	ldr	s1, 0x170 <$d.7+0x170>
+     174: 05 69 01 00  	<unknown>
+     178: 00 1d 05 71  	subs	w0, w8, #327            // =327
+     17c: 01 00 00 1e  	<unknown>
+     180: 05 78 01 00  	<unknown>
+     184: 00 1f 05 7f  	<unknown>
+     188: 01 00 00 20  	<unknown>
+     18c: 05 84 01 00  	<unknown>
+     190: 00 21 05 89  	<unknown>
+     194: 01 00 00 22  	<unknown>
+     198: 05 94 01 00  	<unknown>
+     19c: 00 23 05 99  	<unknown>
+     1a0: 01 00 00 24  	<unknown>
+     1a4: 05 a0 01 00  	<unknown>
+     1a8: 00 25 05 a8  	stnp	x0, x9, [x8, #80]
+     1ac: 01 00 00 26  	<unknown>
+     1b0: 05 af 01 00  	<unknown>
+     1b4: 00 27 05 b5  	cbnz	x0, 0xa694 <$d.7+0xa694>
+     1b8: 01 00 00 28  	stnp	w1, w0, [x0]
+     1bc: 00 03 a2 00  	<unknown>
+     1c0: 00 00 07 01  	<unknown>
+     1c4: 06 55 03 00  	<unknown>
+     1c8: 00 28 03 dd  	<unknown>
+     1cc: 04 07 d8 01  	<unknown>
+     1d0: 00 00 da 01  	<unknown>
+     1d4: 00 00 03 dd  	<unknown>
+     1d8: 04 00 09 12  	and	w4, w0, #0x800000
+     1dc: 03 00 00 18  	ldr	w3, 0x1dc <$d.7+0x1dc>
+     1e0: 03 dd 04 07  	<unknown>
+     1e4: e0 01 00 00  	udf	#480
+     1e8: 1b 02 00 00  	udf	#539
+     1ec: 03 df 04 00  	<unknown>
+     1f0: 07 e9 00 00  	udf	#59655
+     1f4: 00 7e 02 00  	<unknown>
+     1f8: 00 03 e0 04  	<unknown>
+     1fc: 00 07 10 01  	<unknown>
+     200: 00 00 a2 02  	<unknown>
+     204: 00 00 03 e1  	<unknown>
+     208: 04 00 00 0a  	and	w4, w0, w0
+     20c: 9e 00 00 00  	udf	#158
+     210: 7f 03 00 00  	udf	#895
+     214: 03 dd 01 02  	<unknown>
+     218: 06 24 00 0b  	add	w6, w0, w0, lsl #9
+     21c: 19 02 00 00  	udf	#537
+     220: 18 02 e5 01  	<unknown>
+     224: 04 0c e7 01  	<unknown>
+     228: 00 00 42 02  	<unknown>
+     22c: 00 00 02 e6  	<unknown>
+     230: 01 04 00 0c  	st4	{ v1.4h, v2.4h, v3.4h, v4.4h }, [x0]
+     234: 15 02 00 00  	udf	#533
+     238: 42 02 00 00  	udf	#578
+     23c: 02 e7 01 04  	<unknown>
+     240: 0c 00 0b 01  	<unknown>
+     244: 02 00 00 0c  	st4	{ v2.8b, v3.8b, v4.8b, v5.8b }, [x0]
+     248: 02 e0 01 04  	<unknown>
+     24c: 0c eb 01 00  	<unknown>
+     250: 00 77 02 00  	<unknown>
+     254: 00 02 e1 01  	<unknown>
+     258: 04 00 0c f5  	<unknown>
+     25c: 01 00 00 77  	<unknown>
+     260: 02 00 00 02  	<unknown>
+     264: e2 01 04 04  	<unknown>
+     268: 0c fb 01 00  	<unknown>
+     26c: 00 77 02 00  	<unknown>
+     270: 00 02 e3 01  	<unknown>
+     274: 04 08 00 03  	<unknown>
+     278: f1 01 00 00  	udf	#497
+     27c: 07 04 06 37  	tbnz	w7, #0, 0xffffffffffffc2fc <memcpy+0xffffffffffdebb9c>
+     280: 02 00 00 24  	<unknown>
+     284: 03 b6 04 07  	<unknown>
+     288: 2b 02 00 00  	udf	#555
+     28c: 1b 02 00 00  	udf	#539
+     290: 03 b7 04 00  	<unknown>
+     294: 07 31 02 00  	<unknown>
+     298: 00 42 02 00  	<unknown>
+     29c: 00 03 b8 04  	<unknown>
+     2a0: 18 00 06 01  	<unknown>
+     2a4: 03 00 00 08  	stxrb	w0, w3, [x0]
+     2a8: 03 8c 04 07  	<unknown>
+     2ac: e7 01 00 00  	udf	#487
+     2b0: c6 02 00 00  	udf	#710
+     2b4: 03 8d 04 00  	<unknown>
+     2b8: 07 15 02 00  	<unknown>
+     2bc: 00 c6 02 00  	<unknown>
+     2c0: 00 03 8e 04  	<unknown>
+     2c4: 04 00 08 77  	<unknown>
+     2c8: 02 00 00 e7  	<unknown>
+     2cc: 02 00 00 04  	<unknown>
+     2d0: 03 5e 04 05  	<unknown>
+     2d4: 54 02 00 00  	udf	#596
+     2d8: 80 80 80 20  	<unknown>
+     2dc: 05 58 02 00  	<unknown>
+     2e0: 00 80 80 80  	<unknown>
+     2e4: 28 05 5e 02  	<unknown>
+     2e8: 00 00 80 80  	<unknown>
+     2ec: 84 28 05 61  	<unknown>
+     2f0: 02 00 00 80  	<unknown>
+     2f4: 80 88 28 05  	<unknown>
+     2f8: 68 02 00 00  	udf	#616
+     2fc: 80 80 80 30  	adr	x0, #-1044463
+     300: 05 6e 02 00  	<unknown>
+     304: 00 80 80 84  	<unknown>
+     308: 30 05 73 02  	<unknown>
+     30c: 00 00 80 80  	<unknown>
+     310: 88 30 05 78  	sturh	w8, [x4, #83]
+     314: 02 00 00 80  	<unknown>
+     318: 80 8c 30 05  	<unknown>
+     31c: 7f 02 00 00  	udf	#639
+     320: 80 80 80 50  	adr	x0, #-1044462
+     324: 05 85 02 00  	<unknown>
+     328: 00 81 80 80  	<unknown>
+     32c: 50 05 8f 02  	<unknown>
+     330: 00 00 82 80  	<unknown>
+     334: 80 50 05 99  	<unknown>
+     338: 02 00 00 83  	<unknown>
+     33c: 80 80 50 05  	<unknown>
+     340: a3 02 00 00  	udf	#675
+     344: 84 80 80 50  	adr	x4, #-1044462
+     348: 05 ad 02 00  	<unknown>
+     34c: 00 85 80 80  	<unknown>
+     350: 50 05 b7 02  	<unknown>
+     354: 00 00 86 80  	<unknown>
+     358: 80 50 05 c1  	<unknown>
+     35c: 02 00 00 87  	<unknown>
+     360: 80 80 50 05  	<unknown>
+     364: cc 02 00 00  	udf	#716
+     368: 88 80 80 50  	adr	x8, #-1044462
+     36c: 05 d5 02 00  	<unknown>
+     370: 00 89 80 80  	<unknown>
+     374: 50 05 de 02  	<unknown>
+     378: 00 00 8a 80  	<unknown>
+     37c: 80 50 00 08  	stxrb	w0, w0, [x4]
+     380: 70 00 00 00  	udf	#112
+     384: 21 03 00 00  	udf	#801
+     388: 01 03 dd 01  	<unknown>
+     38c: 05 1c 03 00  	<unknown>
+     390: 00 00 05 e0  	<unknown>
+     394: 01 00 00 01  	<unknown>
+     398: 05 e9 00 00  	udf	#59653
+     39c: 00 02 05 10  	adr	x0, #41024
+     3a0: 01 00 00 03  	<unknown>
+     3a4: 00 02 7b 03  	<unknown>
+     3a8: 00 00 b9 00  	<unknown>
+     3ac: 00 00 04 0b  	add	w0, w0, w4
+     3b0: 7b 03 00 00  	udf	#891
+     3b4: 0b a4 03 00  	<unknown>
+     3b8: 00 28 03 7e  	<unknown>
+     3bc: 02 08 0c 85  	<unknown>
+     3c0: 03 00 00 74  	<unknown>
+     3c4: 04 00 00 03  	<unknown>
+     3c8: 7f 02 08 00  	<unknown>
+     3cc: 0d b3 03 00  	<unknown>
+     3d0: 00 8e 04 00  	<unknown>
+     3d4: 00 03 81 02  	<unknown>
+     3d8: b3 03 00 00  	udf	#947
+     3dc: 0d c7 03 00  	<unknown>
+     3e0: 00 95 04 00  	<unknown>
+     3e4: 00 03 82 02  	<unknown>
+     3e8: c7 03 00 00  	udf	#967
+     3ec: 0d d5 03 00  	<unknown>
+     3f0: 00 95 04 00  	<unknown>
+     3f4: 00 03 83 02  	<unknown>
+     3f8: d5 03 00 00  	udf	#981
+     3fc: 0e c0 05 21  	<unknown>
+     400: 00 00 00 00  	udf	#0
+     404: 00 28 00 00  	udf	#10240
+     408: 00 01 6d 01  	<unknown>
+     40c: 0f 00 00 03  	<unknown>
+     410: 88 02 0f f0  	adrp	x8, 0x1e053000 <$d.7+0x7855c>
+     414: 05 21 00 00  	udf	#8453
+     418: 00 00 00 00  	udf	#0
+     41c: 01 00 00 01  	<unknown>
+     420: 6d 21 0f 00  	<unknown>
+     424: 00 03 99 02  	<unknown>
+     428: 10 02 91 70  	adr	x16, #-909245
+     42c: 11 10 00 00  	udf	#4113
+     430: 03 99 02 a7  	<unknown>
+     434: 0e 00 00 10  	adr	x14, #0
+     438: 02 91 6c 25  	<unknown>
+     43c: 10 00 00 03  	<unknown>
+     440: 99 02 8e 04  	<unknown>
+     444: 00 00 11 08  	stxrb	w17, w0, [x0]
+     448: 06 21 00 00  	udf	#8454
+     44c: 00 00 00 e8  	<unknown>
+     450: 00 00 00 12  	and	w0, w0, #0x1
+     454: 02 91 7c 38  	<unknown>
+     458: 10 00 00 03  	<unknown>
+     45c: 9a 02 8e 04  	<unknown>
+     460: 00 00 12 02  	<unknown>
+     464: 91 78 44 10  	adr	x17, #560912
+     468: 00 00 03 9b  	madd	x0, x0, x3, x0
+     46c: 02 bd 01 00  	<unknown>
+     470: 00 00 00 00  	udf	#0
+     474: 13 80 04 00  	<unknown>
+     478: 00 14 87 04  	<unknown>
+     47c: 00 00 05 00  	<unknown>
+     480: 03 8a 03 00  	<unknown>
+     484: 00 07 08 15  	b	0x4202084 <memcpy+0x3ff1924>
+     488: 90 03 00 00  	udf	#912
+     48c: 08 07 03 c4  	<unknown>
+     490: 03 00 00 07  	<unknown>
+     494: 02 03 d2 03  	<unknown>
+     498: 00 00 08 01  	<unknown>
+     49c: 16 e1 03 00  	<unknown>
+     4a0: 00 00 05 26  	<unknown>
+     4a4: 05 0d f8 03  	<unknown>
+     4a8: 00 00 b6 04  	<unknown>
+     4ac: 00 00 05 08  	stxrb	w5, w0, [x0]
+     4b0: 06 f8 03 00  	<unknown>
+     4b4: 00 00 0b 44  	<unknown>
+     4b8: 04 00 00 50  	adr	x4, #2
+     4bc: 03 e0 04 08  	stlxrb	w4, w3, [x0]
+     4c0: 0c 03 04 00  	<unknown>
+     4c4: 00 ed 04 00  	<unknown>
+     4c8: 00 03 e1 04  	<unknown>
+     4cc: 08 00 17 19  	<unknown>
+     4d0: 04 00 00 14  	b	0x4e0 <$d.7+0x4e0>
+     4d4: 05 00 00 03  	<unknown>
+     4d8: e2 04 18 88  	stxr	w24, w2, [x7]
+     4dc: 38 10 0c 3b  	<unknown>
+     4e0: 04 00 00 b4  	cbz	x4, 0x4e0 <$d.7+0x4e0>
+     4e4: 03 00 00 03  	<unknown>
+     4e8: e3 04 08 28  	stnp	w3, w1, [x7, #64]
+     4ec: 00 18 14 04  	<unknown>
+     4f0: 00 00 10 08  	stxrb	w16, w0, [x0]
+     4f4: 19 08 04 00  	<unknown>
+     4f8: 00 0b 05 00  	<unknown>
+     4fc: 00 08 00 19  	<unknown>
+     500: 10 04 00 00  	udf	#1040
+     504: 80 04 00 00  	udf	#1152
+     508: 08 08 00 1a  	<unknown>
+     50c: 95 04 00 00  	udf	#1173
+     510: 0c 04 00 00  	udf	#1036
+     514: 18 2d 04 00  	<unknown>
+     518: 00 18 08 19  	<unknown>
+     51c: 23 04 00 00  	udf	#1059
+     520: ed 04 00 00  	udf	#1261
+     524: 08 00 19 27  	<unknown>
+     528: 04 00 00 39  	strb	w4, [x0]
+     52c: 00 00 00 01  	<unknown>
+     530: 10 00 02 55  	<unknown>
+     534: 04 00 00 41  	<unknown>
+     538: 05 00 00 01  	<unknown>
+     53c: 11 55 04 00  	<unknown>
+     540: 00 0b 1a 06  	<unknown>
+     544: 00 00 38 03  	<unknown>
+     548: 5f 02 08 0c  	<unknown>
+     54c: 59 04 00 00  	udf	#1113
+     550: 76 05 00 00  	udf	#1398
+     554: 03 61 02 01  	<unknown>
+     558: 00 0c 02 06  	<unknown>
+     55c: 00 00 05 07  	<unknown>
+     560: 00 00 03 65  	<unknown>
+     564: 02 08 08 0c  	<unknown>
+     568: 3b 04 00 00  	udf	#1083
+     56c: b4 03 00 00  	udf	#948
+     570: 03 68 02 08  	stxrb	w2, w3, [x0]
+     574: 10 00 04 bd  	str	s16, [x0, #1024]
+     578: 01 00 00 f2  	ands	x1, x0, #0x100000001
+     57c: 05 00 00 01  	<unknown>
+     580: 03 f8 02 01  	<unknown>
+     584: 05 5e 04 00  	<unknown>
+     588: 00 00 05 62  	<unknown>
+     58c: 04 00 00 01  	<unknown>
+     590: 05 68 04 00  	<unknown>
+     594: 00 02 05 70  	adr	x0, #41027
+     598: 04 00 00 03  	<unknown>
+     59c: 05 7b 04 00  	<unknown>
+     5a0: 00 04 05 86  	<unknown>
+     5a4: 04 00 00 05  	<unknown>
+     5a8: 05 8a 04 00  	<unknown>
+     5ac: 00 06 05 8e  	<unknown>
+     5b0: 04 00 00 07  	<unknown>
+     5b4: 05 94 04 00  	<unknown>
+     5b8: 00 08 05 9a  	<unknown>
+     5bc: 04 00 00 09  	<unknown>
+     5c0: 05 9f 04 00  	<unknown>
+     5c4: 00 0a 05 a7  	<unknown>
+     5c8: 04 00 00 0b  	add	w4, w0, w0
+     5cc: 05 ac 04 00  	<unknown>
+     5d0: 00 0c 05 b1  	adds	x0, x0, #323            // =323
+     5d4: 04 00 00 0d  	st1	{ v4.b }[0], [x0]
+     5d8: 05 b8 04 00  	<unknown>
+     5dc: 00 0e 05 bf  	<unknown>
+     5e0: 04 00 00 0f  	<unknown>
+     5e4: 05 c8 04 00  	<unknown>
+     5e8: 00 10 05 cf  	<unknown>
+     5ec: 04 00 00 11  	add	w4, w0, #0              // =0
+     5f0: 05 d7 04 00  	<unknown>
+     5f4: 00 12 05 e1  	<unknown>
+     5f8: 04 00 00 13  	sbfx	w4, w0, #0, #1
+     5fc: 05 eb 04 00  	<unknown>
+     600: 00 14 05 f7  	<unknown>
+     604: 04 00 00 15  	b	0x4000614 <memcpy+0x3defeb4>
+     608: 05 fc 04 00  	<unknown>
+     60c: 00 16 05 03  	<unknown>
+     610: 05 00 00 17  	b	0xfffffffffc000624 <memcpy+0xfffffffffbdefec4>
+     614: 05 0b 05 00  	<unknown>
+     618: 00 18 05 13  	sbfx	w0, w0, #5, #2
+     61c: 05 00 00 19  	<unknown>
+     620: 05 19 05 00  	<unknown>
+     624: 00 1a 05 21  	<unknown>
+     628: 05 00 00 1b  	madd	w5, w0, w0, w0
+     62c: 05 29 05 00  	<unknown>
+     630: 00 1c 05 2f  	<unknown>
+     634: 05 00 00 1d  	<unknown>
+     638: 05 33 05 00  	<unknown>
+     63c: 00 1e 05 39  	strb	w0, [x16, #327]
+     640: 05 00 00 1f  	fmadd	s5, s0, s0, s0
+     644: 05 3f 05 00  	<unknown>
+     648: 00 20 05 47  	<unknown>
+     64c: 05 00 00 21  	<unknown>
+     650: 05 4c 05 00  	<unknown>
+     654: 00 22 05 53  	ubfx	w0, w16, #5, #4
+     658: 05 00 00 23  	<unknown>
+     65c: 05 59 05 00  	<unknown>
+     660: 00 24 05 5f  	<unknown>
+     664: 05 00 00 25  	<unknown>
+     668: 05 67 05 00  	<unknown>
+     66c: 00 26 05 6c  	stnp	d0, d9, [x16, #80]
+     670: 05 00 00 27  	<unknown>
+     674: 05 71 05 00  	<unknown>
+     678: 00 28 05 77  	<unknown>
+     67c: 05 00 00 29  	stp	w5, w0, [x0]
+     680: 05 7f 05 00  	<unknown>
+     684: 00 2a 05 85  	<unknown>
+     688: 05 00 00 2b  	adds	w5, w0, w0
+     68c: 05 8d 05 00  	<unknown>
+     690: 00 2c 05 92  	and	x0, x0, #0xf800007ff800007f
+     694: 05 00 00 2d  	stp	s5, s0, [x0]
+     698: 05 99 05 00  	<unknown>
+     69c: 00 2e 05 a1  	<unknown>
+     6a0: 05 00 00 2f  	<unknown>
+     6a4: 05 a7 05 00  	<unknown>
+     6a8: 00 30 05 ad  	stp	q0, q12, [x0, #160]
+     6ac: 05 00 00 31  	adds	w5, w0, #0              // =0
+     6b0: 05 b4 05 00  	<unknown>
+     6b4: 00 32 05 bb  	<unknown>
+     6b8: 05 00 00 33  	bfxil	w5, w0, #0, #1
+     6bc: 05 ca 05 00  	<unknown>
+     6c0: 00 34 05 d9  	<unknown>
+     6c4: 05 00 00 35  	cbnz	w5, 0x6c4 <$d.7+0x6c4>
+     6c8: 05 dc 05 00  	<unknown>
+     6cc: 00 36 05 e2  	<unknown>
+     6d0: 05 00 00 37  	tbnz	w5, #0, 0x6d0 <$d.7+0x6d0>
+     6d4: 05 ea 05 00  	<unknown>
+     6d8: 00 38 1b f0  	adrp	x0, 0x36703000 <$d.7+0xda2e4>
+     6dc: 06 21 00 00  	udf	#8454
+     6e0: 00 00 00 68  	<unknown>
+     6e4: 00 00 00 01  	<unknown>
+     6e8: 6d 3b 0f 00  	<unknown>
+     6ec: 00 03 51 03  	<unknown>
+     6f0: 39 00 00 00  	udf	#57
+     6f4: 10 02 91 7e  	<unknown>
+     6f8: 59 04 00 00  	udf	#1113
+     6fc: 03 51 03 76  	<unknown>
+     700: 05 00 00 00  	udf	#5
+     704: 00 1a b6 04  	<unknown>
+     708: 00 00 08 06  	<unknown>
+     70c: 00 00 02 29  	stp	w0, w0, [x0, #16]
+     710: 06 00 00 76  	<unknown>
+     714: 05 00 00 04  	<unknown>
+     718: 0a 29 06 00  	<unknown>
+     71c: 00 02 35 06  	<unknown>
+     720: 00 00 2c 07  	<unknown>
+     724: 00 00 06 30  	adr	x0, #49153
+     728: 35 06 00 00  	udf	#1589
+     72c: 1a 35 07 00  	<unknown>
+     730: 00 4e 07 00  	<unknown>
+     734: 00 06 3c 07  	<unknown>
+     738: 00 00 44 06  	<unknown>
+     73c: 1b 01 07 3a  	adcs	w27, w8, w7
+     740: 06 00 00 77  	<unknown>
+     744: 02 00 00 06  	<unknown>
+     748: 1c 04 00 07  	<unknown>
+     74c: 3f 06 00 00  	udf	#1599
+     750: db 07 00 00  	udf	#2011
+     754: 06 1d 04 04  	<unknown>
+     758: 07 45 06 00  	<unknown>
+     75c: 00 e7 07 00  	<unknown>
+     760: 00 06 1e 01  	<unknown>
+     764: 18 07 5d 06  	<unknown>
+     768: 00 00 4a 08  	ldxrb	w0, [x0]
+     76c: 00 00 06 1f  	fmadd	s0, s0, s6, s0
+     770: 04 1c 07 87  	<unknown>
+     774: 06 00 00 77  	<unknown>
+     778: 02 00 00 06  	<unknown>
+     77c: 21 04 24 07  	<unknown>
+     780: 94 06 00 00  	udf	#1684
+     784: 77 02 00 00  	udf	#631
+     788: 06 22 04 28  	stnp	w6, w8, [x16, #32]
+     78c: 07 a3 06 00  	<unknown>
+     790: 00 56 08 00  	<unknown>
+     794: 00 06 24 01  	<unknown>
+     798: 2c 07 d1 06  	<unknown>
+     79c: 00 00 94 08  	<unknown>
+     7a0: 00 00 06 25  	<unknown>
+     7a4: 01 30 07 15  	b	0x41cc7a8 <memcpy+0x3fbc048>
+     7a8: 07 00 00 77  	<unknown>
+     7ac: 02 00 00 06  	<unknown>
+     7b0: 27 04 34 07  	<unknown>
+     7b4: 1b 07 00 00  	udf	#1819
+     7b8: 77 02 00 00  	udf	#631
+     7bc: 06 28 04 38  	sttrb	w6, [x0, #66]
+     7c0: 07 6b 06 00  	<unknown>
+     7c4: 00 77 02 00  	<unknown>
+     7c8: 00 06 29 04  	<unknown>
+     7cc: 3c 07 29 07  	<unknown>
+     7d0: 00 00 77 02  	<unknown>
+     7d4: 00 00 06 2a  	orr	w0, w0, w6
+     7d8: 04 40 00 13  	sbfx	w4, w0, #0, #17
+     7dc: 77 02 00 00  	udf	#631
+     7e0: 14 87 04 00  	<unknown>
+     7e4: 00 05 00 06  	<unknown>
+     7e8: 71 06 00 00  	udf	#1649
+     7ec: 04 06 0b 01  	<unknown>
+     7f0: 0a 3f 06 00  	<unknown>
+     7f4: 00 3c 08 00  	<unknown>
+     7f8: 00 06 0c 04  	<unknown>
+     7fc: 1b 05 00 0a  	and	w27, w8, w0, lsl #1
+     800: 4f 06 00 00  	udf	#1615
+     804: 39 00 00 00  	udf	#57
+     808: 06 0d 01 01  	<unknown>
+     80c: 04 03 0a 5d  	<unknown>
+     810: 06 00 00 43  	<unknown>
+     814: 08 00 00 06  	<unknown>
+     818: 0e 01 01 03  	<unknown>
+     81c: 03 0a 66 06  	<unknown>
+     820: 00 00 39 00  	<unknown>
+     824: 00 00 06 0f  	<unknown>
+     828: 01 01 02 03  	<unknown>
+     82c: 0a 6b 06 00  	<unknown>
+     830: 00 70 00 00  	udf	#28672
+     834: 00 06 10 01  	<unknown>
+     838: 02 00 03 00  	<unknown>
+     83c: 03 4b 06 00  	<unknown>
+     840: 00 07 04 03  	<unknown>
+     844: 63 06 00 00  	udf	#1635
+     848: 07 01 13 77  	<unknown>
+     84c: 02 00 00 14  	b	0x854 <$d.7+0x854>
+     850: 87 04 00 00  	udf	#1159
+     854: 02 00 06 bb  	<unknown>
+     858: 06 00 00 04  	<unknown>
+     85c: 06 05 01 0a  	and	w6, w8, w1, lsl #1
+     860: 3f 06 00 00  	udf	#1599
+     864: 3c 08 00 00  	udf	#2108
+     868: 06 06 04 1b  	madd	w6, w16, w4, w1
+     86c: 05 00 0a b0  	adrp	x5, 0x14001000 <$d.7+0x50870>
+     870: 06 00 00 39  	strb	w6, [x0]
+     874: 00 00 00 06  	<unknown>
+     878: 07 01 01 04  	<unknown>
+     87c: 03 0a 5d 06  	<unknown>
+     880: 00 00 8d 08  	<unknown>
+     884: 00 00 06 08  	stxrb	w6, w0, [x0]
+     888: 01 04 00 03  	<unknown>
+     88c: 00 03 b8 06  	<unknown>
+     890: 00 00 07 01  	<unknown>
+     894: 06 fc 06 00  	<unknown>
+     898: 00 04 06 13  	sbfiz	w0, w0, #26, #2
+     89c: 01 0a 3f 06  	<unknown>
+     8a0: 00 00 e9 08  	<unknown>
+     8a4: 00 00 06 14  	b	0x1808a4 <$d.7+0x1808a4>
+     8a8: 04 16 0a 00  	<unknown>
+     8ac: 0a dd 06 00  	<unknown>
+     8b0: 00 39 00 00  	udf	#14592
+     8b4: 00 06 15 01  	<unknown>
+     8b8: 01 01 02 0a  	and	w1, w8, w2
+     8bc: e8 06 00 00  	udf	#1768
+     8c0: 39 00 00 00  	udf	#57
+     8c4: 06 16 01 01  	<unknown>
+     8c8: 00 02 0a 5d  	<unknown>
+     8cc: 06 00 00 f0  	adrp	x6, 0x3000 <$d.7+0x8d8>
+     8d0: 08 00 00 06  	<unknown>
+     8d4: 17 01 07 01  	<unknown>
+     8d8: 03 0a f4 06  	<unknown>
+     8dc: 00 00 39 00  	<unknown>
+     8e0: 00 00 06 18  	ldr	w0, 0xc8e0 <$d.7+0xc8e0>
+     8e4: 01 01 00 03  	<unknown>
+     8e8: 00 03 d9 06  	<unknown>
+     8ec: 00 00 07 04  	<unknown>
+     8f0: 03 f1 06 00  	<unknown>
+     8f4: 00 07 01 08  	stxrb	w1, w0, [x24]
+     8f8: 95 04 00 00  	udf	#1173
+     8fc: fe 0d 00 00  	udf	#3582
+     900: 01 05 07 01  	<unknown>
+     904: 05 61 07 00  	<unknown>
+     908: 00 00 05 65  	<unknown>
+     90c: 07 00 00 01  	<unknown>
+     910: 05 69 07 00  	<unknown>
+     914: 00 02 05 6d  	stp	d0, d0, [x16, #80]
+     918: 07 00 00 03  	<unknown>
+     91c: 05 7c 07 00  	<unknown>
+     920: 00 04 05 9f  	<unknown>
+     924: 07 00 00 05  	<unknown>
+     928: 05 a7 07 00  	<unknown>
+     92c: 00 06 05 aa  	orr	x0, x16, x5, lsl #1
+     930: 07 00 00 07  	<unknown>
+     934: 05 af 07 00  	<unknown>
+     938: 00 08 05 b9  	str	w0, [x0, #1288]
+     93c: 07 00 00 09  	<unknown>
+     940: 05 c3 07 00  	<unknown>
+     944: 00 0a 05 cc  	<unknown>
+     948: 07 00 00 0b  	add	w7, w0, w0
+     94c: 05 dd 07 00  	<unknown>
+     950: 00 0c 05 ee  	<unknown>
+     954: 07 00 00 0d  	st1	{ v7.b }[0], [x0]
+     958: 05 fd 07 00  	<unknown>
+     95c: 00 0e 05 02  	<unknown>
+     960: 08 00 00 0f  	<unknown>
+     964: 05 07 08 00  	<unknown>
+     968: 00 10 05 0b  	add	w0, w0, w5, lsl #4
+     96c: 08 00 00 11  	add	w8, w0, #0              // =0
+     970: 05 1a 08 00  	<unknown>
+     974: 00 12 05 29  	stp	w0, w4, [x16, #40]
+     978: 08 00 00 13  	sbfx	w8, w0, #0, #1
+     97c: 05 38 08 00  	<unknown>
+     980: 00 14 05 47  	<unknown>
+     984: 08 00 00 15  	b	0x40009a4 <memcpy+0x3df0244>
+     988: 05 56 08 00  	<unknown>
+     98c: 00 16 05 65  	<unknown>
+     990: 08 00 00 17  	b	0xfffffffffc0009b0 <memcpy+0xfffffffffbdf0250>
+     994: 05 74 08 00  	<unknown>
+     998: 00 18 05 82  	<unknown>
+     99c: 08 00 00 19  	<unknown>
+     9a0: 05 90 08 00  	<unknown>
+     9a4: 00 1a 05 95  	bl	0x41471a4 <memcpy+0x3f36a44>
+     9a8: 08 00 00 1b  	madd	w8, w0, w0, w0
+     9ac: 05 9b 08 00  	<unknown>
+     9b0: 00 1c 05 a0  	<unknown>
+     9b4: 08 00 00 1d  	<unknown>
+     9b8: 05 af 08 00  	<unknown>
+     9bc: 00 1e 05 b9  	str	w0, [x16, #1308]
+     9c0: 08 00 00 1f  	fmadd	s8, s0, s0, s0
+     9c4: 05 c8 08 00  	<unknown>
+     9c8: 00 20 05 d4  	<unknown>
+     9cc: 08 00 00 21  	<unknown>
+     9d0: 05 df 08 00  	<unknown>
+     9d4: 00 22 05 e3  	<unknown>
+     9d8: 08 00 00 23  	<unknown>
+     9dc: 05 ea 08 00  	<unknown>
+     9e0: 00 24 05 ff  	<unknown>
+     9e4: 08 00 00 25  	<unknown>
+     9e8: 05 1f 09 00  	<unknown>
+     9ec: 00 26 05 23  	<unknown>
+     9f0: 09 00 00 27  	<unknown>
+     9f4: 05 2b 09 00  	<unknown>
+     9f8: 00 28 05 2f  	<unknown>
+     9fc: 09 00 00 29  	stp	w9, w0, [x0]
+     a00: 05 33 09 00  	<unknown>
+     a04: 00 2a 05 48  	stxrh	w5, w0, [x16]
+     a08: 09 00 00 2b  	adds	w9, w0, w0
+     a0c: 05 52 09 00  	<unknown>
+     a10: 00 2c 05 58  	ldr	x0, 0xaf90 <$d.7+0xaf90>
+     a14: 09 00 00 2d  	stp	s9, s0, [x0]
+     a18: 05 5e 09 00  	<unknown>
+     a1c: 00 2e 05 62  	<unknown>
+     a20: 09 00 00 2f  	<unknown>
+     a24: 05 68 09 00  	<unknown>
+     a28: 00 30 05 80  	<unknown>
+     a2c: 09 00 00 31  	adds	w9, w0, #0              // =0
+     a30: 05 88 09 00  	<unknown>
+     a34: 00 32 05 91  	add	x0, x16, #332           // =332
+     a38: 09 00 00 33  	bfxil	w9, w0, #0, #1
+     a3c: 05 99 09 00  	<unknown>
+     a40: 00 34 05 a2  	<unknown>
+     a44: 09 00 00 35  	cbnz	w9, 0xa44 <$d.7+0xa44>
+     a48: 05 af 09 00  	<unknown>
+     a4c: 00 36 05 b8  	str	w0, [x16], #83
+     a50: 09 00 00 37  	tbnz	w9, #0, 0xa50 <$d.7+0xa50>
+     a54: 05 c9 09 00  	<unknown>
+     a58: 00 38 05 d9  	<unknown>
+     a5c: 09 00 00 39  	strb	w9, [x0]
+     a60: 05 e3 09 00  	<unknown>
+     a64: 00 3a 05 f1  	subs	x0, x16, #334           // =334
+     a68: 09 00 00 3b  	<unknown>
+     a6c: 05 00 0a 00  	<unknown>
+     a70: 00 3c 05 14  	b	0x14fa70 <$d.7+0x14fa70>
+     a74: 0a 00 00 3d  	str	b10, [x0]
+     a78: 05 25 0a 00  	<unknown>
+     a7c: 00 3e 05 29  	stp	w0, w15, [x16, #40]
+     a80: 0a 00 00 3f  	<unknown>
+     a84: 05 2e 0a 00  	<unknown>
+     a88: 00 40 05 35  	cbnz	w0, 0xb288 <$d.7+0xb288>
+     a8c: 0a 00 00 41  	<unknown>
+     a90: 05 39 0a 00  	<unknown>
+     a94: 00 42 05 3e  	<unknown>
+     a98: 0a 00 00 43  	<unknown>
+     a9c: 05 42 0a 00  	<unknown>
+     aa0: 00 44 05 4b  	sub	w0, w0, w5, lsl #17
+     aa4: 0a 00 00 45  	<unknown>
+     aa8: 05 50 0a 00  	<unknown>
+     aac: 00 46 05 54  	b.eq	0xb36c <$d.7+0xb36c>
+     ab0: 0a 00 00 47  	<unknown>
+     ab4: 05 59 0a 00  	<unknown>
+     ab8: 00 48 05 65  	<unknown>
+     abc: 0a 00 00 49  	<unknown>
+     ac0: 05 71 0a 00  	<unknown>
+     ac4: 00 4a 05 7d  	str	h0, [x16, #676]
+     ac8: 0a 00 00 4b  	sub	w10, w0, w0
+     acc: 05 89 0a 00  	<unknown>
+     ad0: 00 4c 05 9b  	madd	x0, x0, x5, x19
+     ad4: 0a 00 00 4d  	st1	{ v10.b }[8], [x0]
+     ad8: 05 a5 0a 00  	<unknown>
+     adc: 00 4e 05 a8  	stnp	x0, x19, [x16, #80]
+     ae0: 0a 00 00 4f  	<unknown>
+     ae4: 05 b8 0a 00  	<unknown>
+     ae8: 00 50 05 bc  	stur	s0, [x0, #85]
+     aec: 0a 00 00 51  	sub	w10, w0, #0             // =0
+     af0: 05 c4 0a 00  	<unknown>
+     af4: 00 52 05 ca  	eor	x0, x16, x5, lsl #20
+     af8: 0a 00 00 53  	ubfx	w10, w0, #0, #1
+     afc: 05 d2 0a 00  	<unknown>
+     b00: 00 54 05 d6  	<unknown>
+     b04: 0a 00 00 55  	<unknown>
+     b08: 05 f3 0a 00  	<unknown>
+     b0c: 00 56 05 fb  	<unknown>
+     b10: 0a 00 00 57  	<unknown>
+     b14: 05 00 0b 00  	<unknown>
+     b18: 00 58 05 04  	<unknown>
+     b1c: 0b 00 00 59  	<unknown>
+     b20: 05 09 0b 00  	<unknown>
+     b24: 00 5a 05 13  	sbfx	w0, w16, #5, #18
+     b28: 0b 00 00 5b  	<unknown>
+     b2c: 05 17 0b 00  	<unknown>
+     b30: 00 5c 05 22  	<unknown>
+     b34: 0b 00 00 5d  	<unknown>
+     b38: 05 2e 0b 00  	<unknown>
+     b3c: 00 5e 05 3a  	<unknown>
+     b40: 0b 00 00 5f  	<unknown>
+     b44: 05 46 0b 00  	<unknown>
+     b48: 00 60 05 52  	eor	w0, w0, #0xf80fffff
+     b4c: 0b 00 00 61  	<unknown>
+     b50: 05 5e 0b 00  	<unknown>
+     b54: 00 62 05 6a  	ands	w0, w16, w5, lsl #24
+     b58: 0b 00 00 63  	<unknown>
+     b5c: 05 76 0b 00  	<unknown>
+     b60: 00 64 05 81  	<unknown>
+     b64: 0b 00 00 65  	<unknown>
+     b68: 05 8d 0b 00  	<unknown>
+     b6c: 00 66 05 99  	<unknown>
+     b70: 0b 00 00 67  	<unknown>
+     b74: 05 a5 0b 00  	<unknown>
+     b78: 00 68 05 b1  	adds	x0, x0, #346            // =346
+     b7c: 0b 00 00 69  	<unknown>
+     b80: 05 bd 0b 00  	<unknown>
+     b84: 00 6a 05 c9  	<unknown>
+     b88: 0b 00 00 6b  	subs	w11, w0, w0
+     b8c: 05 d5 0b 00  	<unknown>
+     b90: 00 6c 05 e1  	<unknown>
+     b94: 0b 00 00 6d  	stp	d11, d0, [x0]
+     b98: 05 ed 0b 00  	<unknown>
+     b9c: 00 6e 05 f8  	str	x0, [x16, #86]!
+     ba0: 0b 00 00 6f  	<unknown>
+     ba4: 05 04 0c 00  	<unknown>
+     ba8: 00 70 05 0f  	<unknown>
+     bac: 0c 00 00 71  	subs	w12, w0, #0             // =0
+     bb0: 05 1a 0c 00  	<unknown>
+     bb4: 00 72 05 25  	<unknown>
+     bb8: 0c 00 00 73  	<unknown>
+     bbc: 05 30 0c 00  	<unknown>
+     bc0: 00 74 05 3b  	<unknown>
+     bc4: 0c 00 00 75  	<unknown>
+     bc8: 05 3f 0c 00  	<unknown>
+     bcc: 00 76 05 42  	<unknown>
+     bd0: 0c 00 00 77  	<unknown>
+     bd4: 05 47 0c 00  	<unknown>
+     bd8: 00 78 05 4c  	<unknown>
+     bdc: 0c 00 00 79  	strh	w12, [x0]
+     be0: 05 51 0c 00  	<unknown>
+     be4: 00 7a 05 6a  	ands	w0, w16, w5, lsl #30
+     be8: 0c 00 00 7b  	<unknown>
+     bec: 05 7a 0c 00  	<unknown>
+     bf0: 00 7c 05 8c  	<unknown>
+     bf4: 0c 00 00 7d  	str	h12, [x0]
+     bf8: 05 90 0c 00  	<unknown>
+     bfc: 00 7e 05 94  	bl	0x1603fc <$d.7+0x1603fc>
+     c00: 0c 00 00 7f  	<unknown>
+     c04: 05 9c 0c 00  	<unknown>
+     c08: 00 80 01 05  	<unknown>
+     c0c: a4 0c 00 00  	udf	#3236
+     c10: 81 01 05 a8  	stnp	x1, x0, [x12, #80]
+     c14: 0c 00 00 82  	<unknown>
+     c18: 01 05 b0 0c  	<unknown>
+     c1c: 00 00 83 01  	<unknown>
+     c20: 05 bd 0c 00  	<unknown>
+     c24: 00 84 01 05  	<unknown>
+     c28: c2 0c 00 00  	udf	#3266
+     c2c: 85 01 05 cf  	<unknown>
+     c30: 0c 00 00 86  	<unknown>
+     c34: 01 05 d3 0c  	ld4	{ v1.4h, v2.4h, v3.4h, v4.4h }, [x8], x19
+     c38: 00 00 87 01  	<unknown>
+     c3c: 05 d8 0c 00  	<unknown>
+     c40: 00 88 01 05  	<unknown>
+     c44: e1 0c 00 00  	udf	#3297
+     c48: 89 01 05 ee  	<unknown>
+     c4c: 0c 00 00 8a  	and	x12, x0, x0
+     c50: 01 05 f8 0c  	<unknown>
+     c54: 00 00 8b 01  	<unknown>
+     c58: 05 01 0d 00  	<unknown>
+     c5c: 00 8c 01 05  	<unknown>
+     c60: 10 0d 00 00  	udf	#3344
+     c64: 8d 01 05 18  	ldr	w13, 0xac94 <$d.7+0xac94>
+     c68: 0d 00 00 8e  	<unknown>
+     c6c: 01 05 1c 0d  	<unknown>
+     c70: 00 00 8f 01  	<unknown>
+     c74: 05 26 0d 00  	<unknown>
+     c78: 00 90 01 05  	<unknown>
+     c7c: 30 0d 00 00  	udf	#3376
+     c80: 91 01 05 3a  	adcs	w17, w12, w5
+     c84: 0d 00 00 92  	and	x13, x0, #0x100000001
+     c88: 01 05 44 0d  	<unknown>
+     c8c: 00 00 93 01  	<unknown>
+     c90: 05 49 0d 00  	<unknown>
+     c94: 00 94 01 05  	<unknown>
+     c98: 4f 0d 00 00  	udf	#3407
+     c9c: 95 01 05 70  	adr	x21, #41011
+     ca0: 0d 00 00 96  	bl	0xfffffffff8000cd4 <memcpy+0xfffffffff7df0574>
+     ca4: 01 05 85 0d  	st1	{ v1.b }[1], [x8], x5
+     ca8: 00 00 97 01  	<unknown>
+     cac: 05 a0 0d 00  	<unknown>
+     cb0: 00 98 01 05  	<unknown>
+     cb4: a6 0d 00 00  	udf	#3494
+     cb8: 99 01 05 ac  	stnp	q25, q0, [x12, #160]
+     cbc: 0d 00 00 9a  	adc	x13, x0, x0
+     cc0: 01 05 b2 0d  	st2	{ v1.b, v2.b }[1], [x8], x18
+     cc4: 00 00 9b 01  	<unknown>
+     cc8: 05 b8 0d 00  	<unknown>
+     ccc: 00 9c 01 05  	<unknown>
+     cd0: be 0d 00 00  	udf	#3518
+     cd4: 9d 01 05 c4  	<unknown>
+     cd8: 0d 00 00 9e  	<unknown>
+     cdc: 01 05 ca 0d  	ld1	{ v1.b }[1], [x8], x10
+     ce0: 00 00 9f 01  	<unknown>
+     ce4: 05 ce 0d 00  	<unknown>
+     ce8: 00 a0 01 05  	<unknown>
+     cec: d2 0d 00 00  	udf	#3538
+     cf0: a1 01 05 d5  	msr	S0_5_C0_C1_5, x1
+     cf4: 0d 00 00 a2  	<unknown>
+     cf8: 01 05 da 0d  	ld1	{ v1.b }[1], [x8], x26
+     cfc: 00 00 a3 01  	<unknown>
+     d00: 05 dd 0d 00  	<unknown>
+     d04: 00 a4 01 05  	<unknown>
+     d08: e1 0d 00 00  	udf	#3553
+     d0c: a5 01 05 e5  	<unknown>
+     d10: 0d 00 00 a6  	<unknown>
+     d14: 01 05 f7 0d  	ld2	{ v1.b, v2.b }[1], [x8], x23
+     d18: 00 00 a7 01  	<unknown>
+     d1c: 00 1c 35 0d  	<unknown>
+     d20: 00 00 29 0e  	saddl	v0.8h, v0.8b, v9.8b
+     d24: 00 00 02 02  	<unknown>
+     d28: 05 1d 0e 00  	<unknown>
+     d2c: 00 00 05 24  	<unknown>
+     d30: 0e 00 00 01  	<unknown>
+     d34: 00 03 19 0e  	tbl	v0.8b, { v24.16b }, v25.8b
+     d38: 00 00 07 02  	<unknown>
+     d3c: 0f 30 03 21  	<unknown>
+     d40: 00 00 00 00  	udf	#0
+     d44: 00 18 00 00  	udf	#6144
+     d48: 00 01 6d 71  	subs	w0, w8, #2880, lsl #12  // =11796480
+     d4c: 0e 00 00 02  	<unknown>
+     d50: cf 02 1d bf  	<unknown>
+     d54: 0f 00 00 02  	<unknown>
+     d58: cf 02 ed 04  	<unknown>
+     d5c: 00 00 10 02  	<unknown>
+     d60: 8f 08 52 0f  	<unknown>
+     d64: 00 00 02 cf  	<unknown>
+     d68: 02 2c 0e 00  	<unknown>
+     d6c: 00 00 16 32  	orr	w0, w0, #0x400
+     d70: 0e 00 00 00  	udf	#14
+     d74: 03 d4 02 0f  	movi	v3.2s, #64, msl #16
+     d78: 50 03 21 00  	<unknown>
+     d7c: 00 00 00 00  	udf	#0
+     d80: 94 00 00 00  	udf	#148
+     d84: 01 6d 8b 0e  	<unknown>
+     d88: 00 00 03 d6  	<unknown>
+     d8c: 02 1e 00 00  	udf	#7682
+     d90: 00 00 3b 04  	<unknown>
+     d94: 00 00 03 d6  	<unknown>
+     d98: 02 80 0e 00  	<unknown>
+     d9c: 00 11 68 03  	<unknown>
+     da0: 21 00 00 00  	udf	#33
+     da4: 00 00 7c 00  	<unknown>
+     da8: 00 00 12 02  	<unknown>
+     dac: 91 58 c3 0f  	<unknown>
+     db0: 00 00 03 d7  	<unknown>
+     db4: 02 b4 03 00  	<unknown>
+     db8: 00 12 02 8f  	<unknown>
+     dbc: 30 c5 0f 00  	<unknown>
+     dc0: 00 03 d8 02  	<unknown>
+     dc4: 80 04 00 00  	udf	#1152
+     dc8: 12 02 8f 2f  	mla	v18.2s, v16.2s, v15.s[0]
+     dcc: cb 0f 00 00  	udf	#4043
+     dd0: 03 d8 02 f7  	<unknown>
+     dd4: 08 00 00 00  	udf	#8
+     dd8: 00 00 1f f0  	adrp	x0, 0x3e003000 <$d.7+0xf8de4>
+     ddc: 03 21 00 00  	udf	#8451
+     de0: 00 00 00 58  	ldr	x0, 0xde0 <$d.7+0xde0>
+     de4: 00 00 00 01  	<unknown>
+     de8: 6d d5 0e 00  	<unknown>
+     dec: 00 07 09 20  	<unknown>
+     df0: 50 04 21 00  	<unknown>
+     df4: 00 00 00 00  	udf	#0
+     df8: 40 01 00 00  	udf	#320
+     dfc: 01 6d da 0e  	<unknown>
+     e00: 00 00 06 37  	tbnz	w0, #0, 0xffffffffffffce00 <memcpy+0xffffffffffdec6a0>
+     e04: 1d 0d 00 00  	udf	#3357
+     e08: 21 90 05 21  	<unknown>
+     e0c: 00 00 00 00  	udf	#0
+     e10: 00 2c 00 00  	udf	#11264
+     e14: 00 01 6d ec  	<unknown>
+     e18: 0e 00 00 06  	<unknown>
+     e1c: 51 22 02 91  	add	x17, x18, #136          // =136
+     e20: 7f 0c 10 00  	<unknown>
+     e24: 00 06 51 95  	bl	0x5442624 <memcpy+0x5231ec4>
+     e28: 04 00 00 00  	udf	#4
+     e2c: 1a 35 0e 00  	<unknown>
+     e30: 00 a7 0f 00  	<unknown>
+     e34: 00 06 90 0f  	<unknown>
+     e38: 00 00 18 02  	<unknown>
+     e3c: 36 08 07 65  	<unknown>
+     e40: 0f 00 00 80  	<unknown>
+     e44: 04 00 00 02  	<unknown>
+     e48: 37 08 00 07  	<unknown>
+     e4c: 6b 0f 00 00  	udf	#3947
+     e50: 59 0e 00 00  	udf	#3673
+     e54: 02 38 08 08  	stxrb	w8, w2, [x0]
+     e58: 00 18 88 0f  	fmla	v0.2s, v0.2s, v8.s[2]
+     e5c: 00 00 10 08  	stxrb	w16, w0, [x0]
+     e60: 19 08 04 00  	<unknown>
+     e64: 00 77 0e 00  	<unknown>
+     e68: 00 08 00 19  	<unknown>
+     e6c: 10 04 00 00  	udf	#1040
+     e70: 80 04 00 00  	udf	#1152
+     e74: 08 08 00 1a  	<unknown>
+     e78: 80 04 00 00  	udf	#1152
+     e7c: 81 0f 00 00  	udf	#3969
+     e80: 18 ef 0f 00  	<unknown>
+     e84: 00 10 08 19  	<unknown>
+     e88: 08 04 00 00  	udf	#1032
+     e8c: 9e 0e 00 00  	udf	#3742
+     e90: 08 00 19 10  	adr	x8, #204800
+     e94: 04 00 00 80  	<unknown>
+     e98: 04 00 00 08  	stxrb	w0, w4, [x0]
+     e9c: 08 00 1a f7  	<unknown>
+     ea0: 08 00 00 d3  	<unknown>
+     ea4: 0f 00 00 1a  	adc	w15, w0, w0
+     ea8: b4 03 00 00  	udf	#948
+     eac: 15 10 00 00  	udf	#4117
+     eb0: 00           	<unknown>
+
+Disassembly of section .debug_str:
+
+0000000000000000 <$d.7>:
+       0: 7a 69 67 20  	<unknown>
+       4: 30 2e 39 2e  	uqsub	v16.8b, v17.8b, v25.8b
+       8: 31 00 6b 65  	<unknown>
+       c: 72 6e 65 6c  	ldnp	d18, d27, [x19, #-432]
+      10: 2e 65 6c 66  	<unknown>
+      14: 00 2f 68 6f  	<unknown>
+      18: 6d 65 2f 65  	<unknown>
+      1c: 6d 69 6c 79  	ldrh	w13, [x11, #5684]
+      20: 2f 44 6f 63  	<unknown>
+      24: 75 6d 65 6e  	umin	v21.8h, v11.8h, v5.8h
+      28: 74 73 2f 50  	adr	x20, #388718
+      2c: 72 6f 67 72  	<unknown>
+      30: 61 6d 73 2f  	<unknown>
+      34: 5a 69 67 2f  	umlsl	v26.4s, v10.4h, v7.h[6]
+      38: 4f 70 65 72  	<unknown>
+      3c: 61 74 69 6e  	uabd	v1.8h, v3.8h, v9.8h
+      40: 67 53 79 73  	<unknown>
+      44: 74 65 6d 2f  	<unknown>
+      48: 73 72 63 00  	<unknown>
+      4c: 7a 69 67 5f  	<unknown>
+      50: 69 73 5f 73  	<unknown>
+      54: 74 61 67 65  	<unknown>
+      58: 32 00 62 6f  	mla	v18.8h, v1.8h, v2.h[2]
+      5c: 6f 6c 00 6f  	<unknown>
+      60: 75 74 70 75  	<unknown>
+      64: 74 5f 6d 6f  	<unknown>
+      68: 64 65 00 75  	<unknown>
+      6c: 32 00 45 78  	ldurh	w18, [x1, #80]
+      70: 65 00 4c 69  	ldpsw	x5, x0, [x3, #96]
+      74: 62 00 4f 62  	<unknown>
+      78: 6a 00 73 74  	<unknown>
+      7c: 64 2e 62 75  	<unknown>
+      80: 69 6c 74 69  	ldpsw	x9, x27, [x3, #-96]
+      84: 6e 2e 4f 75  	<unknown>
+      88: 74 70 75 74  	<unknown>
+      8c: 4d 6f 64 65  	<unknown>
+      90: 00 6c 69 6e  	umin	v0.8h, v0.8h, v9.8h
+      94: 6b 5f 6c 69  	ldpsw	x11, x23, [x27, #-160]
+      98: 62 63 00 6f  	<unknown>
+      9c: 73 00 74 61  	<unknown>
+      a0: 67 00 75 36  	tbz	w7, #14, 0xffffffffffffa0ac <memcpy+0xffffffffffde994c>
+      a4: 00 66 72 65  	<unknown>
+      a8: 65 73 74 61  	<unknown>
+      ac: 6e 64 69 6e  	umax	v14.8h, v3.8h, v9.8h
+      b0: 67 00 61 6e  	uaddl2	v7.4s, v3.8h, v1.8h
+      b4: 61 6e 61 73  	<unknown>
+      b8: 00 63 6c 6f  	umlsl2	v0.4s, v24.8h, v12.h[2]
+      bc: 75 64 61 62  	<unknown>
+      c0: 69 00 64 72  	<unknown>
+      c4: 61 67 6f 6e  	umax	v1.8h, v27.8h, v15.8h
+      c8: 66 6c 79 00  	<unknown>
+      cc: 66 72 65 65  	<unknown>
+      d0: 62 73 64 00  	<unknown>
+      d4: 66 75 63 68  	<unknown>
+      d8: 73 69 61 00  	<unknown>
+      dc: 69 6f 73 00  	<unknown>
+      e0: 6b 66 72 65  	<unknown>
+      e4: 65 62 73 64  	<unknown>
+      e8: 00 6c 69 6e  	umin	v0.8h, v0.8h, v9.8h
+      ec: 75 78 00 6c  	stnp	d21, d30, [x3]
+      f0: 76 32 00 6d  	stp	d22, d12, [x19]
+      f4: 61 63 6f 73  	<unknown>
+      f8: 00 6e 65 74  	<unknown>
+      fc: 62 73 64 00  	<unknown>
+     100: 6f 70 65 6e  	uabdl2	v15.4s, v3.8h, v5.8h
+     104: 62 73 64 00  	<unknown>
+     108: 73 6f 6c 61  	<unknown>
+     10c: 72 69 73 00  	<unknown>
+     110: 77 69 6e 64  	<unknown>
+     114: 6f 77 73 00  	<unknown>
+     118: 7a 6f 73 00  	<unknown>
+     11c: 68 61 69 6b  	<unknown>
+     120: 75 00 6d 69  	ldpsw	x21, x0, [x3, #-152]
+     124: 6e 69 78 00  	<unknown>
+     128: 72 74 65 6d  	ldp	d18, d29, [x3, #-432]
+     12c: 73 00 6e 61  	<unknown>
+     130: 63 6c 00 61  	<unknown>
+     134: 69 78 00 63  	<unknown>
+     138: 75 64 61 00  	<unknown>
+     13c: 6e 76 63 6c  	ldnp	d14, d29, [x19, #-464]
+     140: 00 61 6d 64  	<unknown>
+     144: 68 73 61 00  	<unknown>
+     148: 70 73 34 00  	<unknown>
+     14c: 65 6c 66 69  	ldpsw	x5, x27, [x3, #-208]
+     150: 61 6d 63 75  	<unknown>
+     154: 00 74 76 6f  	uqshl	v0.2d, v0.2d, #54
+     158: 73 00 77 61  	<unknown>
+     15c: 74 63 68 6f  	umlsl2	v20.4s, v27.8h, v8.h[2]
+     160: 73 00 6d 65  	<unknown>
+     164: 73 61 33 64  	<unknown>
+     168: 00 63 6f 6e  	rsubhn2	v0.8h, v24.4s, v15.4s
+     16c: 74 69 6b 69  	ldpsw	x20, x26, [x11, #-168]
+     170: 00 61 6d 64  	<unknown>
+     174: 70 61 6c 00  	<unknown>
+     178: 68 65 72 6d  	ldp	d8, d25, [x11, #-224]
+     17c: 69 74 00 68  	<unknown>
+     180: 75 72 64 00  	<unknown>
+     184: 77 61 73 69  	ldpsw	x23, x24, [x11, #-104]
+     188: 00 65 6d 73  	<unknown>
+     18c: 63 72 69 70  	adr	x3, #863823
+     190: 74 65 6e 00  	<unknown>
+     194: 75 65 66 69  	ldpsw	x21, x25, [x11, #-208]
+     198: 00 6f 70 65  	<unknown>
+     19c: 6e 63 6c 00  	<unknown>
+     1a0: 67 6c 73 6c  	ldnp	d7, d27, [x3, #-208]
+     1a4: 34 35 30 00  	<unknown>
+     1a8: 76 75 6c 6b  	<unknown>
+     1ac: 61 6e 00 70  	adr	x1, #3535
+     1b0: 6c 61 6e 39  	ldrb	w12, [x11, #2968]
+     1b4: 00 6f 74 68  	<unknown>
+     1b8: 65 72 00 73  	<unknown>
+     1bc: 74 64 2e 74  	<unknown>
+     1c0: 61 72 67 65  	<unknown>
+     1c4: 74 2e 54 61  	<unknown>
+     1c8: 67 00 76 65  	<unknown>
+     1cc: 72 73 69 6f  	<unknown>
+     1d0: 6e 5f 72 61  	<unknown>
+     1d4: 6e 67 65 00  	<unknown>
+     1d8: 70 61 79 6c  	ldnp	d16, d24, [x11, #-112]
+     1dc: 6f 61 64 00  	<unknown>
+     1e0: 73 65 6d 76  	<unknown>
+     1e4: 65 72 00 6d  	stp	d5, d28, [x19]
+     1e8: 69 6e 00 6d  	stp	d9, d27, [x19]
+     1ec: 61 6a 6f 72  	<unknown>
+     1f0: 00 75 33 32  	orr	w0, w8, #0xffffe7ff
+     1f4: 00 6d 69 6e  	umin	v0.8h, v8.8h, v9.8h
+     1f8: 6f 72 00 70  	adr	x15, #3663
+     1fc: 61 74 63 68  	<unknown>
+     200: 00 73 74 64  	<unknown>
+     204: 2e 62 75 69  	ldpsw	x14, x24, [x17, #-88]
+     208: 6c 74 69 6e  	uabd	v12.8h, v3.8h, v9.8h
+     20c: 2e 56 65 72  	<unknown>
+     210: 73 69 6f 6e  	<unknown>
+     214: 00 6d 61 78  	<unknown>
+     218: 00 73 74 64  	<unknown>
+     21c: 2e 62 75 69  	ldpsw	x14, x24, [x17, #-88]
+     220: 6c 74 69 6e  	uabd	v12.8h, v3.8h, v9.8h
+     224: 2e 52 61 6e  	uabal2	v14.4s, v17.8h, v1.8h
+     228: 67 65 00 72  	ands	w7, w11, #0x3ffffff
+     22c: 61 6e 67 65  	<unknown>
+     230: 00 67 6c 69  	ldpsw	x0, x25, [x24, #-160]
+     234: 62 63 00 73  	<unknown>
+     238: 74 64 2e 74  	<unknown>
+     23c: 61 72 67 65  	<unknown>
+     240: 74 2e 4c 69  	ldpsw	x20, x11, [x19, #96]
+     244: 6e 75 78 56  	<unknown>
+     248: 65 72 73 69  	ldpsw	x5, x28, [x19, #-104]
+     24c: 6f 6e 52 61  	<unknown>
+     250: 6e 67 65 00  	<unknown>
+     254: 6e 74 34 00  	<unknown>
+     258: 77 69 6e 32  	<unknown>
+     25c: 6b 00 78 70  	adr	x11, #983055
+     260: 00 77 73 32  	<unknown>
+     264: 30 30 33 00  	<unknown>
+     268: 76 69 73 74  	<unknown>
+     26c: 61 00 77 69  	ldpsw	x1, x0, [x3, #-72]
+     270: 6e 37 00 77  	<unknown>
+     274: 69 6e 38 00  	<unknown>
+     278: 77 69 6e 38  	ldrb	w23, [x11, x14]
+     27c: 5f 31 00 77  	<unknown>
+     280: 69 6e 31 30  	adr	x9, #404941
+     284: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     288: 31 30 5f 74  	<unknown>
+     28c: 68 32 00 77  	<unknown>
+     290: 69 6e 31 30  	adr	x9, #404941
+     294: 5f 72 73 31  	cmn	w18, #3292, lsl #12     // =13484032
+     298: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     29c: 31 30 5f 72  	<unknown>
+     2a0: 73 32 00 77  	<unknown>
+     2a4: 69 6e 31 30  	adr	x9, #404941
+     2a8: 5f 72 73 33  	<unknown>
+     2ac: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     2b0: 31 30 5f 72  	<unknown>
+     2b4: 73 34 00 77  	<unknown>
+     2b8: 69 6e 31 30  	adr	x9, #404941
+     2bc: 5f 72 73 35  	cbnz	wzr, 0xe7104 <$d.7+0xe7104>
+     2c0: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     2c4: 31 30 5f 31  	adds	w17, w1, #1996, lsl #12 // =8175616
+     2c8: 39 68 31 00  	<unknown>
+     2cc: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+     2d0: 30 5f 76 62  	<unknown>
+     2d4: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     2d8: 31 30 5f 6d  	ldp	d17, d12, [x1, #496]
+     2dc: 6e 00 77 69  	ldpsw	x14, x0, [x3, #-72]
+     2e0: 6e 31 30 5f  	<unknown>
+     2e4: 66 65 00 73  	<unknown>
+     2e8: 74 64 2e 74  	<unknown>
+     2ec: 61 72 67 65  	<unknown>
+     2f0: 74 2e 57 69  	ldpsw	x20, x11, [x19, #184]
+     2f4: 6e 64 6f 77  	<unknown>
+     2f8: 73 56 65 72  	<unknown>
+     2fc: 73 69 6f 6e  	<unknown>
+     300: 00 73 74 64  	<unknown>
+     304: 2e 74 61 72  	<unknown>
+     308: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     30c: 52 61 6e 67  	<unknown>
+     310: 65 00 41 6e  	<unknown>
+     314: 6f 6e 55 6e  	<unknown>
+     318: 69 6f 6e 00  	<unknown>
+     31c: 6e 6f 6e 65  	<unknown>
+     320: 00 40 74 79  	ldrh	w0, [x0, #6688]
+     324: 70 65 49 6e  	<unknown>
+     328: 66 6f 28 73  	<unknown>
+     32c: 74 64 2e 74  	<unknown>
+     330: 61 72 67 65  	<unknown>
+     334: 74 2e 56 65  	<unknown>
+     338: 72 73 69 6f  	<unknown>
+     33c: 6e 52 61 6e  	uabal2	v14.4s, v19.8h, v1.8h
+     340: 67 65 29 2e  	umax	v7.8b, v11.8b, v9.8b
+     344: 55 6e 69 6f  	<unknown>
+     348: 6e 2e 74 61  	<unknown>
+     34c: 67 5f 74 79  	ldrh	w7, [x27, #6702]
+     350: 70 65 2e 3f  	<unknown>
+     354: 00 73 74 64  	<unknown>
+     358: 2e 74 61 72  	<unknown>
+     35c: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     360: 56 65 72 73  	<unknown>
+     364: 69 6f 6e 52  	<unknown>
+     368: 61 6e 67 65  	<unknown>
+     36c: 00 73 74 64  	<unknown>
+     370: 2e 74 61 72  	<unknown>
+     374: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     378: 4f 73 00 6e  	ext	v15.16b, v26.16b, v0.16b, #14
+     37c: 61 74 69 76  	<unknown>
+     380: 65 5f 6f 73  	<unknown>
+     384: 00 69 6e 74  	<unknown>
+     388: 73 00 75 73  	<unknown>
+     38c: 69 7a 65 00  	<unknown>
+     390: 5f 5f 41 52  	<unknown>
+     394: 52 41 59 5f  	<unknown>
+     398: 53 49 5a 45  	<unknown>
+     39c: 5f 54 59 50  	adr	xzr, #731786
+     3a0: 45 5f 5f 00  	<unknown>
+     3a4: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     3a8: 74 61 72 67  	<unknown>
+     3ac: 65 74 2e 53  	<unknown>
+     3b0: 65 74 00 6e  	<unknown>
+     3b4: 65 65 64 65  	<unknown>
+     3b8: 64 5f 62 69  	ldpsw	x4, x23, [x27, #-240]
+     3bc: 74 5f 63 6f  	<unknown>
+     3c0: 75 6e 74 00  	<unknown>
+     3c4: 75 39 00 62  	<unknown>
+     3c8: 79 74 65 5f  	sqshl	d25, d3, #37
+     3cc: 63 6f 75 6e  	umin	v3.8h, v27.8h, v21.8h
+     3d0: 74 00 75 38  	<unknown>
+     3d4: 00 75 73 69  	ldpsw	x0, x29, [x8, #-104]
+     3d8: 7a 65 5f 63  	<unknown>
+     3dc: 6f 75 6e 74  	<unknown>
+     3e0: 00 73 74 64  	<unknown>
+     3e4: 2e 74 61 72  	<unknown>
+     3e8: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     3ec: 61 61 72 63  	<unknown>
+     3f0: 68 36 34 2e  	cmhi	v8.8b, v19.8b, v20.8b
+     3f4: 63 70 75 00  	<unknown>
+     3f8: 63 6f 72 74  	<unknown>
+     3fc: 65 78 5f 61  	<unknown>
+     400: 35 33 00 6e  	ext	v21.16b, v25.16b, v0.16b, #6
+     404: 61 6d 65 00  	<unknown>
+     408: 70 74 72 00  	<unknown>
+     40c: 2a 75 38 00  	<unknown>
+     410: 6c 65 6e 00  	<unknown>
+     414: 5b 5d 75 38  	<unknown>
+     418: 00 6c 6c 76  	<unknown>
+     41c: 6d 5f 6e 61  	<unknown>
+     420: 6d 65 00 76  	<unknown>
+     424: 61 6c 00 6d  	stp	d1, d27, [x3]
+     428: 61 79 62 65  	<unknown>
+     42c: 00 3f 5b 3a  	<unknown>
+     430: 30 5d 63 6f  	<unknown>
+     434: 6e 73 74 20  	<unknown>
+     438: 75 38 00 66  	<unknown>
+     43c: 65 61 74 75  	<unknown>
+     440: 72 65 73 00  	<unknown>
+     444: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     448: 74 61 72 67  	<unknown>
+     44c: 65 74 2e 4d  	<unknown>
+     450: 6f 64 65 6c  	ldnp	d15, d25, [x3, #-432]
+     454: 00 63 70 75  	<unknown>
+     458: 00 61 72 63  	<unknown>
+     45c: 68 00 61 72  	<unknown>
+     460: 6d 00 61 72  	<unknown>
+     464: 6d 65 62 00  	<unknown>
+     468: 61 61 72 63  	<unknown>
+     46c: 68 36 34 00  	<unknown>
+     470: 61 61 72 63  	<unknown>
+     474: 68 36 34 5f  	<unknown>
+     478: 62 65 00 61  	<unknown>
+     47c: 61 72 63 68  	<unknown>
+     480: 36 34 5f 33  	<unknown>
+     484: 32 00 61 72  	<unknown>
+     488: 63 00 61 76  	<unknown>
+     48c: 72 00 62 70  	adr	x18, #802831
+     490: 66 65 6c 00  	<unknown>
+     494: 62 70 66 65  	<unknown>
+     498: 62 00 63 73  	<unknown>
+     49c: 6b 79 00 68  	<unknown>
+     4a0: 65 78 61 67  	<unknown>
+     4a4: 6f 6e 00 6d  	stp	d15, d27, [x19]
+     4a8: 36 38 6b 00  	<unknown>
+     4ac: 6d 69 70 73  	<unknown>
+     4b0: 00 6d 69 70  	adr	x0, #863651
+     4b4: 73 65 6c 00  	<unknown>
+     4b8: 6d 69 70 73  	<unknown>
+     4bc: 36 34 00 6d  	stp	d22, d13, [x1]
+     4c0: 69 70 73 36  	tbz	w9, #14, 0x72cc <$d.7+0x72cc>
+     4c4: 34 65 6c 00  	<unknown>
+     4c8: 6d 73 70 34  	cbz	w13, 0xe1334 <$d.7+0xe1334>
+     4cc: 33 30 00 70  	adr	x19, #1543
+     4d0: 6f 77 65 72  	<unknown>
+     4d4: 70 63 00 70  	adr	x16, #3183
+     4d8: 6f 77 65 72  	<unknown>
+     4dc: 70 63 6c 65  	<unknown>
+     4e0: 00 70 6f 77  	<unknown>
+     4e4: 65 72 70 63  	<unknown>
+     4e8: 36 34 00 70  	adr	x22, #1671
+     4ec: 6f 77 65 72  	<unknown>
+     4f0: 70 63 36 34  	cbz	w16, 0x6d15c <$d.7+0x6d15c>
+     4f4: 6c 65 00 72  	ands	w12, w11, #0x3ffffff
+     4f8: 36 30 30 00  	<unknown>
+     4fc: 61 6d 64 67  	<unknown>
+     500: 63 6e 00 72  	ands	w3, w19, #0xfffffff
+     504: 69 73 63 76  	<unknown>
+     508: 33 32 00 72  	ands	w19, w17, #0x1fff
+     50c: 69 73 63 76  	<unknown>
+     510: 36 34 00 73  	<unknown>
+     514: 70 61 72 63  	<unknown>
+     518: 00 73 70 61  	<unknown>
+     51c: 72 63 76 39  	ldrb	w18, [x27, #3480]
+     520: 00 73 70 61  	<unknown>
+     524: 72 63 65 6c  	ldnp	d18, d24, [x27, #-432]
+     528: 00 73 33 39  	strb	w0, [x24, #3292]
+     52c: 30 78 00 74  	<unknown>
+     530: 63 65 00 74  	<unknown>
+     534: 63 65 6c 65  	<unknown>
+     538: 00 74 68 75  	<unknown>
+     53c: 6d 62 00 74  	<unknown>
+     540: 68 75 6d 62  	<unknown>
+     544: 65 62 00 69  	<unknown>
+     548: 33 38 36 00  	<unknown>
+     54c: 78 38 36 5f  	<unknown>
+     550: 36 34 00 78  	strh	w22, [x1], #3
+     554: 63 6f 72 65  	<unknown>
+     558: 00 6e 76 70  	adr	x0, #970179
+     55c: 74 78 00 6e  	ext	v20.16b, v3.16b, v0.16b, #15
+     560: 76 70 74 78  	<unknown>
+     564: 36 34 00 6c  	stnp	d22, d13, [x1]
+     568: 65 33 32 00  	<unknown>
+     56c: 6c 65 36 34  	cbz	w12, 0x6d218 <$d.7+0x6d218>
+     570: 00 61 6d 64  	<unknown>
+     574: 69 6c 00 61  	<unknown>
+     578: 6d 64 69 6c  	ldnp	d13, d25, [x3, #-368]
+     57c: 36 34 00 68  	<unknown>
+     580: 73 61 69 6c  	ldnp	d19, d24, [x11, #-368]
+     584: 00 68 73 61  	<unknown>
+     588: 69 6c 36 34  	cbz	w9, 0x6d314 <$d.7+0x6d314>
+     58c: 00 73 70 69  	ldpsw	x0, x28, [x24, #-128]
+     590: 72 00 73 70  	adr	x18, #942095
+     594: 69 72 36 34  	cbz	w9, 0x6d3e0 <$d.7+0x6d3e0>
+     598: 00 6b 61 6c  	ldnp	d0, d26, [x24, #-496]
+     59c: 69 6d 62 61  	<unknown>
+     5a0: 00 73 68 61  	<unknown>
+     5a4: 76 65 00 6c  	stnp	d22, d25, [x11]
+     5a8: 61 6e 61 69  	ldpsw	x1, x27, [x19, #-248]
+     5ac: 00 77 61 73  	<unknown>
+     5b0: 6d 33 32 00  	<unknown>
+     5b4: 77 61 73 6d  	ldp	d23, d24, [x11, #-208]
+     5b8: 36 34 00 72  	ands	w22, w1, #0x3fff
+     5bc: 65 6e 64 65  	<unknown>
+     5c0: 72 73 63 72  	<unknown>
+     5c4: 69 70 74 33  	<unknown>
+     5c8: 32 00 72 65  	<unknown>
+     5cc: 6e 64 65 72  	<unknown>
+     5d0: 73 63 72 69  	ldpsw	x19, x24, [x27, #-112]
+     5d4: 70 74 36 34  	cbz	w16, 0x6d460 <$d.7+0x6d460>
+     5d8: 00 76 65 00  	<unknown>
+     5dc: 73 70 75 5f  	sqdmlsl	s19, h3, v5.h[3]
+     5e0: 32 00 73 70  	adr	x18, #942087
+     5e4: 69 72 76 33  	<unknown>
+     5e8: 32 00 73 70  	adr	x18, #942087
+     5ec: 69 72 76 36  	tbz	w9, #14, 0xffffffffffffd438 <memcpy+0xffffffffffdeccd8>
+     5f0: 34 00 73 74  	<unknown>
+     5f4: 64 2e 74 61  	<unknown>
+     5f8: 72 67 65 74  	<unknown>
+     5fc: 2e 41 72 63  	<unknown>
+     600: 68 00 6d 6f  	mla	v8.8h, v3.8h, v13.h[2]
+     604: 64 65 6c 00  	<unknown>
+     608: 2a 73 74 64  	<unknown>
+     60c: 2e 74 61 72  	<unknown>
+     610: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     614: 4d 6f 64 65  	<unknown>
+     618: 6c 00 73 74  	<unknown>
+     61c: 64 2e 74 61  	<unknown>
+     620: 72 67 65 74  	<unknown>
+     624: 2e 43 70 75  	<unknown>
+     628: 00 6e 61 74  	<unknown>
+     62c: 69 76 65 5f  	sqshl	d9, d19, #37
+     630: 61 72 63 68  	<unknown>
+     634: 00 75 61 72  	<unknown>
+     638: 74 00 64 61  	<unknown>
+     63c: 74 61 00 5f  	<unknown>
+     640: 72 65 73 30  	adr	x18, #945325
+     644: 00 66 6c 61  	<unknown>
+     648: 67 73 00 75  	<unknown>
+     64c: 32 37 00 74  	<unknown>
+     650: 72 61 6e 73  	<unknown>
+     654: 6d 69 74 5f  	<unknown>
+     658: 66 75 6c 6c  	ldnp	d6, d29, [x11, #-320]
+     65c: 00 5f 72 65  	<unknown>
+     660: 73 31 00 75  	<unknown>
+     664: 31 00 62 75  	<unknown>
+     668: 73 79 00 5f  	<unknown>
+     66c: 72 65 73 33  	<unknown>
+     670: 00 64 72 69  	ldpsw	x0, x25, [x0, #-112]
+     674: 76 65 72 73  	<unknown>
+     678: 2e 75 61 72  	<unknown>
+     67c: 74 2e 46 6c  	ldnp	d20, d11, [x19, #96]
+     680: 61 67 42 69  	ldpsw	x1, x25, [x27, #16]
+     684: 74 73 00 62  	<unknown>
+     688: 61 75 64 72  	<unknown>
+     68c: 61 74 65 5f  	sqshl	d1, d3, #37
+     690: 69 6e 74 00  	<unknown>
+     694: 62 61 75 64  	<unknown>
+     698: 72 61 74 65  	<unknown>
+     69c: 5f 66 6c 6f  	sqshlu	v31.2d, v18.2d, #44
+     6a0: 61 74 00 6c  	stnp	d1, d29, [x3]
+     6a4: 69 6e 65 5f  	<unknown>
+     6a8: 63 6f 6e 74  	<unknown>
+     6ac: 72 6f 6c 00  	<unknown>
+     6b0: 66 69 66 6f  	umlsl2	v6.4s, v11.8h, v6.h[6]
+     6b4: 5f 65 6e 00  	<unknown>
+     6b8: 75 34 00 64  	<unknown>
+     6bc: 72 69 76 65  	<unknown>
+     6c0: 72 73 2e 75  	<unknown>
+     6c4: 61 72 74 2e  	uabdl	v1.4s, v19.4h, v20.4h
+     6c8: 4c 69 6e 65  	<unknown>
+     6cc: 42 69 74 73  	<unknown>
+     6d0: 00 63 6f 6e  	rsubhn2	v0.8h, v24.4s, v15.4s
+     6d4: 74 72 6f 6c  	ldnp	d20, d28, [x19, #-272]
+     6d8: 00 75 32 32  	orr	w0, w8, #0xffffcfff
+     6dc: 00 72 65 63  	<unknown>
+     6e0: 65 69 76 65  	<unknown>
+     6e4: 5f 65 6e 00  	<unknown>
+     6e8: 74 72 61 6e  	uabdl2	v20.4s, v19.8h, v1.8h
+     6ec: 73 5f 65 6e  	uqrshl	v19.8h, v27.8h, v5.8h
+     6f0: 00 75 37 00  	<unknown>
+     6f4: 75 61 72 74  	<unknown>
+     6f8: 5f 65 6e 00  	<unknown>
+     6fc: 64 72 69 76  	<unknown>
+     700: 65 72 73 2e  	uabdl	v5.4s, v19.4h, v19.4h
+     704: 75 61 72 74  	<unknown>
+     708: 2e 43 6f 6e  	raddhn2	v14.8h, v25.4s, v15.4s
+     70c: 74 72 6f 6c  	ldnp	d20, d28, [x19, #-272]
+     710: 42 69 74 73  	<unknown>
+     714: 00 5f 72 65  	<unknown>
+     718: 73 32 00 69  	<unknown>
+     71c: 6e 74 65 72  	<unknown>
+     720: 72 75 70 74  	<unknown>
+     724: 5f 73 65 74  	<unknown>
+     728: 00 70 65 6e  	uabdl2	v0.4s, v0.8h, v5.8h
+     72c: 64 69 6e 67  	<unknown>
+     730: 5f 69 6e 74  	<unknown>
+     734: 65 72 72 75  	<unknown>
+     738: 70 74 73 00  	<unknown>
+     73c: 64 72 69 76  	<unknown>
+     740: 65 72 73 2e  	uabdl	v5.4s, v19.4h, v19.4h
+     744: 75 61 72 74  	<unknown>
+     748: 2e 55 61 72  	<unknown>
+     74c: 74 00 2a 64  	<unknown>
+     750: 72 69 76 65  	<unknown>
+     754: 72 73 2e 75  	<unknown>
+     758: 61 72 74 2e  	uabdl	v1.4s, v19.4h, v20.4h
+     75c: 55 61 72 74  	<unknown>
+     760: 00 61 36 35  	cbnz	w0, 0x6d380 <$d.7+0x6d380>
+     764: 00 61 37 36  	tbz	w0, #6, 0xfffffffffffff384 <memcpy+0xffffffffffdeec24>
+     768: 00 61 65 73  	<unknown>
+     76c: 00 61 67 67  	<unknown>
+     770: 72 65 73 73  	<unknown>
+     774: 69 76 65 5f  	sqshl	d9, d19, #37
+     778: 66 6d 61 00  	<unknown>
+     77c: 61 6c 74 65  	<unknown>
+     780: 72 6e 61 74  	<unknown>
+     784: 65 5f 73 65  	<unknown>
+     788: 78 74 6c 6f  	uqshl	v24.2d, v3.2d, #44
+     78c: 61 64 5f 63  	<unknown>
+     790: 76 74 5f 66  	<unknown>
+     794: 33 32 5f 70  	adr	x19, #779847
+     798: 61 74 74 65  	<unknown>
+     79c: 72 6e 00 61  	<unknown>
+     7a0: 6c 74 6e 7a  	<unknown>
+     7a4: 63 76 00 61  	<unknown>
+     7a8: 6d 00 61 6d  	ldp	d13, d0, [x3, #-496]
+     7ac: 76 73 00 61  	<unknown>
+     7b0: 70 70 6c 65  	<unknown>
+     7b4: 5f 61 31 32  	orr	wsp, w10, #0xffff80ff
+     7b8: 00 61 70 70  	adr	x0, #920611
+     7bc: 6c 65 5f 61  	<unknown>
+     7c0: 31 33 00 61  	<unknown>
+     7c4: 70 70 6c 65  	<unknown>
+     7c8: 5f 61 37 00  	<unknown>
+     7cc: 61 72 69 74  	<unknown>
+     7d0: 68 5f 62 63  	<unknown>
+     7d4: 63 5f 66 75  	<unknown>
+     7d8: 73 69 6f 6e  	<unknown>
+     7dc: 00 61 72 69  	ldpsw	x0, x24, [x8, #-112]
+     7e0: 74 68 5f 63  	<unknown>
+     7e4: 62 7a 5f 66  	<unknown>
+     7e8: 75 73 69 6f  	<unknown>
+     7ec: 6e 00 62 61  	<unknown>
+     7f0: 6c 61 6e 63  	<unknown>
+     7f4: 65 5f 66 70  	adr	x5, #838639
+     7f8: 5f 6f 70 73  	<unknown>
+     7fc: 00 62 66 31  	adds	w0, w16, #2456, lsl #12 // =10059776
+     800: 36 00 62 72  	<unknown>
+     804: 62 65 00 62  	<unknown>
+     808: 74 69 00 63  	<unknown>
+     80c: 61 6c 6c 5f  	<unknown>
+     810: 73 61 76 65  	<unknown>
+     814: 64 5f 78 31  	adds	w4, w27, #3607, lsl #12 // =14774272
+     818: 30 00 63 61  	<unknown>
+     81c: 6c 6c 5f 73  	<unknown>
+     820: 61 76 65 64  	<unknown>
+     824: 5f 78 31 31  	cmn	w2, #3166               // =3166
+     828: 00 63 61 6c  	ldnp	d0, d24, [x24, #-496]
+     82c: 6c 5f 73 61  	<unknown>
+     830: 76 65 64 5f  	<unknown>
+     834: 78 31 32 00  	<unknown>
+     838: 63 61 6c 6c  	ldnp	d3, d24, [x11, #-320]
+     83c: 5f 73 61 76  	<unknown>
+     840: 65 64 5f 78  	ldrh	w5, [x3], #-10
+     844: 31 33 00 63  	<unknown>
+     848: 61 6c 6c 5f  	<unknown>
+     84c: 73 61 76 65  	<unknown>
+     850: 64 5f 78 31  	adds	w4, w27, #3607, lsl #12 // =14774272
+     854: 34 00 63 61  	<unknown>
+     858: 6c 6c 5f 73  	<unknown>
+     85c: 61 76 65 64  	<unknown>
+     860: 5f 78 31 35  	cbnz	wzr, 0x63768 <$d.7+0x63768>
+     864: 00 63 61 6c  	ldnp	d0, d24, [x24, #-496]
+     868: 6c 5f 73 61  	<unknown>
+     86c: 76 65 64 5f  	<unknown>
+     870: 78 31 38 00  	<unknown>
+     874: 63 61 6c 6c  	ldnp	d3, d24, [x11, #-320]
+     878: 5f 73 61 76  	<unknown>
+     87c: 65 64 5f 78  	ldrh	w5, [x3], #-10
+     880: 38 00 63 61  	<unknown>
+     884: 6c 6c 5f 73  	<unknown>
+     888: 61 76 65 64  	<unknown>
+     88c: 5f 78 39 00  	<unknown>
+     890: 63 63 64 70  	adr	x3, #822383
+     894: 00 63 63 69  	ldpsw	x0, x24, [x24, #-232]
+     898: 64 78 00 63  	<unknown>
+     89c: 63 70 70 00  	<unknown>
+     8a0: 63 6d 70 5f  	<unknown>
+     8a4: 62 63 63 5f  	<unknown>
+     8a8: 66 75 73 69  	ldpsw	x6, x29, [x11, #-104]
+     8ac: 6f 6e 00 63  	<unknown>
+     8b0: 6f 6d 70 6c  	ldnp	d15, d27, [x11, #-256]
+     8b4: 78 6e 75 6d  	ldp	d24, d27, [x19, #-176]
+     8b8: 00 63 6f 6e  	rsubhn2	v0.8h, v24.4s, v15.4s
+     8bc: 74 65 78 74  	<unknown>
+     8c0: 69 64 72 5f  	<unknown>
+     8c4: 65 6c 32 00  	<unknown>
+     8c8: 63 6f 72 74  	<unknown>
+     8cc: 65 78 5f 61  	<unknown>
+     8d0: 37 38 63 00  	<unknown>
+     8d4: 63 6f 72 74  	<unknown>
+     8d8: 65 78 5f 72  	<unknown>
+     8dc: 38 32 00 63  	<unknown>
+     8e0: 72 63 00 63  	<unknown>
+     8e4: 72 79 70 74  	<unknown>
+     8e8: 6f 00 63 75  	<unknown>
+     8ec: 73 74 6f 6d  	ldp	d19, d29, [x3, #-272]
+     8f0: 5f 63 68 65  	<unknown>
+     8f4: 61 70 5f 61  	<unknown>
+     8f8: 73 5f 6d 6f  	<unknown>
+     8fc: 76 65 00 64  	<unknown>
+     900: 69 73 61 62  	<unknown>
+     904: 6c 65 5f 6c  	ldnp	d12, d25, [x11, #496]
+     908: 61 74 65 6e  	uabd	v1.8h, v3.8h, v5.8h
+     90c: 63 79 5f 73  	<unknown>
+     910: 63 68 65 64  	<unknown>
+     914: 5f 68 65 75  	<unknown>
+     918: 72 69 73 74  	<unknown>
+     91c: 69 63 00 64  	<unknown>
+     920: 69 74 00 64  	<unknown>
+     924: 6f 74 70 72  	<unknown>
+     928: 6f 64 00 65  	<unknown>
+     92c: 63 76 00 65  	<unknown>
+     930: 74 65 00 65  	<unknown>
+     934: 78 79 6e 6f  	<unknown>
+     938: 73 5f 63 68  	<unknown>
+     93c: 65 61 70 5f  	<unknown>
+     940: 61 73 5f 6d  	ldp	d1, d28, [x27, #496]
+     944: 6f 76 65 00  	<unknown>
+     948: 65 78 79 6e  	<unknown>
+     94c: 6f 73 5f 6d  	ldp	d15, d28, [x27, #496]
+     950: 34 00 66 33  	<unknown>
+     954: 32 6d 6d 00  	<unknown>
+     958: 66 36 34 6d  	stp	d6, d13, [x19, #-192]
+     95c: 6d 00 66 67  	<unknown>
+     960: 74 00 66 6c  	ldnp	d20, d0, [x3, #-416]
+     964: 61 67 6d 00  	<unknown>
+     968: 66 6f 72 63  	<unknown>
+     96c: 65 5f 33 32  	orr	w5, w27, #0xffffe01f
+     970: 62 69 74 5f  	<unknown>
+     974: 6a 75 6d 70  	adr	x10, #896687
+     978: 5f 74 61 62  	<unknown>
+     97c: 6c 65 73 00  	<unknown>
+     980: 66 70 31 36  	tbz	w6, #6, 0x378c <$d.7+0x378c>
+     984: 66 6d 6c 00  	<unknown>
+     988: 66 70 5f 61  	<unknown>
+     98c: 72 6d 76 38  	<unknown>
+     990: 00 66 70 74  	<unknown>
+     994: 6f 69 6e 74  	<unknown>
+     998: 00 66 75 6c  	ldnp	d0, d25, [x16, #-176]
+     99c: 6c 66 70 31  	adds	w12, w19, #3097, lsl #12 // =12685312
+     9a0: 36 00 66 75  	<unknown>
+     9a4: 73 65 5f 61  	<unknown>
+     9a8: 64 64 72 65  	<unknown>
+     9ac: 73 73 00 66  	<unknown>
+     9b0: 75 73 65 5f  	sqdmlsl	s21, h27, v5.h[2]
+     9b4: 61 65 73 00  	<unknown>
+     9b8: 66 75 73 65  	<unknown>
+     9bc: 5f 61 72 69  	ldpsw	xzr, x24, [x10, #-112]
+     9c0: 74 68 5f 6c  	ldnp	d20, d26, [x3, #496]
+     9c4: 6f 67 69 63  	<unknown>
+     9c8: 00 66 75 73  	<unknown>
+     9cc: 65 5f 63 72  	<unknown>
+     9d0: 79 70 74 6f  	<unknown>
+     9d4: 5f 65 6f 72  	<unknown>
+     9d8: 00 66 75 73  	<unknown>
+     9dc: 65 5f 63 73  	<unknown>
+     9e0: 65 6c 00 66  	<unknown>
+     9e4: 75 73 65 5f  	sqdmlsl	s21, h27, v5.h[2]
+     9e8: 6c 69 74 65  	<unknown>
+     9ec: 72 61 6c 73  	<unknown>
+     9f0: 00 68 61 72  	<unknown>
+     9f4: 64 65 6e 5f  	<unknown>
+     9f8: 73 6c 73 5f  	<unknown>
+     9fc: 62 6c 72 00  	<unknown>
+     a00: 68 61 72 64  	<unknown>
+     a04: 65 6e 5f 73  	<unknown>
+     a08: 6c 73 5f 6e  	<unknown>
+     a0c: 6f 63 6f 6d  	ldp	d15, d24, [x27, #-272]
+     a10: 64 61 74 00  	<unknown>
+     a14: 68 61 72 64  	<unknown>
+     a18: 65 6e 5f 73  	<unknown>
+     a1c: 6c 73 5f 72  	<unknown>
+     a20: 65 74 62 72  	<unknown>
+     a24: 00 68 63 78  	ldrh	w0, [x0, x3]
+     a28: 00 69 38 6d  	stp	d0, d26, [x8, #-128]
+     a2c: 6d 00 6a 73  	<unknown>
+     a30: 63 6f 6e 76  	<unknown>
+     a34: 00 6c 6f 72  	<unknown>
+     a38: 00 6c 73 36  	tbz	w0, #14, 0x77b8 <$d.7+0x77b8>
+     a3c: 34 00 6c 73  	<unknown>
+     a40: 65 00 6c 73  	<unknown>
+     a44: 6c 5f 66 61  	<unknown>
+     a48: 73 74 00 6d  	stp	d19, d29, [x3]
+     a4c: 70 61 6d 00  	<unknown>
+     a50: 6d 74 65 00  	<unknown>
+     a54: 6e 65 6f 6e  	umax	v14.8h, v11.8h, v15.8h
+     a58: 00 6e 65 6f  	<unknown>
+     a5c: 76 65 72 73  	<unknown>
+     a60: 65 5f 65 31  	adds	w5, w27, #2391, lsl #12 // =9793536
+     a64: 00 6e 65 6f  	<unknown>
+     a68: 76 65 72 73  	<unknown>
+     a6c: 65 5f 6e 31  	adds	w5, w27, #2967, lsl #12 // =12152832
+     a70: 00 6e 65 6f  	<unknown>
+     a74: 76 65 72 73  	<unknown>
+     a78: 65 5f 6e 32  	<unknown>
+     a7c: 00 6e 65 6f  	<unknown>
+     a80: 76 65 72 73  	<unknown>
+     a84: 65 5f 76 31  	adds	w5, w27, #3479, lsl #12 // =14249984
+     a88: 00 6e 6f 5f  	<unknown>
+     a8c: 6e 65 67 5f  	<unknown>
+     a90: 69 6d 6d 65  	<unknown>
+     a94: 64 69 61 74  	<unknown>
+     a98: 65 73 00 6e  	ext	v5.16b, v27.16b, v0.16b, #14
+     a9c: 6f 5f 7a 63  	<unknown>
+     aa0: 7a 5f 66 70  	adr	x26, #838639
+     aa4: 00 6e 76 00  	<unknown>
+     aa8: 6f 75 74 6c  	ldnp	d15, d29, [x11, #-192]
+     aac: 69 6e 65 5f  	<unknown>
+     ab0: 61 74 6f 6d  	ldp	d1, d29, [x3, #-272]
+     ab4: 69 63 73 00  	<unknown>
+     ab8: 70 61 6e 00  	<unknown>
+     abc: 70 61 6e 5f  	<unknown>
+     ac0: 72 77 76 00  	<unknown>
+     ac4: 70 61 75 74  	<unknown>
+     ac8: 68 00 70 65  	<unknown>
+     acc: 72 66 6d 6f  	sqshlu	v18.2d, v19.2d, #45
+     ad0: 6e 00 70 6d  	ldp	d14, d0, [x3, #-256]
+     ad4: 75 00 70 72  	<unknown>
+     ad8: 65 64 69 63  	<unknown>
+     adc: 74 61 62 6c  	ldnp	d20, d24, [x11, #-480]
+     ae0: 65 5f 73 65  	<unknown>
+     ae4: 6c 65 63 74  	<unknown>
+     ae8: 5f 65 78 70  	adr	xzr, #986283
+     aec: 65 6e 73 69  	ldpsw	x5, x27, [x19, #-104]
+     af0: 76 65 00 70  	adr	x22, #3247
+     af4: 72 65 64 72  	<unknown>
+     af8: 65 73 00 72  	ands	w5, w27, #0x1fffffff
+     afc: 61 6e 64 00  	<unknown>
+     b00: 72 61 73 00  	<unknown>
+     b04: 72 63 70 63  	<unknown>
+     b08: 00 72 63 70  	adr	x0, #814659
+     b0c: 63 5f 69 6d  	ldp	d3, d23, [x27, #-368]
+     b10: 6d 6f 00 72  	ands	w13, w27, #0xfffffff
+     b14: 64 6d 00 72  	ands	w4, w11, #0xfffffff
+     b18: 65 73 65 72  	<unknown>
+     b1c: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     b20: 31 00 72 65  	<unknown>
+     b24: 73 65 72 76  	<unknown>
+     b28: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b2c: 30 00 72 65  	<unknown>
+     b30: 73 65 72 76  	<unknown>
+     b34: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b38: 31 00 72 65  	<unknown>
+     b3c: 73 65 72 76  	<unknown>
+     b40: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b44: 32 00 72 65  	<unknown>
+     b48: 73 65 72 76  	<unknown>
+     b4c: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b50: 33 00 72 65  	<unknown>
+     b54: 73 65 72 76  	<unknown>
+     b58: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b5c: 34 00 72 65  	<unknown>
+     b60: 73 65 72 76  	<unknown>
+     b64: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b68: 35 00 72 65  	<unknown>
+     b6c: 73 65 72 76  	<unknown>
+     b70: 65 5f 78 31  	adds	w5, w27, #3607, lsl #12 // =14774272
+     b74: 38 00 72 65  	<unknown>
+     b78: 73 65 72 76  	<unknown>
+     b7c: 65 5f 78 32  	<unknown>
+     b80: 00 72 65 73  	<unknown>
+     b84: 65 72 76 65  	<unknown>
+     b88: 5f 78 32 30  	adr	xzr, #413449
+     b8c: 00 72 65 73  	<unknown>
+     b90: 65 72 76 65  	<unknown>
+     b94: 5f 78 32 31  	cmn	w2, #3230               // =3230
+     b98: 00 72 65 73  	<unknown>
+     b9c: 65 72 76 65  	<unknown>
+     ba0: 5f 78 32 32  	orr	wsp, w2, #0xffffdfff
+     ba4: 00 72 65 73  	<unknown>
+     ba8: 65 72 76 65  	<unknown>
+     bac: 5f 78 32 33  	<unknown>
+     bb0: 00 72 65 73  	<unknown>
+     bb4: 65 72 76 65  	<unknown>
+     bb8: 5f 78 32 34  	cbz	wzr, 0x65ac0 <$d.7+0x65ac0>
+     bbc: 00 72 65 73  	<unknown>
+     bc0: 65 72 76 65  	<unknown>
+     bc4: 5f 78 32 35  	cbnz	wzr, 0x65acc <$d.7+0x65acc>
+     bc8: 00 72 65 73  	<unknown>
+     bcc: 65 72 76 65  	<unknown>
+     bd0: 5f 78 32 36  	tbz	wzr, #6, 0x5ad8 <$d.7+0x5ad8>
+     bd4: 00 72 65 73  	<unknown>
+     bd8: 65 72 76 65  	<unknown>
+     bdc: 5f 78 32 37  	tbnz	wzr, #6, 0x5ae4 <$d.7+0x5ae4>
+     be0: 00 72 65 73  	<unknown>
+     be4: 65 72 76 65  	<unknown>
+     be8: 5f 78 32 38  	strb	wzr, [x2, x18, lsl #0]
+     bec: 00 72 65 73  	<unknown>
+     bf0: 65 72 76 65  	<unknown>
+     bf4: 5f 78 33 00  	<unknown>
+     bf8: 72 65 73 65  	<unknown>
+     bfc: 72 76 65 5f  	sqshl	d18, d19, #37
+     c00: 78 33 30 00  	<unknown>
+     c04: 72 65 73 65  	<unknown>
+     c08: 72 76 65 5f  	sqshl	d18, d19, #37
+     c0c: 78 34 00 72  	ands	w24, w3, #0x3fff
+     c10: 65 73 65 72  	<unknown>
+     c14: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     c18: 35 00 72 65  	<unknown>
+     c1c: 73 65 72 76  	<unknown>
+     c20: 65 5f 78 36  	tbz	w5, #15, 0x180c <$d.7+0x180c>
+     c24: 00 72 65 73  	<unknown>
+     c28: 65 72 76 65  	<unknown>
+     c2c: 5f 78 37 00  	<unknown>
+     c30: 72 65 73 65  	<unknown>
+     c34: 72 76 65 5f  	sqshl	d18, d19, #37
+     c38: 78 39 00 72  	ands	w24, w11, #0x7fff
+     c3c: 6d 65 00 73  	<unknown>
+     c40: 62 00 73 65  	<unknown>
+     c44: 6c 32 00 73  	<unknown>
+     c48: 68 61 32 00  	<unknown>
+     c4c: 73 68 61 33  	<unknown>
+     c50: 00 73 6c 6f  	<unknown>
+     c54: 77 5f 6d 69  	ldpsw	x23, x23, [x27, #-152]
+     c58: 73 61 6c 69  	ldpsw	x19, x24, [x11, #-160]
+     c5c: 67 6e 65 64  	<unknown>
+     c60: 5f 31 32 38  	<unknown>
+     c64: 73 74 6f 72  	<unknown>
+     c68: 65 00 73 6c  	ldnp	d5, d0, [x3, #-208]
+     c6c: 6f 77 5f 70  	adr	x15, #782063
+     c70: 61 69 72 65  	<unknown>
+     c74: 64 5f 31 32  	orr	w4, w27, #0xffff807f
+     c78: 38 00 73 6c  	ldnp	d24, d0, [x1, #-208]
+     c7c: 6f 77 5f 73  	<unknown>
+     c80: 74 72 71 72  	<unknown>
+     c84: 6f 5f 73 74  	<unknown>
+     c88: 6f 72 65 00  	<unknown>
+     c8c: 73 6d 34 00  	<unknown>
+     c90: 73 6d 65 00  	<unknown>
+     c94: 73 6d 65 5f  	<unknown>
+     c98: 66 36 34 00  	<unknown>
+     c9c: 73 6d 65 5f  	<unknown>
+     ca0: 69 36 34 00  	<unknown>
+     ca4: 73 70 65 00  	<unknown>
+     ca8: 73 70 65 5f  	sqdmlsl	s19, h3, v5.h[2]
+     cac: 65 65 66 00  	<unknown>
+     cb0: 73 70 65 63  	<unknown>
+     cb4: 72 65 73 74  	<unknown>
+     cb8: 72 69 63 74  	<unknown>
+     cbc: 00 73 73 62  	<unknown>
+     cc0: 73 00 73 74  	<unknown>
+     cc4: 72 69 63 74  	<unknown>
+     cc8: 5f 61 6c 69  	ldpsw	xzr, x24, [x10, #-160]
+     ccc: 67 6e 00 73  	<unknown>
+     cd0: 76 65 00 73  	<unknown>
+     cd4: 76 65 32 00  	<unknown>
+     cd8: 73 76 65 32  	<unknown>
+     cdc: 5f 61 65 73  	<unknown>
+     ce0: 00 73 76 65  	<unknown>
+     ce4: 32 5f 62 69  	ldpsw	x18, x23, [x25, #-240]
+     ce8: 74 70 65 72  	<unknown>
+     cec: 6d 00 73 76  	<unknown>
+     cf0: 65 32 5f 73  	<unknown>
+     cf4: 68 61 33 00  	<unknown>
+     cf8: 73 76 65 32  	<unknown>
+     cfc: 5f 73 6d 34  	cbz	wzr, 0xdbb64 <$d.7+0xdbb64>
+     d00: 00 74 61 67  	<unknown>
+     d04: 67 65 64 5f  	<unknown>
+     d08: 67 6c 6f 62  	<unknown>
+     d0c: 61 6c 73 00  	<unknown>
+     d10: 74 6c 62 5f  	<unknown>
+     d14: 72 6d 69 00  	<unknown>
+     d18: 74 6d 65 00  	<unknown>
+     d1c: 74 70 69 64  	<unknown>
+     d20: 72 5f 65 6c  	ldnp	d18, d23, [x27, #-432]
+     d24: 31 00 74 70  	adr	x17, #950279
+     d28: 69 64 72 5f  	<unknown>
+     d2c: 65 6c 32 00  	<unknown>
+     d30: 74 70 69 64  	<unknown>
+     d34: 72 5f 65 6c  	ldnp	d18, d23, [x27, #-432]
+     d38: 33 00 74 72  	<unknown>
+     d3c: 61 63 65 76  	<unknown>
+     d40: 38 5f 34 00  	<unknown>
+     d44: 74 72 62 65  	<unknown>
+     d48: 00 75 61 6f  	uqshl	v0.2d, v8.2d, #33
+     d4c: 70 73 00 75  	<unknown>
+     d50: 73 65 5f 65  	<unknown>
+     d54: 78 70 65 72  	<unknown>
+     d58: 69 6d 65 6e  	umin	v9.8h, v11.8h, v5.8h
+     d5c: 74 61 6c 5f  	<unknown>
+     d60: 7a 65 72 6f  	sqshlu	v26.2d, v11.2d, #50
+     d64: 69 6e 67 5f  	<unknown>
+     d68: 70 73 65 75  	<unknown>
+     d6c: 64 6f 73 00  	<unknown>
+     d70: 75 73 65 5f  	sqdmlsl	s21, h27, v5.h[2]
+     d74: 70 6f 73 74  	<unknown>
+     d78: 72 61 5f 73  	<unknown>
+     d7c: 63 68 65 64  	<unknown>
+     d80: 75 6c 65 72  	<unknown>
+     d84: 00 75 73 65  	<unknown>
+     d88: 5f 72 65 63  	<unknown>
+     d8c: 69 70 72 6f  	<unknown>
+     d90: 63 61 6c 5f  	<unknown>
+     d94: 73 71 75 61  	<unknown>
+     d98: 72 65 5f 72  	<unknown>
+     d9c: 6f 6f 74 00  	<unknown>
+     da0: 76 38 5f 31  	adds	w22, w3, #1998, lsl #12 // =8183808
+     da4: 61 00 76 38  	<unknown>
+     da8: 5f 32 61 00  	<unknown>
+     dac: 76 38 5f 33  	<unknown>
+     db0: 61 00 76 38  	<unknown>
+     db4: 5f 34 61 00  	<unknown>
+     db8: 76 38 5f 35  	cbnz	w22, 0xbf4c4 <$d.7+0xbf4c4>
+     dbc: 61 00 76 38  	<unknown>
+     dc0: 5f 36 61 00  	<unknown>
+     dc4: 76 38 5f 37  	tbnz	w22, #11, 0xfffffffffffff4d0 <memcpy+0xffffffffffdeed70>
+     dc8: 61 00 76 38  	<unknown>
+     dcc: 61 00 76 38  	<unknown>
+     dd0: 72 00 76 68  	<unknown>
+     dd4: 00 77 66 78  	<unknown>
+     dd8: 74 00 78 73  	<unknown>
+     ddc: 00 7a 63 6d  	ldp	d0, d30, [x16, #-464]
+     de0: 00 7a 63 7a  	<unknown>
+     de4: 00 7a 63 7a  	<unknown>
+     de8: 5f 66 70 5f  	<unknown>
+     dec: 77 6f 72 6b  	<unknown>
+     df0: 61 72 6f 75  	<unknown>
+     df4: 6e 64 00 7a  	<unknown>
+     df8: 63 7a 5f 67  	<unknown>
+     dfc: 70 00 73 74  	<unknown>
+     e00: 64 2e 74 61  	<unknown>
+     e04: 72 67 65 74  	<unknown>
+     e08: 2e 61 61 72  	<unknown>
+     e0c: 63 68 36 34  	cbz	w3, 0x6db18 <$d.7+0x6db18>
+     e10: 2e 46 65 61  	<unknown>
+     e14: 74 75 72 65  	<unknown>
+     e18: 00 75 31 36  	tbz	w0, #6, 0x3cb8 <$d.7+0x3cb8>
+     e1c: 00 28 6e 6f  	umlal2	v0.4s, v0.8h, v14.h[6]
+     e20: 6e 65 29 00  	<unknown>
+     e24: 42 75 73 79  	ldrh	w2, [x10, #6586]
+     e28: 00 61 6e 79  	ldrh	w0, [x8, #5936]
+     e2c: 65 72 72 6f  	<unknown>
+     e30: 72 00 73 74  	<unknown>
+     e34: 64 2e 74 61  	<unknown>
+     e38: 72 67 65 74  	<unknown>
+     e3c: 2e 46 65 61  	<unknown>
+     e40: 74 75 72 65  	<unknown>
+     e44: 2e 66 65 61  	<unknown>
+     e48: 74 75 72 65  	<unknown>
+     e4c: 5f 73 65 74  	<unknown>
+     e50: 5f 66 6e 73  	<unknown>
+     e54: 28 73 74 64  	<unknown>
+     e58: 2e 74 61 72  	<unknown>
+     e5c: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     e60: 61 61 72 63  	<unknown>
+     e64: 68 36 34 2e  	cmhi	v8.8b, v19.8b, v20.8b
+     e68: 46 65 61 74  	<unknown>
+     e6c: 75 72 65 29  	ldp	w21, w28, [x19, #-216]
+     e70: 00 73 74 64  	<unknown>
+     e74: 2e 62 75 69  	ldpsw	x14, x24, [x17, #-88]
+     e78: 6c 74 69 6e  	uabd	v12.8h, v3.8h, v9.8h
+     e7c: 2e 64 65 66  	<unknown>
+     e80: 61 75 6c 74  	<unknown>
+     e84: 5f 70 61 6e  	uabdl2	v31.4s, v2.8h, v1.8h
+     e88: 69 63 00 73  	<unknown>
+     e8c: 74 64 2e 74  	<unknown>
+     e90: 61 72 67 65  	<unknown>
+     e94: 74 2e 46 65  	<unknown>
+     e98: 61 74 75 72  	<unknown>
+     e9c: 65 2e 66 65  	<unknown>
+     ea0: 61 74 75 72  	<unknown>
+     ea4: 65 5f 73 65  	<unknown>
+     ea8: 74 5f 66 6e  	uqrshl	v20.8h, v27.8h, v6.8h
+     eac: 73 28 73 74  	<unknown>
+     eb0: 64 2e 74 61  	<unknown>
+     eb4: 72 67 65 74  	<unknown>
+     eb8: 2e 61 61 72  	<unknown>
+     ebc: 63 68 36 34  	cbz	w3, 0x6dbc8 <$d.7+0x6dbc8>
+     ec0: 2e 46 65 61  	<unknown>
+     ec4: 74 75 72 65  	<unknown>
+     ec8: 29 2e 66 65  	<unknown>
+     ecc: 61 74 75 72  	<unknown>
+     ed0: 65 53 65 74  	<unknown>
+     ed4: 00 6d 61 69  	ldpsw	x0, x27, [x8, #-248]
+     ed8: 6e 00 64 72  	<unknown>
+     edc: 69 76 65 72  	<unknown>
+     ee0: 73 2e 75 61  	<unknown>
+     ee4: 72 74 2e 69  	<unknown>
+     ee8: 6e 69 74 00  	<unknown>
+     eec: 64 72 69 76  	<unknown>
+     ef0: 65 72 73 2e  	uabdl	v5.4s, v19.4h, v19.4h
+     ef4: 75 61 72 74  	<unknown>
+     ef8: 2e 70 75 74  	<unknown>
+     efc: 63 68 61 72  	<unknown>
+     f00: 00 73 74 64  	<unknown>
+     f04: 2e 74 61 72  	<unknown>
+     f08: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     f0c: 53 65 74 2e  	umax	v19.4h, v10.4h, v20.4h
+     f10: 65 6d 70 74  	<unknown>
+     f14: 79 5f 77 6f  	<unknown>
+     f18: 72 6b 61 72  	<unknown>
+     f1c: 6f 75 6e 64  	<unknown>
+     f20: 00 73 74 64  	<unknown>
+     f24: 2e 74 61 72  	<unknown>
+     f28: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     f2c: 53 65 74 2e  	umax	v19.4h, v10.4h, v20.4h
+     f30: 61 64 64 46  	<unknown>
+     f34: 65 61 74 75  	<unknown>
+     f38: 72 65 00 73  	<unknown>
+     f3c: 74 64 2e 74  	<unknown>
+     f40: 61 72 67 65  	<unknown>
+     f44: 74 2e 41 72  	<unknown>
+     f48: 63 68 2e 69  	<unknown>
+     f4c: 73 57 61 73  	<unknown>
+     f50: 6d 00 65 72  	<unknown>
+     f54: 72 6f 72 5f  	<unknown>
+     f58: 72 65 74 75  	<unknown>
+     f5c: 72 6e 5f 74  	<unknown>
+     f60: 72 61 63 65  	<unknown>
+     f64: 00 69 6e 64  	<unknown>
+     f68: 65 78 00 69  	<unknown>
+     f6c: 6e 73 74 72  	<unknown>
+     f70: 75 63 74 69  	ldpsw	x21, x24, [x27, #-96]
+     f74: 6f 6e 5f 61  	<unknown>
+     f78: 64 64 72 65  	<unknown>
+     f7c: 73 73 65 73  	<unknown>
+     f80: 00 2a 75 73  	<unknown>
+     f84: 69 7a 65 00  	<unknown>
+     f88: 5b 5d 75 73  	<unknown>
+     f8c: 69 7a 65 00  	<unknown>
+     f90: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     f94: 62 75 69 6c  	ldnp	d2, d29, [x11, #-368]
+     f98: 74 69 6e 2e  	<unknown>
+     f9c: 53 74 61 63  	<unknown>
+     fa0: 6b 54 72 61  	<unknown>
+     fa4: 63 65 00 2a  	orr	w3, w11, w0, lsl #25
+     fa8: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     fac: 62 75 69 6c  	ldnp	d2, d29, [x11, #-368]
+     fb0: 74 69 6e 2e  	<unknown>
+     fb4: 53 74 61 63  	<unknown>
+     fb8: 6b 54 72 61  	<unknown>
+     fbc: 63 65 00 6d  	stp	d3, d25, [x11]
+     fc0: 73 67 00 78  	strh	w19, [x27], #6
+     fc4: 00 5f 61 6e  	uqrshl	v0.8h, v24.8h, v1.8h
+     fc8: 6f 6e 00 66  	<unknown>
+     fcc: 65 61 74 75  	<unknown>
+     fd0: 72 65 00 2a  	orr	w18, w11, w0, lsl #25
+     fd4: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     fd8: 74 61 72 67  	<unknown>
+     fdc: 65 74 2e 61  	<unknown>
+     fe0: 61 72 63 68  	<unknown>
+     fe4: 36 34 2e 46  	<unknown>
+     fe8: 65 61 74 75  	<unknown>
+     fec: 72 65 00 5b  	<unknown>
+     ff0: 5d 73 74 64  	<unknown>
+     ff4: 2e 74 61 72  	<unknown>
+     ff8: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     ffc: 61 61 72 63  	<unknown>
+    1000: 68 36 34 2e  	cmhi	v8.8b, v19.8b, v20.8b
+    1004: 46 65 61 74  	<unknown>
+    1008: 75 72 65 00  	<unknown>
+    100c: 63 68 61 72  	<unknown>
+    1010: 00 73 65 74  	<unknown>
+    1014: 00 2a 73 74  	<unknown>
+    1018: 64 2e 74 61  	<unknown>
+    101c: 72 67 65 74  	<unknown>
+    1020: 2e 53 65 74  	<unknown>
+    1024: 00 61 72 63  	<unknown>
+    1028: 68 5f 66 65  	<unknown>
+    102c: 61 74 75 72  	<unknown>
+    1030: 65 5f 69 6e  	uqrshl	v5.8h, v27.8h, v9.8h
+    1034: 64 65 78 00  	<unknown>
+    1038: 75 73 69 7a  	<unknown>
+    103c: 65 5f 69 6e  	uqrshl	v5.8h, v27.8h, v9.8h
+    1040: 64 65 78 00  	<unknown>
+    1044: 62 69 74 5f  	<unknown>
+    1048: 69 6e 64 65  	<unknown>
+    104c: 78           	<unknown>
+    104d: 00           	<unknown>
+
+Disassembly of section .debug_pubnames:
+
+0000000000000000 <$d.8>:
+       0: 46 10 00 00  	udf	#4166
+       4: 02 00 00 00  	udf	#2
+       8: 00 00 b1 0e  	saddl	v0.2d, v0.2s, v17.2s
+       c: 00 00 3e 06  	<unknown>
+      10: 00 00 74 68  	<unknown>
+      14: 75 6d 62 00  	<unknown>
+      18: 5c 06 00 00  	udf	#1628
+      1c: 6e 76 70 74  	<unknown>
+      20: 78 00 c8 0c  	ld4	{ v24.8b, v25.8b, v26.8b, v27.8b }, [x3], x8
+      24: 00 00 76 38  	<unknown>
+      28: 5f 35 61 00  	<unknown>
+      2c: 2e 0d 00 00  	udf	#3374
+      30: 42 75 73 79  	ldrh	w2, [x10, #6586]
+      34: 00 a4 06 00  	<unknown>
+      38: 00 6c 61 6e  	umin	v0.8h, v0.8h, v1.8h
+      3c: 61 69 00 32  	orr	w1, w11, #0x7ffffff
+      40: 05 00 00 63  	<unknown>
+      44: 70 75 00 0b  	add	w16, w11, w0, lsl #29
+      48: 0c 00 00 73  	<unknown>
+      4c: 70 65 00 c0  	<unknown>
+      50: 05 00 00 68  	<unknown>
+      54: 65 78 61 67  	<unknown>
+      58: 6f 6e 00 ae  	<unknown>
+      5c: 0a 00 00 6e  	ext	v10.16b, v0.16b, v0.16b, #0
+      60: 65 6f 6e 00  	<unknown>
+      64: 5a 03 00 00  	udf	#858
+      68: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+      6c: 30 5f 31 39  	strb	w16, [x25, #3159]
+      70: 68 31 00 cc  	<unknown>
+      74: 00 00 00 61  	<unknown>
+      78: 6e 61 6e 61  	<unknown>
+      7c: 73 00 26 01  	<unknown>
+      80: 00 00 68 61  	<unknown>
+      84: 69 6b 75 00  	<unknown>
+      88: 12 03 00 00  	udf	#786
+      8c: 77 69 6e 38  	ldrb	w23, [x11, x14]
+      90: 5f 31 00 2e  	ext	v31.8b, v10.8b, v0.8b, #6
+      94: 09 00 00 61  	<unknown>
+      98: 6d 76 73 00  	<unknown>
+      9c: 1a 06 00 00  	udf	#1562
+      a0: 73 70 61 72  	<unknown>
+      a4: 63 00 10 09  	<unknown>
+      a8: 00 00 61 65  	<unknown>
+      ac: 73 00 b6 06  	<unknown>
+      b0: 00 00 72 65  	<unknown>
+      b4: 6e 64 65 72  	<unknown>
+      b8: 73 63 72 69  	ldpsw	x19, x24, [x27, #-112]
+      bc: 70 74 33 32  	orr	w16, w3, #0xffffe7ff
+      c0: 00 1d 07 00  	<unknown>
+      c4: 00 75 61 72  	<unknown>
+      c8: 74 00 08 01  	<unknown>
+      cc: 00 00 6e 65  	<unknown>
+      d0: 74 62 73 64  	<unknown>
+      d4: 00 b0 06 00  	<unknown>
+      d8: 00 77 61 73  	<unknown>
+      dc: 6d 36 34 00  	<unknown>
+      e0: fc 03 00 00  	udf	#1020
+      e4: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+      e8: 74 61 72 67  	<unknown>
+      ec: 65 74 2e 53  	<unknown>
+      f0: 65 74 2e 65  	<unknown>
+      f4: 6d 70 74 79  	ldrh	w13, [x3, #6712]
+      f8: 5f 77 6f 72  	<unknown>
+      fc: 6b 61 72 6f  	umlsl2	v11.4s, v11.8h, v2.h[3]
+     100: 75 6e 64 00  	<unknown>
+     104: 6d 0c 00 00  	udf	#3181
+     108: 74 70 69 64  	<unknown>
+     10c: 72 5f 65 6c  	ldnp	d18, d23, [x27, #-432]
+     110: 31 00 00 03  	<unknown>
+     114: 00 00 77 69  	ldpsw	x0, x0, [x0, #-72]
+     118: 6e 37 00 09  	<unknown>
+     11c: 03 00 00 77  	<unknown>
+     120: 69 6e 38 00  	<unknown>
+     124: 7b 0c 00 00  	udf	#3195
+     128: 74 70 69 64  	<unknown>
+     12c: 72 5f 65 6c  	ldnp	d18, d23, [x27, #-432]
+     130: 33 00 d2 0a  	and	w19, w1, w18, ror #0
+     134: 00 00 6e 6f  	mla	v0.8h, v0.8h, v14.h[2]
+     138: 5f 7a 63 7a  	<unknown>
+     13c: 5f 66 70 00  	<unknown>
+     140: 5f 0c 00 00  	udf	#3167
+     144: 74 6c 62 5f  	<unknown>
+     148: 72 6d 69 00  	<unknown>
+     14c: 4a 06 00 00  	udf	#1610
+     150: 69 33 38 36  	tbz	w9, #7, 0x7bc <$d.7+0x7bc>
+     154: 00 74 0c 00  	<unknown>
+     158: 00 74 70 69  	ldpsw	x0, x29, [x0, #-128]
+     15c: 64 72 5f 65  	<unknown>
+     160: 6c 32 00 0e  	tbx	v12.8b, { v19.16b, v20.16b }, v0.8b
+     164: 06 00 00 72  	ands	w6, w0, #0x1
+     168: 69 73 63 76  	<unknown>
+     16c: 33 32 00 8a  	and	x19, x17, x0, lsl #12
+     170: 0a 00 00 6c  	stnp	d10, d0, [x0]
+     174: 6f 72 00 cf  	<unknown>
+     178: 0c 00 00 76  	<unknown>
+     17c: 38 5f 36 61  	<unknown>
+     180: 00 1b 03 00  	<unknown>
+     184: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     188: 31 30 00 00  	udf	#12337
+     18c: 0d 00 00 7a  	sbcs	w13, w0, w0
+     190: 63 6d 00 aa  	orr	x3, x11, x0, lsl #27
+     194: 01 00 00 76  	<unknown>
+     198: 75 6c 6b 61  	<unknown>
+     19c: 6e 00 86 01  	<unknown>
+     1a0: 00 00 68 75  	<unknown>
+     1a4: 72 64 00 51  	sub	w18, w3, #25            // =25
+     1a8: 0c 00 00 73  	<unknown>
+     1ac: 76 65 32 5f  	<unknown>
+     1b0: 73 6d 34 00  	<unknown>
+     1b4: 34 09 00 00  	udf	#2356
+     1b8: 61 70 70 6c  	ldnp	d1, d28, [x3, #-256]
+     1bc: 65 5f 61 31  	adds	w5, w27, #2135, lsl #12 // =8744960
+     1c0: 32 00 3a 09  	<unknown>
+     1c4: 00 00 61 70  	adr	x0, #794627
+     1c8: 70 6c 65 5f  	<unknown>
+     1cc: 61 31 33 00  	<unknown>
+     1d0: 07 0d 00 00  	udf	#3335
+     1d4: 7a 63 7a 00  	<unknown>
+     1d8: d0 09 00 00  	udf	#2512
+     1dc: 63 72 63 00  	<unknown>
+     1e0: fc 05 00 00  	udf	#1532
+     1e4: 70 6f 77 65  	<unknown>
+     1e8: 72 70 63 36  	tbz	w18, #12, 0x6ff4 <$d.7+0x6ff4>
+     1ec: 34 6c 65 00  	<unknown>
+     1f0: dc 03 00 00  	udf	#988
+     1f4: 62 79 74 65  	<unknown>
+     1f8: 5f 63 6f 75  	<unknown>
+     1fc: 6e 74 00 64  	<unknown>
+     200: 09 00 00 62  	<unknown>
+     204: 74 69 00 ea  	ands	x20, x11, x0, lsl #26
+     208: 05 00 00 70  	adr	x5, #3
+     20c: 6f 77 65 72  	<unknown>
+     210: 70 63 00 f0  	adrp	x16, 0xc6f000 <$d.7+0x33cc>
+     214: 0a 00 00 70  	adr	x10, #3
+     218: 61 75 74 68  	<unknown>
+     21c: 00 d8 05 00  	<unknown>
+     220: 00 6d 69 70  	adr	x0, #863651
+     224: 73 36 34 00  	<unknown>
+     228: 26 0b 00 00  	udf	#2854
+     22c: 72 64 6d 00  	<unknown>
+     230: d6 0c 00 00  	udf	#3286
+     234: 76 38 5f 37  	tbnz	w22, #11, 0xffffffffffffe940 <memcpy+0xffffffffffdee1e0>
+     238: 61 00 a8 05  	<unknown>
+     23c: 00 00 61 76  	<unknown>
+     240: 72 00 77 0d  	<unknown>
+     244: 00 00 73 74  	<unknown>
+     248: 64 2e 74 61  	<unknown>
+     24c: 72 67 65 74  	<unknown>
+     250: 2e 46 65 61  	<unknown>
+     254: 74 75 72 65  	<unknown>
+     258: 2e 66 65 61  	<unknown>
+     25c: 74 75 72 65  	<unknown>
+     260: 5f 73 65 74  	<unknown>
+     264: 5f 66 6e 73  	<unknown>
+     268: 28 73 74 64  	<unknown>
+     26c: 2e 74 61 72  	<unknown>
+     270: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     274: 61 61 72 63  	<unknown>
+     278: 68 36 34 2e  	cmhi	v8.8b, v19.8b, v20.8b
+     27c: 46 65 61 74  	<unknown>
+     280: 75 72 65 29  	ldp	w21, w28, [x19, #-216]
+     284: 2e 66 65 61  	<unknown>
+     288: 74 75 72 65  	<unknown>
+     28c: 53 65 74 00  	<unknown>
+     290: ee 02 00 00  	udf	#750
+     294: 77 73 32 30  	adr	x23, #413293
+     298: 30 33 00 82  	<unknown>
+     29c: 0c 00 00 74  	<unknown>
+     2a0: 72 61 63 65  	<unknown>
+     2a4: 76 38 5f 34  	cbz	w22, 0xbe9b0 <$d.7+0xbe9b0>
+     2a8: 00 94 09 00  	<unknown>
+     2ac: 00 63 61 6c  	ldnp	d0, d24, [x24, #-496]
+     2b0: 6c 5f 73 61  	<unknown>
+     2b4: 76 65 64 5f  	<unknown>
+     2b8: 78 38 00 d4  	<unknown>
+     2bc: 06 00 00 73  	<unknown>
+     2c0: 70 69 72 76  	<unknown>
+     2c4: 36 34 00 9a  	<unknown>
+     2c8: 09 00 00 63  	<unknown>
+     2cc: 61 6c 6c 5f  	<unknown>
+     2d0: 73 61 76 65  	<unknown>
+     2d4: 64 5f 78 39  	ldrb	w4, [x27, #3607]
+     2d8: 00 b0 01 00  	<unknown>
+     2dc: 00 70 6c 61  	<unknown>
+     2e0: 6e 39 00 0e  	zip1	v14.8b, v11.8b, v0.8b
+     2e4: 0b 00 00 72  	ands	w11, w0, #0x1
+     2e8: 61 6e 64 00  	<unknown>
+     2ec: d8 00 00 00  	udf	#216
+     2f0: 64 72 61 67  	<unknown>
+     2f4: 6f 6e 66 6c  	ldnp	d15, d27, [x19, #-416]
+     2f8: 79 00 2c 06  	<unknown>
+     2fc: 00 00 73 33  	<unknown>
+     300: 39 30 78 00  	<unknown>
+     304: 24 0a 00 00  	udf	#2596
+     308: 66 6f 72 63  	<unknown>
+     30c: 65 5f 33 32  	orr	w5, w27, #0xffffe01f
+     310: 62 69 74 5f  	<unknown>
+     314: 6a 75 6d 70  	adr	x10, #896687
+     318: 5f 74 61 62  	<unknown>
+     31c: 6c 65 73 00  	<unknown>
+     320: 6c 03 00 00  	udf	#876
+     324: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+     328: 30 5f 6d 6e  	uqrshl	v16.8h, v25.8h, v13.8h
+     32c: 00 8c 03 00  	<unknown>
+     330: 00 6e 6f 6e  	umin	v0.8h, v16.8h, v15.8h
+     334: 65 00 7a 06  	<unknown>
+     338: 00 00 61 6d  	ldp	d0, d0, [x0, #-496]
+     33c: 64 69 6c 36  	tbz	w4, #13, 0xffffffffffff9068 <memcpy+0xffffffffffde8908>
+     340: 34 00 60 0a  	bic	w20, w1, w0, lsr #0
+     344: 00 00 66 75  	<unknown>
+     348: 73 65 5f 6c  	ldnp	d19, d25, [x11, #496]
+     34c: 69 74 65 72  	<unknown>
+     350: 61 6c 73 00  	<unknown>
+     354: de 05 00 00  	udf	#1502
+     358: 6d 69 70 73  	<unknown>
+     35c: 36 34 65 6c  	ldnp	d22, d13, [x1, #-432]
+     360: 00 1c 09 00  	<unknown>
+     364: 00 61 6c 74  	<unknown>
+     368: 65 72 6e 61  	<unknown>
+     36c: 74 65 5f 73  	<unknown>
+     370: 65 78 74 6c  	ldnp	d5, d30, [x3, #-192]
+     374: 6f 61 64 5f  	<unknown>
+     378: 63 76 74 5f  	sqshl	d3, d19, #52
+     37c: 66 33 32 5f  	<unknown>
+     380: 70 61 74 74  	<unknown>
+     384: 65 72 6e 00  	<unknown>
+     388: f6 0a 00 00  	udf	#2806
+     38c: 70 65 72 66  	<unknown>
+     390: 6d 6f 6e 00  	<unknown>
+     394: 7e 0a 00 00  	udf	#2686
+     398: 69 38 6d 6d  	ldp	d9, d14, [x3, #-304]
+     39c: 00 b4 0a 00  	<unknown>
+     3a0: 00 6e 65 6f  	<unknown>
+     3a4: 76 65 72 73  	<unknown>
+     3a8: 65 5f 65 31  	adds	w5, w27, #2391, lsl #12 // =9793536
+     3ac: 00 a5 04 00  	<unknown>
+     3b0: 00 63 6f 72  	<unknown>
+     3b4: 74 65 78 5f  	<unknown>
+     3b8: 61 35 33 00  	<unknown>
+     3bc: 44 01 00 00  	udf	#324
+     3c0: 63 75 64 61  	<unknown>
+     3c4: 00 bc 06 00  	<unknown>
+     3c8: 00 72 65 6e  	uabdl2	v0.4s, v16.8h, v5.8h
+     3cc: 64 65 72 73  	<unknown>
+     3d0: 63 72 69 70  	adr	x3, #863823
+     3d4: 74 36 34 00  	<unknown>
+     3d8: 27 0c 00 00  	udf	#3111
+     3dc: 73 74 72 69  	ldpsw	x19, x29, [x3, #-112]
+     3e0: 63 74 5f 61  	<unknown>
+     3e4: 6c 69 67 6e  	<unknown>
+     3e8: 00 2c 0b 00  	<unknown>
+     3ec: 00 72 65 73  	<unknown>
+     3f0: 65 72 76 65  	<unknown>
+     3f4: 5f 78 31 00  	<unknown>
+     3f8: 5c 0b 00 00  	udf	#2908
+     3fc: 72 65 73 65  	<unknown>
+     400: 72 76 65 5f  	sqshl	d18, d19, #37
+     404: 78 32 00 98  	ldrsw	x24, 0xa50 <$d.7+0xa50>
+     408: 0b 00 00 72  	ands	w11, w0, #0x1
+     40c: 65 73 65 72  	<unknown>
+     410: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     414: 33 00 a4 0b  	<unknown>
+     418: 00 00 72 65  	<unknown>
+     41c: 73 65 72 76  	<unknown>
+     420: 65 5f 78 34  	cbz	w5, 0xf100c <$d.7+0xf100c>
+     424: 00 aa 0b 00  	<unknown>
+     428: 00 72 65 73  	<unknown>
+     42c: 65 72 76 65  	<unknown>
+     430: 5f 78 35 00  	<unknown>
+     434: c8 06 00 00  	udf	#1736
+     438: 73 70 75 5f  	sqdmlsl	s19, h3, v5.h[3]
+     43c: 32 00 d2 05  	<unknown>
+     440: 00 00 6d 69  	ldpsw	x0, x0, [x0, #-152]
+     444: 70 73 65 6c  	ldnp	d16, d28, [x27, #-432]
+     448: 00 dc 02 00  	<unknown>
+     44c: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     450: 32 6b 00 b0  	adrp	x18, 0xd65000 <$d.7+0x39e4>
+     454: 0b 00 00 72  	ands	w11, w0, #0x1
+     458: 65 73 65 72  	<unknown>
+     45c: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     460: 36 00 b6 0b  	<unknown>
+     464: 00 00 72 65  	<unknown>
+     468: 73 65 72 76  	<unknown>
+     46c: 65 5f 78 37  	tbnz	w5, #15, 0x1058 <$d.7+0x1058>
+     470: 00 00 0a 00  	<unknown>
+     474: 00 65 78 79  	ldrh	w0, [x8, #7218]
+     478: 6e 6f 73 5f  	<unknown>
+     47c: 63 68 65 61  	<unknown>
+     480: 70 5f 61 73  	<unknown>
+     484: 5f 6d 6f 76  	<unknown>
+     488: 65 00 de 0a  	and	w5, w3, w30, ror #0
+     48c: 00 00 6f 75  	<unknown>
+     490: 74 6c 69 6e  	umin	v20.8h, v3.8h, v9.8h
+     494: 65 5f 61 74  	<unknown>
+     498: 6f 6d 69 63  	<unknown>
+     49c: 73 00 f0 05  	<unknown>
+     4a0: 00 00 70 6f  	mla	v0.8h, v0.8h, v0.h[3]
+     4a4: 77 65 72 70  	adr	x23, #937135
+     4a8: 63 6c 65 00  	<unknown>
+     4ac: 14 06 00 00  	udf	#1556
+     4b0: 72 69 73 63  	<unknown>
+     4b4: 76 36 34 00  	<unknown>
+     4b8: 80 06 00 00  	udf	#1664
+     4bc: 68 73 61 69  	ldpsw	x8, x28, [x27, #-248]
+     4c0: 6c 00 bc 0b  	<unknown>
+     4c4: 00 00 72 65  	<unknown>
+     4c8: 73 65 72 76  	<unknown>
+     4cc: 65 5f 78 39  	ldrb	w5, [x27, #3607]
+     4d0: 00 98 06 00  	<unknown>
+     4d4: 00 6b 61 6c  	ldnp	d0, d26, [x24, #-496]
+     4d8: 69 6d 62 61  	<unknown>
+     4dc: 00 42 0a 00  	<unknown>
+     4e0: 00 66 75 73  	<unknown>
+     4e4: 65 5f 61 64  	<unknown>
+     4e8: 64 72 65 73  	<unknown>
+     4ec: 73 00 19 0c  	<unknown>
+     4f0: 00 00 73 70  	adr	x0, #942083
+     4f4: 65 63 72 65  	<unknown>
+     4f8: 73 74 72 69  	ldpsw	x19, x29, [x3, #-112]
+     4fc: 63 74 00 32  	orr	w3, w3, #0x3fffffff
+     500: 06 00 00 74  	<unknown>
+     504: 63 65 00 14  	b	0x19a90 <$d.7+0x19a90>
+     508: 01 00 00 73  	<unknown>
+     50c: 6f 6c 61 72  	<unknown>
+     510: 69 73 00 6e  	ext	v9.16b, v27.16b, v0.16b, #14
+     514: 01 00 00 6d  	stp	d1, d0, [x0]
+     518: 65 73 61 33  	<unknown>
+     51c: 64 00 12 04  	<unknown>
+     520: 00 00 73 74  	<unknown>
+     524: 64 2e 74 61  	<unknown>
+     528: 72 67 65 74  	<unknown>
+     52c: 2e 53 65 74  	<unknown>
+     530: 2e 61 64 64  	<unknown>
+     534: 46 65 61 74  	<unknown>
+     538: 75 72 65 00  	<unknown>
+     53c: 3e 01 00 00  	udf	#318
+     540: 61 69 78 00  	<unknown>
+     544: 96 0a 00 00  	udf	#2710
+     548: 6c 73 65 00  	<unknown>
+     54c: 2c 01 00 00  	udf	#300
+     550: 6d 69 6e 69  	ldpsw	x13, x26, [x11, #-144]
+     554: 78 00 c6 05  	<unknown>
+     558: 00 00 6d 36  	tbz	w0, #13, 0xffffffffffffa558 <memcpy+0xffffffffffde9df8>
+     55c: 38 6b 00 1e  	<unknown>
+     560: 0a 00 00 66  	<unknown>
+     564: 6c 61 67 6d  	ldp	d12, d24, [x11, #-400]
+     568: 00 92 06 00  	<unknown>
+     56c: 00 73 70 69  	ldpsw	x0, x28, [x24, #-128]
+     570: 72 36 34 00  	<unknown>
+     574: 90 05 00 00  	udf	#1424
+     578: 61 61 72 63  	<unknown>
+     57c: 68 36 34 00  	<unknown>
+     580: d8 0a 00 00  	udf	#2776
+     584: 6e 76 00 a4  	<unknown>
+     588: 01 00 00 67  	<unknown>
+     58c: 6c 73 6c 34  	cbz	w12, 0xd93f8 <$d.7+0xd93f8>
+     590: 35 30 00 62  	<unknown>
+     594: 01 00 00 74  	<unknown>
+     598: 76 6f 73 00  	<unknown>
+     59c: c6 0a 00 00  	udf	#2758
+     5a0: 6e 65 6f 76  	<unknown>
+     5a4: 65 72 73 65  	<unknown>
+     5a8: 5f 76 31 00  	<unknown>
+     5ac: a2 0a 00 00  	udf	#2722
+     5b0: 6d 70 61 6d  	ldp	d13, d28, [x3, #-496]
+     5b4: 00 d4 0b 00  	<unknown>
+     5b8: 00 73 68 61  	<unknown>
+     5bc: 32 00 da 0b  	<unknown>
+     5c0: 00 00 73 68  	<unknown>
+     5c4: 61 33 00 74  	<unknown>
+     5c8: 01 00 00 63  	<unknown>
+     5cc: 6f 6e 74 69  	ldpsw	x15, x27, [x19, #-96]
+     5d0: 6b 69 00 15  	b	0x401ab7c <memcpy+0x3e0a41c>
+     5d4: 0d 00 00 7a  	sbcs	w13, w0, w0
+     5d8: 63 7a 5f 67  	<unknown>
+     5dc: 70 00 ef 0d  	ld2	{ v16.b, v17.b }[0], [x3], x15
+     5e0: 00 00 64 72  	<unknown>
+     5e4: 69 76 65 72  	<unknown>
+     5e8: 73 2e 75 61  	<unknown>
+     5ec: 72 74 2e 69  	<unknown>
+     5f0: 6e 69 74 00  	<unknown>
+     5f4: 24 03 00 00  	udf	#804
+     5f8: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+     5fc: 30 5f 74 68  	<unknown>
+     600: 32 00 35 0c  	<unknown>
+     604: 00 00 73 76  	<unknown>
+     608: 65 32 00 86  	<unknown>
+     60c: 00 00 00 6f  	<unknown>
+     610: 73 00 d2 00  	<unknown>
+     614: 00 00 63 6c  	ldnp	d0, d0, [x0, #-464]
+     618: 6f 75 64 61  	<unknown>
+     61c: 62 69 00 90  	adrp	x2, 0xd2c000 <$d.7+0x3acc>
+     620: 0c 00 00 75  	<unknown>
+     624: 61 6f 70 73  	<unknown>
+     628: 00 0e 01 00  	<unknown>
+     62c: 00 6f 70 65  	<unknown>
+     630: 6e 62 73 64  	<unknown>
+     634: 00 cc 03 00  	<unknown>
+     638: 00 6e 65 65  	<unknown>
+     63c: 64 65 64 5f  	<unknown>
+     640: 62 69 74 5f  	<unknown>
+     644: 63 6f 75 6e  	umin	v3.8h, v27.8h, v21.8h
+     648: 74 00 2e 0c  	<unknown>
+     64c: 00 00 73 76  	<unknown>
+     650: 65 00 4a 01  	<unknown>
+     654: 00 00 6e 76  	<unknown>
+     658: 63 6c 00 fc  	str	d3, [x3, #6]!
+     65c: 00 00 00 6c  	stnp	d0, d0, [x0]
+     660: 76 32 00 02  	<unknown>
+     664: 0b 00 00 70  	adr	x11, #3
+     668: 72 65 64 69  	ldpsw	x18, x25, [x11, #-224]
+     66c: 63 74 61 62  	<unknown>
+     670: 6c 65 5f 73  	<unknown>
+     674: 65 6c 65 63  	<unknown>
+     678: 74 5f 65 78  	<unknown>
+     67c: 70 65 6e 73  	<unknown>
+     680: 69 76 65 00  	<unknown>
+     684: e6 0b 00 00  	udf	#3046
+     688: 73 6c 6f 77  	<unknown>
+     68c: 5f 70 61 69  	ldpsw	xzr, x28, [x2, #-248]
+     690: 72 65 64 5f  	<unknown>
+     694: 31 32 38 00  	<unknown>
+     698: 3c 0c 00 00  	udf	#3132
+     69c: 73 76 65 32  	<unknown>
+     6a0: 5f 61 65 73  	<unknown>
+     6a4: 00 cc 05 00  	<unknown>
+     6a8: 00 6d 69 70  	adr	x0, #863651
+     6ac: 73 00 2a 0a  	bic	w19, w3, w10
+     6b0: 00 00 66 70  	adr	x0, #835587
+     6b4: 31 36 66 6d  	ldp	d17, d13, [x17, #-416]
+     6b8: 6c 00 f4 09  	<unknown>
+     6bc: 00 00 65 63  	<unknown>
+     6c0: 76 00 e4 00  	<unknown>
+     6c4: 00 00 66 75  	<unknown>
+     6c8: 63 68 73 69  	ldpsw	x3, x26, [x3, #-104]
+     6cc: 61 00 b8 09  	<unknown>
+     6d0: 00 00 63 6f  	mla	v0.8h, v0.8h, v3.h[2]
+     6d4: 6d 70 6c 78  	<unknown>
+     6d8: 6e 75 6d 00  	<unknown>
+     6dc: 5c 01 00 00  	udf	#348
+     6e0: 65 6c 66 69  	ldpsw	x5, x27, [x3, #-208]
+     6e4: 61 6d 63 75  	<unknown>
+     6e8: 00 e4 05 00  	<unknown>
+     6ec: 00 6d 73 70  	adr	x0, #945571
+     6f0: 34 33 30 00  	<unknown>
+     6f4: f2 0c 00 00  	udf	#3314
+     6f8: 77 66 78 74  	<unknown>
+     6fc: 00 9c 05 00  	<unknown>
+     700: 00 61 61 72  	<unknown>
+     704: 63 68 36 34  	cbz	w3, 0x6d410 <$d.7+0x6d410>
+     708: 5f 33 32 00  	<unknown>
+     70c: 28 09 00 00  	udf	#2344
+     710: 61 6d 00 08  	stxrb	w0, w1, [x11]
+     714: 0e 00 00 64  	<unknown>
+     718: 72 69 76 65  	<unknown>
+     71c: 72 73 2e 75  	<unknown>
+     720: 61 72 74 2e  	uabdl	v1.4s, v19.4h, v20.4h
+     724: 70 75 74 63  	<unknown>
+     728: 68 61 72 00  	<unknown>
+     72c: 46 09 00 00  	udf	#2374
+     730: 61 72 69 74  	<unknown>
+     734: 68 5f 62 63  	<unknown>
+     738: 63 5f 66 75  	<unknown>
+     73c: 73 69 6f 6e  	<unknown>
+     740: 00 84 0a 00  	<unknown>
+     744: 00 6a 73 63  	<unknown>
+     748: 6f 6e 76 00  	<unknown>
+     74c: 8c 01 00 00  	udf	#396
+     750: 77 61 73 69  	ldpsw	x23, x24, [x11, #-104]
+     754: 00 fc 0a 00  	<unknown>
+     758: 00 70 6d 75  	<unknown>
+     75c: 00 ba 05 00  	<unknown>
+     760: 00 63 73 6b  	<unknown>
+     764: 79 00 fa 09  	<unknown>
+     768: 00 00 65 74  	<unknown>
+     76c: 65 00 16 09  	<unknown>
+     770: 00 00 61 67  	<unknown>
+     774: 67 72 65 73  	<unknown>
+     778: 73 69 76 65  	<unknown>
+     77c: 5f 66 6d 61  	<unknown>
+     780: 00 30 0a 00  	<unknown>
+     784: 00 66 70 5f  	<unknown>
+     788: 61 72 6d 76  	<unknown>
+     78c: 38 00 be 09  	<unknown>
+     790: 00 00 63 6f  	mla	v0.8h, v0.8h, v3.h[2]
+     794: 6e 74 65 78  	<unknown>
+     798: 74 69 64 72  	<unknown>
+     79c: 5f 65 6c 32  	<unknown>
+     7a0: 00 a8 0a 00  	<unknown>
+     7a4: 00 6d 74 65  	<unknown>
+     7a8: 00 9e 03 00  	<unknown>
+     7ac: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     7b0: 64 6f 77 73  	<unknown>
+     7b4: 00 d3 02 00  	<unknown>
+     7b8: 00 6e 74 34  	cbz	w0, 0xe9578 <$d.7+0xe9578>
+     7bc: 00 12 0c 00  	<unknown>
+     7c0: 00 73 70 65  	<unknown>
+     7c4: 5f 65 65 66  	<unknown>
+     7c8: 00 54 0a 00  	<unknown>
+     7cc: 00 66 75 73  	<unknown>
+     7d0: 65 5f 63 72  	<unknown>
+     7d4: 79 70 74 6f  	<unknown>
+     7d8: 5f 65 6f 72  	<unknown>
+     7dc: 00 c6 00 00  	udf	#50688
+     7e0: 00 66 72 65  	<unknown>
+     7e4: 65 73 74 61  	<unknown>
+     7e8: 6e 64 69 6e  	umax	v14.8h, v3.8h, v9.8h
+     7ec: 67 00 69 00  	<unknown>
+     7f0: 00 00 4f 62  	<unknown>
+     7f4: 6a 00 5e 09  	<unknown>
+     7f8: 00 00 62 72  	<unknown>
+     7fc: 62 65 00 92  	and	x2, x11, #0x3ffffff03ffffff
+     800: 01 00 00 65  	<unknown>
+     804: 6d 73 63 72  	<unknown>
+     808: 69 70 74 65  	<unknown>
+     80c: 6e 00 b4 05  	<unknown>
+     810: 00 00 62 70  	adr	x0, #802819
+     814: 66 65 62 00  	<unknown>
+     818: 72 0a 00 00  	udf	#2674
+     81c: 68 61 72 64  	<unknown>
+     820: 65 6e 5f 73  	<unknown>
+     824: 6c 73 5f 72  	<unknown>
+     828: 65 74 62 72  	<unknown>
+     82c: 00 a5 0c 00  	<unknown>
+     830: 00 75 73 65  	<unknown>
+     834: 5f 72 65 63  	<unknown>
+     838: 69 70 72 6f  	<unknown>
+     83c: 63 61 6c 5f  	<unknown>
+     840: 73 71 75 61  	<unknown>
+     844: 72 65 5f 72  	<unknown>
+     848: 6f 6f 74 00  	<unknown>
+     84c: 36 0a 00 00  	udf	#2614
+     850: 66 70 74 6f  	<unknown>
+     854: 69 6e 74 00  	<unknown>
+     858: 06 0a 00 00  	udf	#2566
+     85c: 65 78 79 6e  	<unknown>
+     860: 6f 73 5f 6d  	ldp	d15, d28, [x27, #496]
+     864: 34 00 8a 05  	<unknown>
+     868: 00 00 61 72  	<unknown>
+     86c: 6d 65 62 00  	<unknown>
+     870: 1a 0b 00 00  	udf	#2842
+     874: 72 63 70 63  	<unknown>
+     878: 00 80 01 00  	<unknown>
+     87c: 00 68 65 72  	<unknown>
+     880: 6d 69 74 00  	<unknown>
+     884: 08 06 00 00  	udf	#1544
+     888: 61 6d 64 67  	<unknown>
+     88c: 63 6e 00 62  	<unknown>
+     890: 06 00 00 6e  	ext	v6.16b, v0.16b, v0.16b, #0
+     894: 76 70 74 78  	<unknown>
+     898: 36 34 00 ae  	<unknown>
+     89c: 05 00 00 62  	<unknown>
+     8a0: 70 66 65 6c  	ldnp	d16, d25, [x19, #-432]
+     8a4: 00 48 0a 00  	<unknown>
+     8a8: 00 66 75 73  	<unknown>
+     8ac: 65 5f 61 65  	<unknown>
+     8b0: 73 00 7a 01  	<unknown>
+     8b4: 00 00 61 6d  	ldp	d0, d0, [x0, #-496]
+     8b8: 64 70 61 6c  	ldnp	d4, d28, [x3, #-496]
+     8bc: 00 96 05 00  	<unknown>
+     8c0: 00 61 61 72  	<unknown>
+     8c4: 63 68 36 34  	cbz	w3, 0x6d5d0 <$d.7+0x6d5d0>
+     8c8: 5f 62 65 00  	<unknown>
+     8cc: ca 09 00 00  	udf	#2506
+     8d0: 63 6f 72 74  	<unknown>
+     8d4: 65 78 5f 72  	<unknown>
+     8d8: 38 32 00 32  	orr	w24, w17, #0x1fff
+     8dc: 0b 00 00 72  	ands	w11, w0, #0x1
+     8e0: 65 73 65 72  	<unknown>
+     8e4: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     8e8: 31 30 00 38  	sturb	w17, [x1, #3]
+     8ec: 0b 00 00 72  	ands	w11, w0, #0x1
+     8f0: 65 73 65 72  	<unknown>
+     8f4: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     8f8: 31 31 00 3e  	<unknown>
+     8fc: 0b 00 00 72  	ands	w11, w0, #0x1
+     900: 65 73 65 72  	<unknown>
+     904: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     908: 31 32 00 63  	<unknown>
+     90c: 00 00 00 4c  	st4	{ v0.16b, v1.16b, v2.16b, v3.16b }, [x0]
+     910: 69 62 00 cc  	<unknown>
+     914: 0a 00 00 6e  	ext	v10.16b, v0.16b, v0.16b, #0
+     918: 6f 5f 6e 65  	<unknown>
+     91c: 67 5f 69 6d  	ldp	d7, d23, [x27, #-368]
+     920: 6d 65 64 69  	ldpsw	x13, x25, [x11, #-224]
+     924: 61 74 65 73  	<unknown>
+     928: 00 4a 0b 00  	<unknown>
+     92c: 00 72 65 73  	<unknown>
+     930: 65 72 76 65  	<unknown>
+     934: 5f 78 31 34  	cbz	wzr, 0x6383c <$d.7+0x6383c>
+     938: 00 44 0b 00  	<unknown>
+     93c: 00 72 65 73  	<unknown>
+     940: 65 72 76 65  	<unknown>
+     944: 5f 78 31 33  	<unknown>
+     948: 00 c8 0b 00  	<unknown>
+     94c: 00 73 62 00  	<unknown>
+     950: 50 0b 00 00  	udf	#2896
+     954: 72 65 73 65  	<unknown>
+     958: 72 76 65 5f  	sqshl	d18, d19, #37
+     95c: 78 31 35 00  	<unknown>
+     960: 56 0b 00 00  	udf	#2902
+     964: 72 65 73 65  	<unknown>
+     968: 72 76 65 5f  	sqshl	d18, d19, #37
+     96c: 78 31 38 00  	<unknown>
+     970: fe 0b 00 00  	udf	#3070
+     974: 73 6d 65 5f  	<unknown>
+     978: 66 36 34 00  	<unknown>
+     97c: 56 06 00 00  	udf	#1622
+     980: 78 63 6f 72  	<unknown>
+     984: 65 00 6a 09  	<unknown>
+     988: 00 00 63 61  	<unknown>
+     98c: 6c 6c 5f 73  	<unknown>
+     990: 61 76 65 64  	<unknown>
+     994: 5f 78 31 30  	adr	xzr, #405257
+     998: 00 70 09 00  	<unknown>
+     99c: 00 63 61 6c  	ldnp	d0, d24, [x24, #-496]
+     9a0: 6c 5f 73 61  	<unknown>
+     9a4: 76 65 64 5f  	<unknown>
+     9a8: 78 31 31 00  	<unknown>
+     9ac: 02 06 00 00  	udf	#1538
+     9b0: 72 36 30 30  	adr	x18, #394957
+     9b4: 00 4c 09 00  	<unknown>
+     9b8: 00 61 72 69  	ldpsw	x0, x24, [x8, #-112]
+     9bc: 74 68 5f 63  	<unknown>
+     9c0: 62 7a 5f 66  	<unknown>
+     9c4: 75 73 69 6f  	<unknown>
+     9c8: 6e 00 7c 09  	<unknown>
+     9cc: 00 00 63 61  	<unknown>
+     9d0: 6c 6c 5f 73  	<unknown>
+     9d4: 61 76 65 64  	<unknown>
+     9d8: 5f 78 31 33  	<unknown>
+     9dc: 00 76 09 00  	<unknown>
+     9e0: 00 63 61 6c  	ldnp	d0, d24, [x24, #-496]
+     9e4: 6c 5f 73 61  	<unknown>
+     9e8: 76 65 64 5f  	<unknown>
+     9ec: 78 31 32 00  	<unknown>
+     9f0: 88 09 00 00  	udf	#2440
+     9f4: 63 61 6c 6c  	ldnp	d3, d24, [x11, #-320]
+     9f8: 5f 73 61 76  	<unknown>
+     9fc: 65 64 5f 78  	ldrh	w5, [x3], #-10
+     a00: 31 35 00 82  	<unknown>
+     a04: 09 00 00 63  	<unknown>
+     a08: 61 6c 6c 5f  	<unknown>
+     a0c: 73 61 76 65  	<unknown>
+     a10: 64 5f 78 31  	adds	w4, w27, #3607, lsl #12 // =14774272
+     a14: 34 00 8e 09  	<unknown>
+     a18: 00 00 63 61  	<unknown>
+     a1c: 6c 6c 5f 73  	<unknown>
+     a20: 61 76 65 64  	<unknown>
+     a24: 5f 78 31 38  	strb	wzr, [x2, x17, lsl #0]
+     a28: 00 90 0a 00  	<unknown>
+     a2c: 00 6c 73 36  	tbz	w0, #14, 0x77ac <$d.7+0x77ac>
+     a30: 34 00 3c 0d  	<unknown>
+     a34: 00 00 73 74  	<unknown>
+     a38: 64 2e 62 75  	<unknown>
+     a3c: 69 6c 74 69  	ldpsw	x9, x27, [x3, #-96]
+     a40: 6e 2e 64 65  	<unknown>
+     a44: 66 61 75 6c  	ldnp	d6, d24, [x11, #-176]
+     a48: 74 5f 70 61  	<unknown>
+     a4c: 6e 69 63 00  	<unknown>
+     a50: 4a 0c 00 00  	udf	#3146
+     a54: 73 76 65 32  	<unknown>
+     a58: 5f 73 68 61  	<unknown>
+     a5c: 33 00 e0 0b  	<unknown>
+     a60: 00 00 73 6c  	ldnp	d0, d0, [x0, #-208]
+     a64: 6f 77 5f 6d  	ldp	d15, d29, [x27, #496]
+     a68: 69 73 61 6c  	ldnp	d9, d28, [x27, #-496]
+     a6c: 69 67 6e 65  	<unknown>
+     a70: 64 5f 31 32  	orr	w4, w27, #0xffff807f
+     a74: 38 73 74 6f  	<unknown>
+     a78: 72 65 00 08  	stxrb	w0, w18, [x11]
+     a7c: 0b 00 00 70  	adr	x11, #3
+     a80: 72 65 64 72  	<unknown>
+     a84: 65 73 00 68  	<unknown>
+     a88: 06 00 00 6c  	stnp	d6, d0, [x0]
+     a8c: 65 33 32 00  	<unknown>
+     a90: 68 0b 00 00  	udf	#2920
+     a94: 72 65 73 65  	<unknown>
+     a98: 72 76 65 5f  	sqshl	d18, d19, #37
+     a9c: 78 32 31 00  	<unknown>
+     aa0: ec 03 00 00  	udf	#1004
+     aa4: 75 73 69 7a  	<unknown>
+     aa8: 65 5f 63 6f  	<unknown>
+     aac: 75 6e 74 00  	<unknown>
+     ab0: 74 0b 00 00  	udf	#2932
+     ab4: 72 65 73 65  	<unknown>
+     ab8: 72 76 65 5f  	sqshl	d18, d19, #37
+     abc: 78 32 33 00  	<unknown>
+     ac0: 6e 0b 00 00  	udf	#2926
+     ac4: 72 65 73 65  	<unknown>
+     ac8: 72 76 65 5f  	sqshl	d18, d19, #37
+     acc: 78 32 32 00  	<unknown>
+     ad0: 62 0b 00 00  	udf	#2914
+     ad4: 72 65 73 65  	<unknown>
+     ad8: 72 76 65 5f  	sqshl	d18, d19, #37
+     adc: 78 32 30 00  	<unknown>
+     ae0: 7a 0b 00 00  	udf	#2938
+     ae4: 72 65 73 65  	<unknown>
+     ae8: 72 76 65 5f  	sqshl	d18, d19, #37
+     aec: 78 32 34 00  	<unknown>
+     af0: 80 0b 00 00  	udf	#2944
+     af4: 72 65 73 65  	<unknown>
+     af8: 72 76 65 5f  	sqshl	d18, d19, #37
+     afc: 78 32 35 00  	<unknown>
+     b00: 86 0b 00 00  	udf	#2950
+     b04: 72 65 73 65  	<unknown>
+     b08: 72 76 65 5f  	sqshl	d18, d19, #37
+     b0c: 78 32 36 00  	<unknown>
+     b10: e4 0a 00 00  	udf	#2788
+     b14: 70 61 6e 00  	<unknown>
+     b18: 92 0b 00 00  	udf	#2962
+     b1c: 72 65 73 65  	<unknown>
+     b20: 72 76 65 5f  	sqshl	d18, d19, #37
+     b24: 78 32 38 00  	<unknown>
+     b28: d6 09 00 00  	udf	#2518
+     b2c: 63 72 79 70  	adr	x3, #994895
+     b30: 74 6f 00 5d  	<unknown>
+     b34: 00 00 00 45  	<unknown>
+     b38: 78 65 00 22  	<unknown>
+     b3c: 09 00 00 61  	<unknown>
+     b40: 6c 74 6e 7a  	<unknown>
+     b44: 63 76 00 0e  	<unknown>
+     b48: 07 00 00 6e  	ext	v7.16b, v0.16b, v0.16b, #0
+     b4c: 61 74 69 76  	<unknown>
+     b50: 65 5f 61 72  	<unknown>
+     b54: 63 68 00 c2  	<unknown>
+     b58: 0b 00 00 72  	ands	w11, w0, #0x1
+     b5c: 6d 65 00 8c  	<unknown>
+     b60: 0b 00 00 72  	ands	w11, w0, #0x1
+     b64: 65 73 65 72  	<unknown>
+     b68: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     b6c: 32 37 00 77  	<unknown>
+     b70: 00 00 00 6c  	stnp	d0, d0, [x0]
+     b74: 69 6e 6b 5f  	<unknown>
+     b78: 6c 69 62 63  	<unknown>
+     b7c: 00 44 06 00  	<unknown>
+     b80: 00 74 68 75  	<unknown>
+     b84: 6d 62 65 62  	<unknown>
+     b88: 00 f6 05 00  	<unknown>
+     b8c: 00 70 6f 77  	<unknown>
+     b90: 65 72 70 63  	<unknown>
+     b94: 36 34 00 ea  	ands	x22, x1, x0, lsl #13
+     b98: 00 00 00 69  	<unknown>
+     b9c: 6f 73 00 a6  	<unknown>
+     ba0: 09 00 00 63  	<unknown>
+     ba4: 63 69 64 78  	ldrh	w3, [x11, x4]
+     ba8: 00 50 01 00  	<unknown>
+     bac: 00 61 6d 64  	<unknown>
+     bb0: 68 73 61 00  	<unknown>
+     bb4: 50 06 00 00  	udf	#1616
+     bb8: 78 38 36 5f  	<unknown>
+     bbc: 36 34 00 e8  	<unknown>
+     bc0: 09 00 00 64  	<unknown>
+     bc4: 69 74 00 da  	<unknown>
+     bc8: 06 00 00 73  	<unknown>
+     bcc: 74 64 2e 74  	<unknown>
+     bd0: 61 72 67 65  	<unknown>
+     bd4: 74 2e 41 72  	<unknown>
+     bd8: 63 68 2e 69  	<unknown>
+     bdc: 73 57 61 73  	<unknown>
+     be0: 6d 00 ce 0b  	<unknown>
+     be4: 00 00 73 65  	<unknown>
+     be8: 6c 32 00 f2  	ands	x12, x19, #0x1fff00001fff
+     bec: 0b 00 00 73  	<unknown>
+     bf0: 6d 34 00 9e  	<unknown>
+     bf4: 0b 00 00 72  	ands	w11, w0, #0x1
+     bf8: 65 73 65 72  	<unknown>
+     bfc: 76 65 5f 78  	ldrh	w22, [x11], #-10
+     c00: 33 30 00 56  	<unknown>
+     c04: 01 00 00 70  	adr	x1, #3
+     c08: 73 34 00 4e  	<unknown>
+     c0c: 0a 00 00 66  	<unknown>
+     c10: 75 73 65 5f  	sqdmlsl	s21, h27, v5.h[2]
+     c14: 61 72 69 74  	<unknown>
+     c18: 68 5f 6c 6f  	<unknown>
+     c1c: 67 69 63 00  	<unknown>
+     c20: 75 03 00 00  	udf	#885
+     c24: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+     c28: 30 5f 66 65  	<unknown>
+     c2c: 00 b2 09 00  	<unknown>
+     c30: 00 63 6d 70  	adr	x0, #896099
+     c34: 5f 62 63 63  	<unknown>
+     c38: 5f 66 75 73  	<unknown>
+     c3c: 69 6f 6e 00  	<unknown>
+     c40: 5a 0a 00 00  	udf	#2650
+     c44: 66 75 73 65  	<unknown>
+     c48: 5f 63 73 65  	<unknown>
+     c4c: 6c 00 38 01  	<unknown>
+     c50: 00 00 6e 61  	<unknown>
+     c54: 63 6c 00 ac  	stnp	q3, q27, [x3]
+     c58: 0c 00 00 76  	<unknown>
+     c5c: 38 5f 31 61  	<unknown>
+     c60: 00 63 03 00  	<unknown>
+     c64: 00 77 69 6e  	uabd	v0.8h, v24.8h, v9.8h
+     c68: 31 30 5f 76  	<unknown>
+     c6c: 62 00 74 06  	<unknown>
+     c70: 00 00 61 6d  	ldp	d0, d0, [x0, #-496]
+     c74: 64 69 6c 00  	<unknown>
+     c78: 98 01 00 00  	udf	#408
+     c7c: 75 65 66 69  	ldpsw	x21, x25, [x11, #-208]
+     c80: 00 12 0a 00  	<unknown>
+     c84: 00 66 36 34  	cbz	w0, 0x6d944 <$d.7+0x6d944>
+     c88: 6d 6d 00 32  	orr	w13, w11, #0xfffffff
+     c8c: 01 00 00 72  	ands	w1, w0, #0x1
+     c90: 74 65 6d 73  	<unknown>
+     c94: 00 ac 09 00  	<unknown>
+     c98: 00 63 63 70  	adr	x0, #814179
+     c9c: 70 00 58 09  	<unknown>
+     ca0: 00 00 62 66  	<unknown>
+     ca4: 31 36 00 58  	ldr	x17, 0x1368 <$d.7+0x1368>
+     ca8: 0c 00 00 74  	<unknown>
+     cac: 61 67 67 65  	<unknown>
+     cb0: 64 5f 67 6c  	ldnp	d4, d23, [x27, #-400]
+     cb4: 6f 62 61 6c  	ldnp	d15, d24, [x19, #-496]
+     cb8: 73 00 dd 0c  	ld4	{ v19.8b, v20.8b, v21.8b, v22.8b }, [x3], x29
+     cbc: 00 00 76 38  	<unknown>
+     cc0: 61 00 02 01  	<unknown>
+     cc4: 00 00 6d 61  	<unknown>
+     cc8: 63 6f 73 00  	<unknown>
+     ccc: 9e 06 00 00  	udf	#1694
+     cd0: 73 68 61 76  	<unknown>
+     cd4: 65 00 0e 0d  	<unknown>
+     cd8: 00 00 7a 63  	<unknown>
+     cdc: 7a 5f 66 70  	adr	x26, #838639
+     ce0: 5f 77 6f 72  	<unknown>
+     ce4: 6b 61 72 6f  	umlsl2	v11.4s, v11.8h, v2.h[3]
+     ce8: 75 6e 64 00  	<unknown>
+     cec: c2 06 00 00  	udf	#1730
+     cf0: 76 65 00 ea  	ands	x22, x11, x0, lsl #25
+     cf4: 0a 00 00 70  	adr	x10, #3
+     cf8: 61 6e 5f 72  	<unknown>
+     cfc: 77 76 00 eb  	subs	x23, x19, x0, lsl #29
+     d00: 0c 00 00 76  	<unknown>
+     d04: 68 00 b3 0c  	<unknown>
+     d08: 00 00 76 38  	<unknown>
+     d0c: 5f 32 61 00  	<unknown>
+     d10: 9e 01 00 00  	udf	#414
+     d14: 6f 70 65 6e  	uabdl2	v15.4s, v3.8h, v5.8h
+     d18: 63 6c 00 18  	ldr	w3, 0x1aa4 <$d.7+0x1aa4>
+     d1c: 0a 00 00 66  	<unknown>
+     d20: 67 74 00 66  	<unknown>
+     d24: 0a 00 00 68  	<unknown>
+     d28: 61 72 64 65  	<unknown>
+     d2c: 6e 5f 73 6c  	ldnp	d14, d23, [x27, #-208]
+     d30: 73 5f 62 6c  	ldnp	d19, d23, [x27, #-480]
+     d34: 72 00 2d 03  	<unknown>
+     d38: 00 00 77 69  	ldpsw	x0, x0, [x0, #-72]
+     d3c: 6e 31 30 5f  	<unknown>
+     d40: 72 73 31 00  	<unknown>
+     d44: 36 03 00 00  	udf	#822
+     d48: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+     d4c: 30 5f 72 73  	<unknown>
+     d50: 32 00 3f 03  	<unknown>
+     d54: 00 00 77 69  	ldpsw	x0, x0, [x0, #-72]
+     d58: 6e 31 30 5f  	<unknown>
+     d5c: 72 73 33 00  	<unknown>
+     d60: 48 03 00 00  	udf	#840
+     d64: 77 69 6e 31  	adds	w23, w11, #2970, lsl #12 // =12165120
+     d68: 30 5f 72 73  	<unknown>
+     d6c: 34 00 51 03  	<unknown>
+     d70: 00 00 77 69  	ldpsw	x0, x0, [x0, #-72]
+     d74: 6e 31 30 5f  	<unknown>
+     d78: 72 73 35 00  	<unknown>
+     d7c: 40 09 00 00  	udf	#2368
+     d80: 61 70 70 6c  	ldnp	d1, d28, [x3, #-256]
+     d84: 65 5f 61 37  	tbnz	w5, #12, 0x3970 <$d.7+0x3970>
+     d88: 00 2a 00 00  	udf	#10752
+     d8c: 00 7a 69 67  	<unknown>
+     d90: 5f 69 73 5f  	<unknown>
+     d94: 73 74 61 67  	<unknown>
+     d98: 65 32 00 ba  	<unknown>
+     d9c: 0a 00 00 6e  	ext	v10.16b, v0.16b, v0.16b, #0
+     da0: 65 6f 76 65  	<unknown>
+     da4: 72 73 65 5f  	sqdmlsl	s18, h27, v5.h[2]
+     da8: 6e 31 00 52  	eor	w14, w11, #0x1fff
+     dac: 09 00 00 62  	<unknown>
+     db0: 61 6c 61 6e  	umin	v1.8h, v3.8h, v1.8h
+     db4: 63 65 5f 66  	<unknown>
+     db8: 70 5f 6f 70  	adr	x16, #912367
+     dbc: 73 00 c4 09  	<unknown>
+     dc0: 00 00 63 6f  	mla	v0.8h, v0.8h, v3.h[2]
+     dc4: 72 74 65 78  	<unknown>
+     dc8: 5f 61 37 38  	<unknown>
+     dcc: 63 00 f8 0b  	<unknown>
+     dd0: 00 00 73 6d  	ldp	d0, d0, [x0, #-208]
+     dd4: 65 00 98 03  	<unknown>
+     dd8: 00 00 6c 69  	ldpsw	x0, x0, [x0, #-160]
+     ddc: 6e 75 78 00  	<unknown>
+     de0: 78 0a 00 00  	udf	#2680
+     de4: 68 63 78 00  	<unknown>
+     de8: c0 0a 00 00  	udf	#2752
+     dec: 6e 65 6f 76  	<unknown>
+     df0: 65 72 73 65  	<unknown>
+     df4: 5f 6e 32 00  	<unknown>
+     df8: a2 05 00 00  	udf	#1442
+     dfc: 61 72 63 00  	<unknown>
+     e00: 97 0c 00 00  	udf	#3223
+     e04: 75 73 65 5f  	sqdmlsl	s21, h27, v5.h[2]
+     e08: 65 78 70 65  	<unknown>
+     e0c: 72 69 6d 65  	<unknown>
+     e10: 6e 74 61 6c  	ldnp	d14, d29, [x3, #-496]
+     e14: 5f 7a 65 72  	<unknown>
+     e18: 6f 69 6e 67  	<unknown>
+     e1c: 5f 70 73 65  	<unknown>
+     e20: 75 64 6f 73  	<unknown>
+     e24: 00 6e 06 00  	<unknown>
+     e28: 00 6c 65 36  	tbz	w0, #12, 0xffffffffffffbba8 <memcpy+0xffffffffffdeb448>
+     e2c: 34 00 20 01  	<unknown>
+     e30: 00 00 7a 6f  	mla	v0.8h, v0.8h, v10.h[3]
+     e34: 73 00 ee 09  	<unknown>
+     e38: 00 00 64 6f  	mla	v0.8h, v0.8h, v4.h[2]
+     e3c: 74 70 72 6f  	<unknown>
+     e40: 64 00 aa 06  	<unknown>
+     e44: 00 00 77 61  	<unknown>
+     e48: 73 6d 33 32  	orr	w19, w11, #0xffffe1ff
+     e4c: 00 84 05 00  	<unknown>
+     e50: 00 61 72 6d  	ldp	d0, d24, [x8, #-224]
+     e54: 00 ec 0b 00  	<unknown>
+     e58: 00 73 6c 6f  	<unknown>
+     e5c: 77 5f 73 74  	<unknown>
+     e60: 72 71 72 6f  	<unknown>
+     e64: 5f 73 74 6f  	<unknown>
+     e68: 72 65 00 b6  	tbz	x18, #32, 0x1b14 <$d.7+0x1b14>
+     e6c: 01 00 00 6f  	<unknown>
+     e70: 74 68 65 72  	<unknown>
+     e74: 00 dc 09 00  	<unknown>
+     e78: 00 63 75 73  	<unknown>
+     e7c: 74 6f 6d 5f  	<unknown>
+     e80: 63 68 65 61  	<unknown>
+     e84: 70 5f 61 73  	<unknown>
+     e88: 5f 6d 6f 76  	<unknown>
+     e8c: 65 00 f7 02  	<unknown>
+     e90: 00 00 76 69  	ldpsw	x0, x0, [x0, #-80]
+     e94: 73 74 61 00  	<unknown>
+     e98: a5 03 00 00  	udf	#933
+     e9c: 6e 61 74 69  	ldpsw	x14, x24, [x11, #-96]
+     ea0: 76 65 5f 6f  	sqshlu	v22.2d, v11.2d, #31
+     ea4: 73 00 20 06  	<unknown>
+     ea8: 00 00 73 70  	adr	x0, #942083
+     eac: 61 72 63 76  	<unknown>
+     eb0: 39 00 26 06  	<unknown>
+     eb4: 00 00 73 70  	adr	x0, #942083
+     eb8: 61 72 63 65  	<unknown>
+     ebc: 6c 00 ba 0c  	<unknown>
+     ec0: 00 00 76 38  	<unknown>
+     ec4: 5f 33 61 00  	<unknown>
+     ec8: 04 09 00 00  	udf	#2308
+     ecc: 61 36 35 00  	<unknown>
+     ed0: e4 0c 00 00  	udf	#3300
+     ed4: 76 38 72 00  	<unknown>
+     ed8: 3c 0a 00 00  	udf	#2620
+     edc: 66 75 6c 6c  	ldnp	d6, d29, [x11, #-320]
+     ee0: 66 70 31 36  	tbz	w6, #6, 0x3cec <$d.7+0x3cec>
+     ee4: 00 43 0c 00  	<unknown>
+     ee8: 00 73 76 65  	<unknown>
+     eec: 32 5f 62 69  	ldpsw	x18, x23, [x25, #-240]
+     ef0: 74 70 65 72  	<unknown>
+     ef4: 6d 00 28 0d  	<unknown>
+     ef8: 00 00 28 6e  	uaddl2	v0.8h, v0.16b, v8.16b
+     efc: 6f 6e 65 29  	ldp	w15, w27, [x19, #-216]
+     f00: 00 6c 0a 00  	<unknown>
+     f04: 00 68 61 72  	<unknown>
+     f08: 64 65 6e 5f  	<unknown>
+     f0c: 73 6c 73 5f  	<unknown>
+     f10: 6e 6f 63 6f  	<unknown>
+     f14: 6d 64 61 74  	<unknown>
+     f18: 00 e2 09 00  	<unknown>
+     f1c: 00 64 69 73  	<unknown>
+     f20: 61 62 6c 65  	<unknown>
+     f24: 5f 6c 61 74  	<unknown>
+     f28: 65 6e 63 79  	ldrh	w5, [x19, #4534]
+     f2c: 5f 73 63 68  	<unknown>
+     f30: 65 64 5f 68  	<unknown>
+     f34: 65 75 72 69  	ldpsw	x5, x29, [x11, #-112]
+     f38: 73 74 69 63  	<unknown>
+     f3c: 00 68 01 00  	<unknown>
+     f40: 00 77 61 74  	<unknown>
+     f44: 63 68 6f 73  	<unknown>
+     f48: 00 de 00 00  	udf	#56832
+     f4c: 00 66 72 65  	<unknown>
+     f50: 65 62 73 64  	<unknown>
+     f54: 00 20 0c 00  	<unknown>
+     f58: 00 73 73 62  	<unknown>
+     f5c: 73 00 c1 0c  	ld4	{ v19.8b, v20.8b, v21.8b, v22.8b }, [x3], x1
+     f60: 00 00 76 38  	<unknown>
+     f64: 5f 34 61 00  	<unknown>
+     f68: 9e 0c 00 00  	udf	#3230
+     f6c: 75 73 65 5f  	sqdmlsl	s21, h27, v5.h[2]
+     f70: 70 6f 73 74  	<unknown>
+     f74: 72 61 5f 73  	<unknown>
+     f78: 63 68 65 64  	<unknown>
+     f7c: 75 6c 65 72  	<unknown>
+     f80: 00 0c 0a 00  	<unknown>
+     f84: 00 66 33 32  	orr	w0, w16, #0xffffe07f
+     f88: 6d 6d 00 f0  	adrp	x13, 0xdaf000 <$d.7+0x4644>
+     f8c: 00 00 00 6b  	subs	w0, w0, w0
+     f90: 66 72 65 65  	<unknown>
+     f94: 62 73 64 00  	<unknown>
+     f98: 14 0b 00 00  	udf	#2836
+     f9c: 72 61 73 00  	<unknown>
+     fa0: e5 02 00 00  	udf	#741
+     fa4: 78 70 00 66  	<unknown>
+     fa8: 0c 00 00 74  	<unknown>
+     fac: 6d 65 00 f9  	str	x13, [x11, #200]
+     fb0: 0c 00 00 78  	sturh	w12, [x0]
+     fb4: 73 00 38 06  	<unknown>
+     fb8: 00 00 74 63  	<unknown>
+     fbc: 65 6c 65 00  	<unknown>
+     fc0: 0a 09 00 00  	udf	#2314
+     fc4: 61 37 36 00  	<unknown>
+     fc8: da 0d 00 00  	udf	#3546
+     fcc: 6d 61 69 6e  	rsubhn2	v13.8h, v11.4s, v9.4s
+     fd0: 00 89 0c 00  	<unknown>
+     fd4: 00 74 72 62  	<unknown>
+     fd8: 65 00 92 03  	<unknown>
+     fdc: 00 00 73 65  	<unknown>
+     fe0: 6d 76 65 72  	<unknown>
+     fe4: 00 40 00 00  	udf	#16384
+     fe8: 00 6f 75 74  	<unknown>
+     fec: 70 75 74 5f  	sqshl	d16, d11, #52
+     ff0: 6d 6f 64 65  	<unknown>
+     ff4: 00 04 0c 00  	<unknown>
+     ff8: 00 73 6d 65  	<unknown>
+     ffc: 5f 69 36 34  	cbz	wzr, 0x6dd24 <$d.7+0x6dd24>
+    1000: 00 9c 0a 00  	<unknown>
+    1004: 00 6c 73 6c  	ldnp	d0, d27, [x0, #-208]
+    1008: 5f 66 61 73  	<unknown>
+    100c: 74 00 ce 06  	<unknown>
+    1010: 00 00 73 70  	adr	x0, #942083
+    1014: 69 72 76 33  	<unknown>
+    1018: 32 00 a0 09  	<unknown>
+    101c: 00 00 63 63  	<unknown>
+    1020: 64 70 00 86  	<unknown>
+    1024: 06 00 00 68  	<unknown>
+    1028: 73 61 69 6c  	ldnp	d19, d24, [x11, #-368]
+    102c: 36 34 00 20  	<unknown>
+    1030: 0b 00 00 72  	ands	w11, w0, #0x1
+    1034: 63 70 63 5f  	sqdmlsl	s3, h3, v3.h[2]
+    1038: 69 6d 6d 6f  	<unknown>
+    103c: 00 8c 06 00  	<unknown>
+    1040: 00 73 70 69  	ldpsw	x0, x28, [x24, #-128]
+    1044: 72 00 00 00  	udf	#114
+    1048: 00           	<unknown>
+    1049: 00           	<unknown>
+
+Disassembly of section .debug_pubtypes:
+
+0000000000000000 <$d.9>:
+       0: bb 03 00 00  	udf	#955
+       4: 02 00 00 00  	udf	#2
+       8: 00 00 b1 0e  	saddl	v0.2d, v0.2s, v17.2s
+       c: 00 00 35 0e  	saddl	v0.8h, v0.8b, v21.8b
+      10: 00 00 73 74  	<unknown>
+      14: 64 2e 62 75  	<unknown>
+      18: 69 6c 74 69  	ldpsw	x9, x27, [x3, #-96]
+      1c: 6e 2e 53 74  	<unknown>
+      20: 61 63 6b 54  	b.ne	0xd6c8c <$d.7+0xd6c8c>
+      24: 72 61 63 65  	<unknown>
+      28: 00 43 08 00  	<unknown>
+      2c: 00 75 31 00  	<unknown>
+      30: 70 00 00 00  	udf	#112
+      34: 75 32 00 05  	<unknown>
+      38: 07 00 00 2a  	orr	w7, w0, w0
+      3c: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+      40: 74 61 72 67  	<unknown>
+      44: 65 74 2e 4d  	<unknown>
+      48: 6f 64 65 6c  	ldnp	d15, d25, [x3, #-432]
+      4c: 00 8d 08 00  	<unknown>
+      50: 00 75 34 00  	<unknown>
+      54: bd 01 00 00  	udf	#445
+      58: 75 36 00 39  	strb	w21, [x19, #13]
+      5c: 00 00 00 62  	<unknown>
+      60: 6f 6f 6c 00  	<unknown>
+      64: 95 04 00 00  	udf	#1173
+      68: 75 38 00 1b  	madd	w21, w3, w0, w14
+      6c: 02 00 00 73  	<unknown>
+      70: 74 64 2e 62  	<unknown>
+      74: 75 69 6c 74  	<unknown>
+      78: 69 6e 2e 52  	eor	w9, w19, #0xfffc3fff
+      7c: 61 6e 67 65  	<unknown>
+      80: 00 7f 03 00  	<unknown>
+      84: 00 40 74 79  	ldrh	w0, [x0, #6688]
+      88: 70 65 49 6e  	<unknown>
+      8c: 66 6f 28 73  	<unknown>
+      90: 74 64 2e 74  	<unknown>
+      94: 61 72 67 65  	<unknown>
+      98: 74 2e 56 65  	<unknown>
+      9c: 72 73 69 6f  	<unknown>
+      a0: 6e 52 61 6e  	uabal2	v14.4s, v19.8h, v1.8h
+      a4: 67 65 29 2e  	umax	v7.8b, v11.8b, v9.8b
+      a8: 55 6e 69 6f  	<unknown>
+      ac: 6e 2e 74 61  	<unknown>
+      b0: 67 5f 74 79  	ldrh	w7, [x27, #6702]
+      b4: 70 65 2e 3f  	<unknown>
+      b8: 00 95 00 00  	udf	#38144
+      bc: 00 73 74 64  	<unknown>
+      c0: 2e 74 61 72  	<unknown>
+      c4: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+      c8: 4f 73 00 80  	<unknown>
+      cc: 04 00 00 75  	<unknown>
+      d0: 73 69 7a 65  	<unknown>
+      d4: 00 56 08 00  	<unknown>
+      d8: 00 64 72 69  	ldpsw	x0, x25, [x0, #-112]
+      dc: 76 65 72 73  	<unknown>
+      e0: 2e 75 61 72  	<unknown>
+      e4: 74 2e 4c 69  	ldpsw	x20, x11, [x19, #96]
+      e8: 6e 65 42 69  	ldpsw	x14, x25, [x11, #16]
+      ec: 74 73 00 9c  	ldr	q20, 0xf58 <$d.7+0xf58>
+      f0: 04 00 00 73  	<unknown>
+      f4: 74 64 2e 74  	<unknown>
+      f8: 61 72 67 65  	<unknown>
+      fc: 74 2e 61 61  	<unknown>
+     100: 72 63 68 36  	tbz	w18, #13, 0xd6c <$d.7+0xd6c>
+     104: 34 2e 63 70  	adr	x20, #812487
+     108: 75 00 4f 00  	<unknown>
+     10c: 00 00 73 74  	<unknown>
+     110: 64 2e 62 75  	<unknown>
+     114: 69 6c 74 69  	ldpsw	x9, x27, [x3, #-96]
+     118: 6e 2e 4f 75  	<unknown>
+     11c: 74 70 75 74  	<unknown>
+     120: 4d 6f 64 65  	<unknown>
+     124: 00 1d 0d 00  	<unknown>
+     128: 00 61 6e 79  	ldrh	w0, [x8, #5936]
+     12c: 65 72 72 6f  	<unknown>
+     130: 72 00 41 05  	<unknown>
+     134: 00 00 73 74  	<unknown>
+     138: 64 2e 74 61  	<unknown>
+     13c: 72 67 65 74  	<unknown>
+     140: 2e 43 70 75  	<unknown>
+     144: 00 8e 04 00  	<unknown>
+     148: 00 75 39 00  	<unknown>
+     14c: 94 08 00 00  	udf	#2196
+     150: 64 72 69 76  	<unknown>
+     154: 65 72 73 2e  	uabdl	v5.4s, v19.4h, v19.4h
+     158: 75 61 72 74  	<unknown>
+     15c: 2e 43 6f 6e  	raddhn2	v14.8h, v25.4s, v15.4s
+     160: 74 72 6f 6c  	ldnp	d20, d28, [x19, #-272]
+     164: 42 69 74 73  	<unknown>
+     168: 00 e9 08 00  	<unknown>
+     16c: 00 75 32 32  	orr	w0, w8, #0xffffcfff
+     170: 00 a2 02 00  	<unknown>
+     174: 00 73 74 64  	<unknown>
+     178: 2e 74 61 72  	<unknown>
+     17c: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     180: 52 61 6e 67  	<unknown>
+     184: 65 00 9e 0e  	<unknown>
+     188: 00 00 2a 73  	<unknown>
+     18c: 74 64 2e 74  	<unknown>
+     190: 61 72 67 65  	<unknown>
+     194: 74 2e 61 61  	<unknown>
+     198: 72 63 68 36  	tbz	w18, #13, 0xe04 <$d.7+0xe04>
+     19c: 34 2e 46 65  	<unknown>
+     1a0: 61 74 75 72  	<unknown>
+     1a4: 65 00 2c 07  	<unknown>
+     1a8: 00 00 2a 64  	<unknown>
+     1ac: 72 69 76 65  	<unknown>
+     1b0: 72 73 2e 75  	<unknown>
+     1b4: 61 72 74 2e  	uabdl	v1.4s, v19.4h, v20.4h
+     1b8: 55 61 72 74  	<unknown>
+     1bc: 00 3c 08 00  	<unknown>
+     1c0: 00 75 32 37  	tbnz	w0, #6, 0x5060 <$d.7+0x5060>
+     1c4: 00 b6 04 00  	<unknown>
+     1c8: 00 73 74 64  	<unknown>
+     1cc: 2e 74 61 72  	<unknown>
+     1d0: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     1d4: 4d 6f 64 65  	<unknown>
+     1d8: 6c 00 c4 01  	<unknown>
+     1dc: 00 00 73 74  	<unknown>
+     1e0: 64 2e 74 61  	<unknown>
+     1e4: 72 67 65 74  	<unknown>
+     1e8: 2e 56 65 72  	<unknown>
+     1ec: 73 69 6f 6e  	<unknown>
+     1f0: 52 61 6e 67  	<unknown>
+     1f4: 65 00 e7 07  	<unknown>
+     1f8: 00 00 64 72  	<unknown>
+     1fc: 69 76 65 72  	<unknown>
+     200: 73 2e 75 61  	<unknown>
+     204: 72 74 2e 46  	<unknown>
+     208: 6c 61 67 42  	<unknown>
+     20c: 69 74 73 00  	<unknown>
+     210: 42 02 00 00  	udf	#578
+     214: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     218: 62 75 69 6c  	ldnp	d2, d29, [x11, #-368]
+     21c: 74 69 6e 2e  	<unknown>
+     220: 56 65 72 73  	<unknown>
+     224: 69 6f 6e 00  	<unknown>
+     228: ed 04 00 00  	udf	#1261
+     22c: 5b 5d 75 38  	<unknown>
+     230: 00 6e 0d 00  	<unknown>
+     234: 00 73 74 64  	<unknown>
+     238: 2e 74 61 72  	<unknown>
+     23c: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     240: 46 65 61 74  	<unknown>
+     244: 75 72 65 2e  	uabdl	v21.4s, v19.4h, v5.4h
+     248: 66 65 61 74  	<unknown>
+     24c: 75 72 65 5f  	sqdmlsl	s21, h19, v5.h[2]
+     250: 73 65 74 5f  	<unknown>
+     254: 66 6e 73 28  	ldnp	w6, w27, [x19, #-104]
+     258: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     25c: 74 61 72 67  	<unknown>
+     260: 65 74 2e 61  	<unknown>
+     264: 61 72 63 68  	<unknown>
+     268: 36 34 2e 46  	<unknown>
+     26c: 65 61 74 75  	<unknown>
+     270: 72 65 29 00  	<unknown>
+     274: f0 08 00 00  	udf	#2288
+     278: 75 37 00 59  	<unknown>
+     27c: 0e 00 00 5b  	<unknown>
+     280: 5d 75 73 69  	ldpsw	x29, x29, [x10, #-104]
+     284: 7a 65 00 b9  	str	w26, [x11, #100]
+     288: 00 00 00 73  	<unknown>
+     28c: 74 64 2e 74  	<unknown>
+     290: 61 72 67 65  	<unknown>
+     294: 74 2e 54 61  	<unknown>
+     298: 67 00 76 05  	<unknown>
+     29c: 00 00 73 74  	<unknown>
+     2a0: 64 2e 74 61  	<unknown>
+     2a4: 72 67 65 74  	<unknown>
+     2a8: 2e 41 72 63  	<unknown>
+     2ac: 68 00 2c 0e  	saddl	v8.8h, v3.8b, v12.8b
+     2b0: 00 00 2a 73  	<unknown>
+     2b4: 74 64 2e 62  	<unknown>
+     2b8: 75 69 6c 74  	<unknown>
+     2bc: 69 6e 2e 53  	<unknown>
+     2c0: 74 61 63 6b  	<unknown>
+     2c4: 54 72 61 63  	<unknown>
+     2c8: 65 00 a7 0e  	saddl	v5.2d, v3.2s, v7.2s
+     2cc: 00 00 2a 73  	<unknown>
+     2d0: 74 64 2e 74  	<unknown>
+     2d4: 61 72 67 65  	<unknown>
+     2d8: 74 2e 53 65  	<unknown>
+     2dc: 74 00 7e 02  	<unknown>
+     2e0: 00 00 73 74  	<unknown>
+     2e4: 64 2e 74 61  	<unknown>
+     2e8: 72 67 65 74  	<unknown>
+     2ec: 2e 4c 69 6e  	uqshl	v14.8h, v1.8h, v9.8h
+     2f0: 75 78 56 65  	<unknown>
+     2f4: 72 73 69 6f  	<unknown>
+     2f8: 6e 52 61 6e  	uabal2	v14.4s, v19.8h, v1.8h
+     2fc: 67 65 00 f7  	<unknown>
+     300: 08 00 00 73  	<unknown>
+     304: 74 64 2e 74  	<unknown>
+     308: 61 72 67 65  	<unknown>
+     30c: 74 2e 61 61  	<unknown>
+     310: 72 63 68 36  	tbz	w18, #13, 0xf7c <$d.7+0xf7c>
+     314: 34 2e 46 65  	<unknown>
+     318: 61 74 75 72  	<unknown>
+     31c: 65 00 35 07  	<unknown>
+     320: 00 00 64 72  	<unknown>
+     324: 69 76 65 72  	<unknown>
+     328: 73 2e 75 61  	<unknown>
+     32c: 72 74 2e 55  	<unknown>
+     330: 61 72 74 00  	<unknown>
+     334: 14 05 00 00  	udf	#1300
+     338: 3f 5b 3a 30  	adr	xzr, #478053
+     33c: 5d 63 6f 6e  	rsubhn2	v29.8h, v26.4s, v15.4s
+     340: 73 74 20 75  	<unknown>
+     344: 38 00 80 0e  	<unknown>
+     348: 00 00 5b 5d  	<unknown>
+     34c: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+     350: 74 61 72 67  	<unknown>
+     354: 65 74 2e 61  	<unknown>
+     358: 61 72 63 68  	<unknown>
+     35c: 36 34 2e 46  	<unknown>
+     360: 65 61 74 75  	<unknown>
+     364: 72 65 00 0b  	add	w18, w11, w0, lsl #25
+     368: 05 00 00 2a  	orr	w5, w0, w0
+     36c: 75 38 00 77  	<unknown>
+     370: 02 00 00 75  	<unknown>
+     374: 33 32 00 b4  	cbz	x19, 0x9b8 <$d.7+0x9b8>
+     378: 03 00 00 73  	<unknown>
+     37c: 74 64 2e 74  	<unknown>
+     380: 61 72 67 65  	<unknown>
+     384: 74 2e 53 65  	<unknown>
+     388: 74 00 35 0d  	<unknown>
+     38c: 00 00 75 31  	adds	w0, w0, #3392, lsl #12  // =13893632
+     390: 36 00 77 0e  	saddl	v22.4s, v1.4h, v23.4h
+     394: 00 00 2a 75  	<unknown>
+     398: 73 69 7a 65  	<unknown>
+     39c: 00 c6 02 00  	<unknown>
+     3a0: 00 73 74 64  	<unknown>
+     3a4: 2e 74 61 72  	<unknown>
+     3a8: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     3ac: 57 69 6e 64  	<unknown>
+     3b0: 6f 77 73 56  	<unknown>
+     3b4: 65 72 73 69  	ldpsw	x5, x28, [x19, #-104]
+     3b8: 6f 6e 00 00  	udf	#28271
+     3bc: 00           	<unknown>
+     3bd: 00           	<unknown>
+     3be: 00           	<unknown>
+
+Disassembly of section .debug_frame:
+
+0000000000000000 <$d.10>:
+       0: 14 00 00 00  	udf	#20
+       4: ff ff ff ff  	<unknown>
+       8: 04 00 08 00  	<unknown>
+       c: 01 7c 1e 0c  	<unknown>
+      10: 1f 00 00 00  	udf	#31
+      14: 00 00 00 00  	udf	#0
+      18: 1c 00 00 00  	udf	#28
+      1c: 00 00 00 00  	udf	#0
+      20: 30 03 21 00  	<unknown>
+      24: 00 00 00 00  	udf	#0
+      28: 18 00 00 00  	udf	#24
+      2c: 00 00 00 00  	udf	#0
+      30: 4c 0c 1d 10  	adr	x12, #237960
+      34: 9e 02 9d 04  	<unknown>
+      38: 1c 00 00 00  	udf	#28
+      3c: 00 00 00 00  	udf	#0
+      40: 50 03 21 00  	<unknown>
+      44: 00 00 00 00  	udf	#0
+      48: 94 00 00 00  	udf	#148
+      4c: 00 00 00 00  	udf	#0
+      50: 4c 0c 1d 10  	adr	x12, #237960
+      54: 9e 02 9d 04  	<unknown>
+      58: 24 00 00 00  	udf	#36
+      5c: 00 00 00 00  	udf	#0
+      60: f0 03 21 00  	<unknown>
+      64: 00 00 00 00  	udf	#0
+      68: 58 00 00 00  	udf	#88
+      6c: 00 00 00 00  	udf	#0
+      70: 50 0c 1d 20  	<unknown>
+      74: 9c 04 9e 06  	<unknown>
+      78: 9d 08 00 00  	udf	#2205
+      7c: 00 00 00 00  	udf	#0
+      80: 1c 00 00 00  	udf	#28
+      84: 00 00 00 00  	udf	#0
+      88: 50 04 21 00  	<unknown>
+      8c: 00 00 00 00  	udf	#0
+      90: 40 01 00 00  	udf	#320
+      94: 00 00 00 00  	udf	#0
+      98: 4c 0c 1d 10  	adr	x12, #237960
+      9c: 9e 02 9d 04  	<unknown>
+      a0: 1c 00 00 00  	udf	#28
+      a4: 00 00 00 00  	udf	#0
+      a8: 90 05 21 00  	<unknown>
+      ac: 00 00 00 00  	udf	#0
+      b0: 2c 00 00 00  	udf	#44
+      b4: 00 00 00 00  	udf	#0
+      b8: 4c 0c 1d 10  	adr	x12, #237960
+      bc: 9e 02 9d 04  	<unknown>
+      c0: 1c 00 00 00  	udf	#28
+      c4: 00 00 00 00  	udf	#0
+      c8: c0 05 21 00  	<unknown>
+      cc: 00 00 00 00  	udf	#0
+      d0: 28 00 00 00  	udf	#40
+      d4: 00 00 00 00  	udf	#0
+      d8: 48 0c 1d 10  	adr	x8, #237960
+      dc: 9e 02 9d 04  	<unknown>
+      e0: 1c 00 00 00  	udf	#28
+      e4: 00 00 00 00  	udf	#0
+      e8: f0 05 21 00  	<unknown>
+      ec: 00 00 00 00  	udf	#0
+      f0: 00 01 00 00  	udf	#256
+      f4: 00 00 00 00  	udf	#0
+      f8: 4c 0c 1d 10  	adr	x12, #237960
+      fc: 9e 02 9d 04  	<unknown>
+     100: 1c 00 00 00  	udf	#28
+     104: 00 00 00 00  	udf	#0
+     108: f0 06 21 00  	<unknown>
+     10c: 00 00 00 00  	udf	#0
+     110: 68 00 00 00  	udf	#104
+     114: 00 00 00 00  	udf	#0
+     118: 4c 0c 1d 10  	adr	x12, #237960
+     11c: 9e 02 9d 04  	<unknown>
+
+Disassembly of section .debug_line:
+
+0000000000000000 <$d.11>:
+       0: 5a 03 00 00  	udf	#858
+       4: 04 00 e2 01  	<unknown>
+       8: 00 00 01 01  	<unknown>
+       c: 01 fb 0e 0d  	<unknown>
+      10: 00 01 01 01  	<unknown>
+      14: 01 00 00 00  	udf	#1
+      18: 01 00 00 01  	<unknown>
+      1c: 2f 68 6f 6d  	ldp	d15, d26, [x1, #-272]
+      20: 65 2f 65 6d  	ldp	d5, d11, [x27, #-432]
+      24: 69 6c 79 2f  	<unknown>
+      28: 44 6f 63 75  	<unknown>
+      2c: 6d 65 6e 74  	<unknown>
+      30: 73 2f 50 72  	<unknown>
+      34: 6f 67 72 61  	<unknown>
+      38: 6d 73 2f 5a  	<unknown>
+      3c: 69 67 2f 4f  	<unknown>
+      40: 70 65 72 61  	<unknown>
+      44: 74 69 6e 67  	<unknown>
+      48: 53 79 73 74  	<unknown>
+      4c: 65 6d 2f 7a  	<unknown>
+      50: 69 67 2d 63  	<unknown>
+      54: 61 63 68 65  	<unknown>
+      58: 2f 6f 2f 39  	strb	w15, [x25, #3035]
+      5c: 64 33 34 39  	strb	w4, [x27, #3340]
+      60: 32 38 32 33  	<unknown>
+      64: 33 33 34 36  	tbz	w19, #6, 0xffffffffffff86c8 <memcpy+0xffffffffffde7f68>
+      68: 35 61 32 61  	<unknown>
+      6c: 32 63 34 38  	<unknown>
+      70: 34 36 63 36  	tbz	w20, #12, 0x6734 <$d.7+0x6734>
+      74: 36 30 33 35  	cbnz	w22, 0x66678 <$d.7+0x66678>
+      78: 31 31 61 00  	<unknown>
+      7c: 2f 68 6f 6d  	ldp	d15, d26, [x1, #-272]
+      80: 65 2f 65 6d  	ldp	d5, d11, [x27, #-432]
+      84: 69 6c 79 2f  	<unknown>
+      88: 44 6f 63 75  	<unknown>
+      8c: 6d 65 6e 74  	<unknown>
+      90: 73 2f 50 72  	<unknown>
+      94: 6f 67 72 61  	<unknown>
+      98: 6d 73 2f 5a  	<unknown>
+      9c: 69 67 2f 4f  	<unknown>
+      a0: 70 65 72 61  	<unknown>
+      a4: 74 69 6e 67  	<unknown>
+      a8: 53 79 73 74  	<unknown>
+      ac: 65 6d 2f 63  	<unknown>
+      b0: 6f 6d 70 69  	ldpsw	x15, x27, [x11, #-128]
+      b4: 6c 65 72 2f  	<unknown>
+      b8: 6c 69 62 2f  	umlsl	v12.4s, v11.4h, v2.h[6]
+      bc: 73 74 64 00  	<unknown>
+      c0: 2f 68 6f 6d  	ldp	d15, d26, [x1, #-272]
+      c4: 65 2f 65 6d  	ldp	d5, d11, [x27, #-432]
+      c8: 69 6c 79 2f  	<unknown>
+      cc: 44 6f 63 75  	<unknown>
+      d0: 6d 65 6e 74  	<unknown>
+      d4: 73 2f 50 72  	<unknown>
+      d8: 6f 67 72 61  	<unknown>
+      dc: 6d 73 2f 5a  	<unknown>
+      e0: 69 67 2f 4f  	<unknown>
+      e4: 70 65 72 61  	<unknown>
+      e8: 74 69 6e 67  	<unknown>
+      ec: 53 79 73 74  	<unknown>
+      f0: 65 6d 2f 63  	<unknown>
+      f4: 6f 6d 70 69  	ldpsw	x15, x27, [x11, #-128]
+      f8: 6c 65 72 2f  	<unknown>
+      fc: 6c 69 62 2f  	umlsl	v12.4s, v11.4h, v2.h[6]
+     100: 73 74 64 2f  	<unknown>
+     104: 74 61 72 67  	<unknown>
+     108: 65 74 00 2f  	bic	v5.2s, #3, lsl #24
+     10c: 68 6f 6d 65  	<unknown>
+     110: 2f 65 6d 69  	ldpsw	x15, x25, [x9, #-152]
+     114: 6c 79 2f 44  	<unknown>
+     118: 6f 63 75 6d  	ldp	d15, d24, [x27, #-176]
+     11c: 65 6e 74 73  	<unknown>
+     120: 2f 50 72 6f  	<unknown>
+     124: 67 72 61 6d  	ldp	d7, d28, [x19, #-496]
+     128: 73 2f 5a 69  	ldpsw	x19, x11, [x27, #208]
+     12c: 67 2f 4f 70  	adr	x7, #648687
+     130: 65 72 61 74  	<unknown>
+     134: 69 6e 67 53  	<unknown>
+     138: 79 73 74 65  	<unknown>
+     13c: 6d 2f 73 72  	<unknown>
+     140: 63 2f 64 72  	<unknown>
+     144: 69 76 65 72  	<unknown>
+     148: 73 00 2f 68  	<unknown>
+     14c: 6f 6d 65 2f  	<unknown>
+     150: 65 6d 69 6c  	ldnp	d5, d27, [x11, #-368]
+     154: 79 2f 44 6f  	<unknown>
+     158: 63 75 6d 65  	<unknown>
+     15c: 6e 74 73 2f  	<unknown>
+     160: 50 72 6f 67  	<unknown>
+     164: 72 61 6d 73  	<unknown>
+     168: 2f 5a 69 67  	<unknown>
+     16c: 2f 4f 70 65  	<unknown>
+     170: 72 61 74 69  	ldpsw	x18, x24, [x11, #-96]
+     174: 6e 67 53 79  	ldrh	w14, [x27, #2482]
+     178: 73 74 65 6d  	ldp	d19, d29, [x3, #-432]
+     17c: 2f 73 72 63  	<unknown>
+     180: 2f 6b 65 72  	<unknown>
+     184: 6e 65 6c 00  	<unknown>
+     188: 00 62 75 69  	ldpsw	x0, x24, [x16, #-88]
+     18c: 6c 74 69 6e  	uabd	v12.8h, v3.8h, v9.8h
+     190: 2e 7a 69 67  	<unknown>
+     194: 00 01 00 00  	udf	#256
+     198: 62 75 69 6c  	ldnp	d2, d29, [x11, #-368]
+     19c: 74 69 6e 2e  	<unknown>
+     1a0: 7a 69 67 00  	<unknown>
+     1a4: 02 00 00 74  	<unknown>
+     1a8: 61 72 67 65  	<unknown>
+     1ac: 74 2e 7a 69  	ldpsw	x20, x11, [x19, #-48]
+     1b0: 67 00 02 00  	<unknown>
+     1b4: 00 73 74 61  	<unknown>
+     1b8: 72 74 2e 7a  	<unknown>
+     1bc: 69 67 00 02  	<unknown>
+     1c0: 00 00 61 61  	<unknown>
+     1c4: 72 63 68 36  	tbz	w18, #13, 0xe30 <$d.7+0xe30>
+     1c8: 34 2e 7a 69  	ldpsw	x20, x11, [x17, #-48]
+     1cc: 67 00 03 00  	<unknown>
+     1d0: 00 75 61 72  	<unknown>
+     1d4: 74 2e 7a 69  	ldpsw	x20, x11, [x19, #-48]
+     1d8: 67 00 04 00  	<unknown>
+     1dc: 00 6b 65 72  	<unknown>
+     1e0: 6e 65 6c 2e  	umax	v14.4h, v11.4h, v12.4h
+     1e4: 7a 69 67 00  	<unknown>
+     1e8: 05 00 00 00  	udf	#5
+     1ec: 04 02 00 09  	<unknown>
+     1f0: 02 30 03 21  	<unknown>
+     1f4: 00 00 00 00  	udf	#0
+     1f8: 00 03 ce 05  	<unknown>
+     1fc: 01 05 11 0a  	and	w1, w8, w17, lsl #1
+     200: 03 0c f2 05  	<unknown>
+     204: 0d 49 04 03  	<unknown>
+     208: 05 00 b6 05  	<unknown>
+     20c: 35 0a 08 75  	<unknown>
+     210: 05 19 83 06  	<unknown>
+     214: 03 a8 7a ba  	<unknown>
+     218: 03 d8 05 4a  	<unknown>
+     21c: 03 a8 7a f2  	ands	x3, x0, #0x1ffffffffffc0
+     220: 03 d8 05 82  	<unknown>
+     224: 05 29 82 05  	<unknown>
+     228: 35 06 83 05  	<unknown>
+     22c: 29 06 82 05  	<unknown>
+     230: 19 06 81 06  	<unknown>
+     234: 03 a8 7a ba  	<unknown>
+     238: 05 20 06 03  	<unknown>
+     23c: db 05 f2 05  	<unknown>
+     240: 19 06 4a 04  	<unknown>
+     244: 07 05 00 06  	<unknown>
+     248: 03 ae 7a 08  	<unknown>
+     24c: 74 05 0e 0a  	and	w20, w11, w14, lsl #1
+     250: 02 2c 13 05  	<unknown>
+     254: 11 06 82 05  	<unknown>
+     258: 00 03 76 82  	<unknown>
+     25c: 05 09 06 03  	<unknown>
+     260: 0b ba 06 03  	<unknown>
+     264: 75 4a 05 11  	add	w21, w19, #338          // =338
+     268: 06 03 0d 4a  	eor	w6, w24, w13
+     26c: 05 05 4b 04  	<unknown>
+     270: 06 05 00 03  	<unknown>
+     274: 29 ba 0a 03  	<unknown>
+     278: 49 08 74 05  	<unknown>
+     27c: 16 03 39 f2  	ands	x22, x24, #0x8000000080
+     280: 05 05 06 02  	<unknown>
+     284: 98 01 12 03  	<unknown>
+     288: 47 4a 05 1c  	ldr	s7, 0xabd0 <$d.7+0xabd0>
+     28c: 06 03 c1 00  	<unknown>
+     290: 4a 05 21 08  	<unknown>
+     294: 3d 05 1f 08  	stxrb	wzr, w29, [x9]
+     298: 3d 05 1d 08  	stxrb	w29, w29, [x9]
+     29c: 3d 05 1c 03  	<unknown>
+     2a0: 0a 08 3c 05  	<unknown>
+     2a4: 1e 03 69 08  	<unknown>
+     2a8: 3c 06 82 05  	<unknown>
+     2ac: 00 06 03 1a  	<unknown>
+     2b0: ba 05 11 0a  	and	w26, w13, w17, lsl #1
+     2b4: f3 05 1f f1  	subs	x19, x15, #1985         // =1985
+     2b8: 04 03 05 00  	<unknown>
+     2bc: 03 b7 04 f2  	ands	x3, x24, #0xf3fff3fff3fff3ff
+     2c0: 0a 03 f8 7a  	<unknown>
+     2c4: ba 05 35 03  	<unknown>
+     2c8: 89 05 f2 05  	<unknown>
+     2cc: 15 06 4a 05  	<unknown>
+     2d0: 00 06 03 10  	adr	x0, #24768
+     2d4: f2 05 29 0a  	bic	w18, w15, w9, lsl #1
+     2d8: 08 75 05 3c  	str	b8, [x8], #87
+     2dc: 06 ba 03 e6  	<unknown>
+     2e0: 7a 08 74 03  	<unknown>
+     2e4: 9a 05 4a 05  	<unknown>
+     2e8: 3a 06 83 05  	<unknown>
+     2ec: 4d 06 ba 03  	<unknown>
+     2f0: e5 7a 82 03  	<unknown>
+     2f4: 9b 05 4a 05  	<unknown>
+     2f8: 27 ba 05 4d  	<unknown>
+     2fc: 82 03 e5 7a  	<unknown>
+     300: f2 05 27 03  	<unknown>
+     304: 9b 05 4a 05  	<unknown>
+     308: 18 06 83 05  	<unknown>
+     30c: 1e 06 82 05  	<unknown>
+     310: 1d 82 05 27  	<unknown>
+     314: 06 b9 05 1d  	<unknown>
+     318: f3 06 03 e4  	<unknown>
+     31c: 7a f2 03 9c  	ldr	q26, 0x8168 <$d.7+0x8168>
+     320: 05 82 05 3f  	<unknown>
+     324: 82 05 3c ba  	<unknown>
+     328: 05 2b 4a 05  	<unknown>
+     32c: 4e 06 7f 05  	<unknown>
+     330: 00 03 b8 01  	<unknown>
+     334: ba 05 18 0a  	and	w26, w13, w24, lsl #1
+     338: 08 3d 06 03  	<unknown>
+     33c: ae 79 08 ac  	stnp	q14, q30, [x13, #256]
+     340: 05 1d 06 03  	<unknown>
+     344: d4 06 4a 05  	<unknown>
+     348: 18 b8 06 03  	<unknown>
+     34c: ae 79 4a 05  	<unknown>
+     350: 29 06 03 d3  	<unknown>
+     354: 06 4a 05 11  	add	w6, w16, #338           // =338
+     358: b9 02 14 00  	<unknown>
+     35c: 01           	<unknown>
+     35d: 01           	<unknown>
+
+Disassembly of section .comment:
+
+0000000000000000 <.comment>:
+       0: 4c 69 6e 6b  	<unknown>
+       4: 65 72 3a 20  	<unknown>
+       8: 4c 4c 44 20  	<unknown>
+       c: 31 33 2e 30  	adr	x17, #378469
+      10: 2e 31 20 28  	stnp	w14, w12, [x9, #-256]
+      14: 67 69 74 40  	<unknown>
+      18: 67 69 74 68  	<unknown>
+      1c: 75 62 2e 63  	<unknown>
+      20: 6f 6d 3a 7a  	<unknown>
+      24: 69 67 6c 61  	<unknown>
+      28: 6e 67 2f 7a  	<unknown>
+      2c: 69 67 2d 62  	<unknown>
+      30: 6f 6f 74 73  	<unknown>
+      34: 74 72 61 70  	adr	x20, #798287
+      38: 2e 67 69 74  	<unknown>
+      3c: 20 38 31 66  	<unknown>
+      40: 30 65 36 63  	<unknown>
+      44: 35 62 39 30  	adr	x21, #470085
+      48: 32 65 61 64  	<unknown>
+      4c: 38 34 37 35  	cbnz	w24, 0x6e6d0 <$d.7+0x6e6d0>
+      50: 33 34 39 30  	adr	x19, #468613
+      54: 64 62 34 66  	<unknown>
+      58: 30 30 30 37  	tbnz	w16, #6, 0x65c <$d.7+0x65c>
+      5c: 64 30 38 64  	<unknown>
+      60: 66 39 36 34  	cbz	w6, 0x6c78c <$d.7+0x6c78c>
+      64: 61           	<unknown>
+      65: 29           	<unknown>
+      66: 00           	<unknown>
+
+Disassembly of section .symtab:
+
+0000000000000000 <.symtab>:
+		...
+      18: 01 00 00 00  	udf	#1
+      1c: 00 00 02 00  	<unknown>
+      20: 0d 03 21 00  	<unknown>
+		...
+      30: 06 00 00 00  	udf	#6
+      34: 00 00 02 00  	<unknown>
+      38: 21 03 21 00  	<unknown>
+		...
+      48: 11 00 00 00  	udf	#17
+      4c: 04 00 f1 ff  	<unknown>
+		...
+      60: 1c 00 00 00  	udf	#28
+      64: 02 00 03 00  	<unknown>
+      68: 30 03 21 00  	<unknown>
+      6c: 00 00 00 00  	udf	#0
+      70: 18 00 00 00  	udf	#24
+      74: 00 00 00 00  	udf	#0
+      78: 01 00 00 00  	udf	#1
+      7c: 00 00 03 00  	<unknown>
+      80: 30 03 21 00  	<unknown>
+		...
+      90: 36 00 00 00  	udf	#54
+      94: 02 00 03 00  	<unknown>
+      98: 50 03 21 00  	<unknown>
+      9c: 00 00 00 00  	udf	#0
+      a0: 94 00 00 00  	udf	#148
+      a4: 00 00 00 00  	udf	#0
+      a8: 80 00 00 00  	udf	#128
+      ac: 02 00 03 00  	<unknown>
+      b0: c0 05 21 00  	<unknown>
+      b4: 00 00 00 00  	udf	#0
+      b8: 28 00 00 00  	udf	#40
+      bc: 00 00 00 00  	udf	#0
+      c0: a0 00 00 00  	udf	#160
+      c4: 02 00 03 00  	<unknown>
+      c8: f0 05 21 00  	<unknown>
+      cc: 00 00 00 00  	udf	#0
+      d0: 00 01 00 00  	udf	#256
+      d4: 00 00 00 00  	udf	#0
+      d8: ba 00 00 00  	udf	#186
+      dc: 02 00 03 00  	<unknown>
+      e0: 50 04 21 00  	<unknown>
+      e4: 00 00 00 00  	udf	#0
+      e8: 40 01 00 00  	udf	#320
+      ec: 00 00 00 00  	udf	#0
+      f0: cc 00 00 00  	udf	#204
+      f4: 01 00 01 00  	<unknown>
+      f8: f8 01 20 00  	<unknown>
+      fc: 00 00 00 00  	udf	#0
+     100: 10 00 00 00  	udf	#16
+     104: 00 00 00 00  	udf	#0
+     108: d8 00 00 00  	udf	#216
+     10c: 02 00 03 00  	<unknown>
+     110: 90 05 21 00  	<unknown>
+     114: 00 00 00 00  	udf	#0
+     118: 2c 00 00 00  	udf	#44
+     11c: 00 00 00 00  	udf	#0
+     120: ed 00 00 00  	udf	#237
+     124: 01 00 01 00  	<unknown>
+     128: 08 02 20 00  	<unknown>
+     12c: 00 00 00 00  	udf	#0
+     130: 28 00 00 00  	udf	#40
+     134: 00 00 00 00  	udf	#0
+     138: f9 00 00 00  	udf	#249
+     13c: 01 00 01 00  	<unknown>
+     140: 30 02 20 00  	<unknown>
+     144: 00 00 00 00  	udf	#0
+     148: 10 00 00 00  	udf	#16
+     14c: 00 00 00 00  	udf	#0
+     150: 05 01 00 00  	udf	#261
+     154: 01 00 01 00  	<unknown>
+     158: 40 02 20 00  	<unknown>
+     15c: 00 00 00 00  	udf	#0
+     160: 10 00 00 00  	udf	#16
+     164: 00 00 00 00  	udf	#0
+     168: 11 01 00 00  	udf	#273
+     16c: 01 00 01 00  	<unknown>
+     170: 50 02 20 00  	<unknown>
+     174: 00 00 00 00  	udf	#0
+     178: 10 00 00 00  	udf	#16
+     17c: 00 00 00 00  	udf	#0
+     180: 1d 01 00 00  	udf	#285
+     184: 01 00 01 00  	<unknown>
+     188: 60 02 20 00  	<unknown>
+     18c: 00 00 00 00  	udf	#0
+     190: 10 00 00 00  	udf	#16
+     194: 00 00 00 00  	udf	#0
+     198: 29 01 00 00  	udf	#297
+     19c: 02 00 03 00  	<unknown>
+     1a0: f0 06 21 00  	<unknown>
+     1a4: 00 00 00 00  	udf	#0
+     1a8: 68 00 00 00  	udf	#104
+     1ac: 00 00 00 00  	udf	#0
+     1b0: 40 01 00 00  	udf	#320
+     1b4: 01 00 01 00  	<unknown>
+     1b8: 20 01 20 00  	<unknown>
+     1bc: 00 00 00 00  	udf	#0
+     1c0: 08 00 00 00  	udf	#8
+     1c4: 00 00 00 00  	udf	#0
+     1c8: 46 01 00 00  	udf	#326
+     1cc: 00 00 01 00  	<unknown>
+     1d0: 20 01 20 00  	<unknown>
+		...
+     1e0: 4b 01 00 00  	udf	#331
+     1e4: 01 00 01 00  	<unknown>
+     1e8: 28 01 20 00  	<unknown>
+     1ec: 00 00 00 00  	udf	#0
+     1f0: 01 00 00 00  	udf	#1
+     1f4: 00 00 00 00  	udf	#0
+     1f8: 59 01 00 00  	udf	#345
+     1fc: 01 00 01 00  	<unknown>
+     200: 29 01 20 00  	<unknown>
+     204: 00 00 00 00  	udf	#0
+     208: 01 00 00 00  	udf	#1
+     20c: 00 00 00 00  	udf	#0
+     210: 65 01 00 00  	udf	#357
+     214: 01 00 01 00  	<unknown>
+     218: 2a 01 20 00  	<unknown>
+     21c: 00 00 00 00  	udf	#0
+     220: 01 00 00 00  	udf	#1
+     224: 00 00 00 00  	udf	#0
+     228: 6f 01 00 00  	udf	#367
+     22c: 01 00 01 00  	<unknown>
+     230: 2c 01 20 00  	<unknown>
+     234: 00 00 00 00  	udf	#0
+     238: 2c 00 00 00  	udf	#44
+     23c: 00 00 00 00  	udf	#0
+     240: 72 01 00 00  	udf	#370
+     244: 01 00 01 00  	<unknown>
+     248: 58 01 20 00  	<unknown>
+     24c: 00 00 00 00  	udf	#0
+     250: 01 00 00 00  	udf	#1
+     254: 00 00 00 00  	udf	#0
+     258: 7c 01 00 00  	udf	#380
+     25c: 01 00 01 00  	<unknown>
+     260: 60 01 20 00  	<unknown>
+     264: 00 00 00 00  	udf	#0
+     268: 08 00 00 00  	udf	#8
+     26c: 00 00 00 00  	udf	#0
+     270: 87 01 00 00  	udf	#391
+     274: 01 00 01 00  	<unknown>
+     278: 70 02 20 00  	<unknown>
+     27c: 00 00 00 00  	udf	#0
+     280: 0b 00 00 00  	udf	#11
+     284: 00 00 00 00  	udf	#0
+     288: 93 01 00 00  	udf	#403
+     28c: 00 00 01 00  	<unknown>
+     290: 70 02 20 00  	<unknown>
+		...
+     2a0: 98 01 00 00  	udf	#408
+     2a4: 01 00 01 00  	<unknown>
+     2a8: 7b 02 20 00  	<unknown>
+     2ac: 00 00 00 00  	udf	#0
+     2b0: 0b 00 00 00  	udf	#11
+     2b4: 00 00 00 00  	udf	#0
+     2b8: a4 01 00 00  	udf	#420
+     2bc: 01 00 01 00  	<unknown>
+     2c0: 68 01 20 00  	<unknown>
+     2c4: 00 00 00 00  	udf	#0
+     2c8: 50 00 00 00  	udf	#80
+     2cc: 00 00 00 00  	udf	#0
+     2d0: af 01 00 00  	udf	#431
+     2d4: 01 00 01 00  	<unknown>
+     2d8: b8 01 20 00  	<unknown>
+     2dc: 00 00 00 00  	udf	#0
+     2e0: 38 00 00 00  	udf	#56
+     2e4: 00 00 00 00  	udf	#0
+     2e8: b3 01 00 00  	udf	#435
+     2ec: 01 00 01 00  	<unknown>
+     2f0: f0 01 20 00  	<unknown>
+     2f4: 00 00 00 00  	udf	#0
+     2f8: 01 00 00 00  	udf	#1
+     2fc: 00 00 00 00  	udf	#0
+     300: bf 01 00 00  	udf	#447
+     304: 01 00 01 00  	<unknown>
+     308: 86 02 20 00  	<unknown>
+     30c: 00 00 00 00  	udf	#0
+     310: 19 00 00 00  	udf	#25
+     314: 00 00 00 00  	udf	#0
+     318: cb 01 00 00  	udf	#459
+     31c: 01 00 01 00  	<unknown>
+     320: 9f 02 20 00  	<unknown>
+     324: 00 00 00 00  	udf	#0
+     328: 11 00 00 00  	udf	#17
+     32c: 00 00 00 00  	udf	#0
+     330: d8 01 00 00  	udf	#472
+     334: 01 00 01 00  	<unknown>
+     338: b0 02 20 00  	<unknown>
+     33c: 00 00 00 00  	udf	#0
+     340: 2d 00 00 00  	udf	#45
+     344: 00 00 00 00  	udf	#0
+     348: e5 01 00 00  	udf	#485
+     34c: 01 00 01 00  	<unknown>
+     350: dd 02 20 00  	<unknown>
+     354: 00 00 00 00  	udf	#0
+     358: 1c 00 00 00  	udf	#28
+     35c: 00 00 00 00  	udf	#0
+     360: f2 01 00 00  	udf	#498
+     364: 01 00 01 00  	<unknown>
+     368: f9 02 20 00  	<unknown>
+     36c: 00 00 00 00  	udf	#0
+     370: 14 00 00 00  	udf	#20
+     374: 00 00 00 00  	udf	#0
+     378: ff 01 00 00  	udf	#511
+     37c: 00 00 04 00  	<unknown>
+		...
+     390: 04 02 00 00  	udf	#516
+     394: 00 00 05 00  	<unknown>
+		...
+     3a8: 09 02 00 00  	udf	#521
+     3ac: 00 00 06 00  	<unknown>
+		...
+     3c0: 0e 02 00 00  	udf	#526
+     3c4: 00 00 07 00  	<unknown>
+		...
+     3d8: 13 02 00 00  	udf	#531
+     3dc: 00 00 08 00  	<unknown>
+		...
+     3f0: 18 02 00 00  	udf	#536
+     3f4: 00 00 09 00  	<unknown>
+		...
+     408: 1d 02 00 00  	udf	#541
+     40c: 00 00 0a 00  	<unknown>
+		...
+     420: 23 02 00 00  	udf	#547
+     424: 00 00 0b 00  	<unknown>
+		...
+     438: 29 02 00 00  	udf	#553
+     43c: 04 00 f1 ff  	<unknown>
+		...
+     450: 2b 02 00 00  	udf	#555
+     454: 00 00 03 00  	<unknown>
+     458: 60 07 21 00  	<unknown>
+		...
+     468: 30 02 00 00  	udf	#560
+     46c: 04 00 f1 ff  	<unknown>
+		...
+     480: 3c 02 00 00  	udf	#572
+     484: 10 00 02 00  	<unknown>
+     488: 0d 03 21 00  	<unknown>
+		...
+     498: 43 02 00 00  	udf	#579
+     49c: 12 00 03 00  	<unknown>
+     4a0: f0 03 21 00  	<unknown>
+     4a4: 00 00 00 00  	udf	#0
+     4a8: 58 00 00 00  	udf	#88
+     4ac: 00 00 00 00  	udf	#0
+     4b0: 48 02 00 00  	udf	#584
+     4b4: 12 00 03 00  	<unknown>
+     4b8: 60 07 21 00  	<unknown>
+     4bc: 00 00 00 00  	udf	#0
+     4c0: b4 00 00 00  	udf	#180
+     4c4: 00 00 00 00  	udf	#0
+
+Disassembly of section .shstrtab:
+
+0000000000000000 <.shstrtab>:
+       0: 00 2e 72 6f  	<unknown>
+       4: 64 61 74 61  	<unknown>
+       8: 00 2e 69 6e  	uqsub	v0.8h, v16.8h, v9.8h
+       c: 69 74 00 2e  	<unknown>
+      10: 74 65 78 74  	<unknown>
+      14: 00 2e 64 65  	<unknown>
+      18: 62 75 67 5f  	sqshl	d2, d11, #39
+      1c: 6c 6f 63 00  	<unknown>
+      20: 2e 64 65 62  	<unknown>
+      24: 75 67 5f 61  	<unknown>
+      28: 62 62 72 65  	<unknown>
+      2c: 76 00 2e 64  	<unknown>
+      30: 65 62 75 67  	<unknown>
+      34: 5f 69 6e 66  	<unknown>
+      38: 6f 00 2e 64  	<unknown>
+      3c: 65 62 75 67  	<unknown>
+      40: 5f 73 74 72  	<unknown>
+      44: 00 2e 64 65  	<unknown>
+      48: 62 75 67 5f  	sqshl	d2, d11, #39
+      4c: 70 75 62 6e  	uabd	v16.8h, v11.8h, v2.8h
+      50: 61 6d 65 73  	<unknown>
+      54: 00 2e 64 65  	<unknown>
+      58: 62 75 67 5f  	sqshl	d2, d11, #39
+      5c: 70 75 62 74  	<unknown>
+      60: 79 70 65 73  	<unknown>
+      64: 00 2e 64 65  	<unknown>
+      68: 62 75 67 5f  	sqshl	d2, d11, #39
+      6c: 66 72 61 6d  	ldp	d6, d28, [x19, #-496]
+      70: 65 00 2e 64  	<unknown>
+      74: 65 62 75 67  	<unknown>
+      78: 5f 6c 69 6e  	umin	v31.8h, v2.8h, v9.8h
+      7c: 65 00 2e 63  	<unknown>
+      80: 6f 6d 6d 65  	<unknown>
+      84: 6e 74 00 2e  	<unknown>
+      88: 73 79 6d 74  	<unknown>
+      8c: 61 62 00 2e  	<unknown>
+      90: 73 68 73 74  	<unknown>
+      94: 72 74 61 62  	<unknown>
+      98: 00 2e 73 74  	<unknown>
+      9c: 72 74 61 62  	<unknown>
+      a0: 00           	<unknown>
+
+Disassembly of section .strtab:
+
+0000000000000000 <.strtab>:
+       0: 00 24 78 2e  	uhsub	v0.4h, v0.4h, v24.4h
+       4: 30 00 5f 64  	<unknown>
+       8: 6f 4e 6f 74  	<unknown>
+       c: 68 69 6e 67  	<unknown>
+      10: 00 6b 65 72  	<unknown>
+      14: 6e 65 6c 2e  	umax	v14.4h, v11.4h, v12.4h
+      18: 65 6c 66 00  	<unknown>
+      1c: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+      20: 62 75 69 6c  	ldnp	d2, d29, [x11, #-368]
+      24: 74 69 6e 2e  	<unknown>
+      28: 64 65 66 61  	<unknown>
+      2c: 75 6c 74 5f  	<unknown>
+      30: 70 61 6e 69  	ldpsw	x16, x24, [x11, #-144]
+      34: 63 00 73 74  	<unknown>
+      38: 64 2e 74 61  	<unknown>
+      3c: 72 67 65 74  	<unknown>
+      40: 2e 46 65 61  	<unknown>
+      44: 74 75 72 65  	<unknown>
+      48: 2e 66 65 61  	<unknown>
+      4c: 74 75 72 65  	<unknown>
+      50: 5f 73 65 74  	<unknown>
+      54: 5f 66 6e 73  	<unknown>
+      58: 28 73 74 64  	<unknown>
+      5c: 2e 74 61 72  	<unknown>
+      60: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+      64: 61 61 72 63  	<unknown>
+      68: 68 36 34 2e  	cmhi	v8.8b, v19.8b, v20.8b
+      6c: 46 65 61 74  	<unknown>
+      70: 75 72 65 29  	ldp	w21, w28, [x19, #-216]
+      74: 2e 66 65 61  	<unknown>
+      78: 74 75 72 65  	<unknown>
+      7c: 53 65 74 00  	<unknown>
+      80: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+      84: 74 61 72 67  	<unknown>
+      88: 65 74 2e 53  	<unknown>
+      8c: 65 74 2e 65  	<unknown>
+      90: 6d 70 74 79  	ldrh	w13, [x3, #6712]
+      94: 5f 77 6f 72  	<unknown>
+      98: 6b 61 72 6f  	umlsl2	v11.4s, v11.8h, v2.h[3]
+      9c: 75 6e 64 00  	<unknown>
+      a0: 73 74 64 2e  	uabd	v19.4h, v3.4h, v4.4h
+      a4: 74 61 72 67  	<unknown>
+      a8: 65 74 2e 53  	<unknown>
+      ac: 65 74 2e 61  	<unknown>
+      b0: 64 64 46 65  	<unknown>
+      b4: 61 74 75 72  	<unknown>
+      b8: 65 00 64 72  	<unknown>
+      bc: 69 76 65 72  	<unknown>
+      c0: 73 2e 75 61  	<unknown>
+      c4: 72 74 2e 69  	<unknown>
+      c8: 6e 69 74 00  	<unknown>
+      cc: 5f 5f 75 6e  	uqrshl	v31.8h, v26.8h, v21.8h
+      d0: 6e 61 6d 65  	<unknown>
+      d4: 64 5f 31 00  	<unknown>
+      d8: 64 72 69 76  	<unknown>
+      dc: 65 72 73 2e  	uabdl	v5.4s, v19.4h, v19.4h
+      e0: 75 61 72 74  	<unknown>
+      e4: 2e 70 75 74  	<unknown>
+      e8: 63 68 61 72  	<unknown>
+      ec: 00 5f 5f 75  	<unknown>
+      f0: 6e 6e 61 6d  	ldp	d14, d27, [x19, #-496]
+      f4: 65 64 5f 32  	<unknown>
+      f8: 00 5f 5f 75  	<unknown>
+      fc: 6e 6e 61 6d  	ldp	d14, d27, [x19, #-496]
+     100: 65 64 5f 33  	<unknown>
+     104: 00 5f 5f 75  	<unknown>
+     108: 6e 6e 61 6d  	ldp	d14, d27, [x19, #-496]
+     10c: 65 64 5f 34  	cbz	w5, 0xbed98 <$d.7+0xbed98>
+     110: 00 5f 5f 75  	<unknown>
+     114: 6e 6e 61 6d  	ldp	d14, d27, [x19, #-496]
+     118: 65 64 5f 35  	cbnz	w5, 0xbeda4 <$d.7+0xbeda4>
+     11c: 00 5f 5f 75  	<unknown>
+     120: 6e 6e 61 6d  	ldp	d14, d27, [x19, #-496]
+     124: 65 64 5f 36  	tbz	w5, #11, 0xffffffffffffedb0 <memcpy+0xffffffffffdee650>
+     128: 00 73 74 64  	<unknown>
+     12c: 2e 74 61 72  	<unknown>
+     130: 67 65 74 2e  	umax	v7.4h, v11.4h, v20.4h
+     134: 41 72 63 68  	<unknown>
+     138: 2e 69 73 57  	<unknown>
+     13c: 61 73 6d 00  	<unknown>
+     140: 70 61 6e 69  	ldpsw	x16, x24, [x11, #-144]
+     144: 63 00 24 64  	<unknown>
+     148: 2e 31 00 7a  	<unknown>
+     14c: 69 67 5f 69  	ldpsw	x9, x25, [x27, #248]
+     150: 73 5f 73 74  	<unknown>
+     154: 61 67 65 32  	<unknown>
+     158: 00 6f 75 74  	<unknown>
+     15c: 70 75 74 5f  	sqshl	d16, d11, #52
+     160: 6d 6f 64 65  	<unknown>
+     164: 00 6c 69 6e  	umin	v0.8h, v0.8h, v9.8h
+     168: 6b 5f 6c 69  	ldpsw	x11, x23, [x27, #-160]
+     16c: 62 63 00 6f  	<unknown>
+     170: 73 00 6e 61  	<unknown>
+     174: 74 69 76 65  	<unknown>
+     178: 5f 6f 73 00  	<unknown>
+     17c: 66 65 61 74  	<unknown>
+     180: 75 72 65 53  	<unknown>
+     184: 65 74 00 5f  	<unknown>
+     188: 5f 75 6e 6e  	uabd	v31.8h, v10.8h, v14.8h
+     18c: 61 6d 65 64  	<unknown>
+     190: 5f 37 00 24  	<unknown>
+     194: 64 2e 32 00  	<unknown>
+     198: 5f 5f 75 6e  	uqrshl	v31.8h, v26.8h, v21.8h
+     19c: 6e 61 6d 65  	<unknown>
+     1a0: 64 5f 38 00  	<unknown>
+     1a4: 63 6f 72 74  	<unknown>
+     1a8: 65 78 5f 61  	<unknown>
+     1ac: 35 33 00 63  	<unknown>
+     1b0: 70 75 00 6e  	<unknown>
+     1b4: 61 74 69 76  	<unknown>
+     1b8: 65 5f 61 72  	<unknown>
+     1bc: 63 68 00 5f  	<unknown>
+     1c0: 5f 75 6e 6e  	uabd	v31.8h, v10.8h, v14.8h
+     1c4: 61 6d 65 64  	<unknown>
+     1c8: 5f 39 00 5f  	<unknown>
+     1cc: 5f 75 6e 6e  	uabd	v31.8h, v10.8h, v14.8h
+     1d0: 61 6d 65 64  	<unknown>
+     1d4: 5f 31 30 00  	<unknown>
+     1d8: 5f 5f 75 6e  	uqrshl	v31.8h, v26.8h, v21.8h
+     1dc: 6e 61 6d 65  	<unknown>
+     1e0: 64 5f 31 31  	adds	w4, w27, #3159          // =3159
+     1e4: 00 5f 5f 75  	<unknown>
+     1e8: 6e 6e 61 6d  	ldp	d14, d27, [x19, #-496]
+     1ec: 65 64 5f 31  	adds	w5, w3, #2009, lsl #12  // =8228864
+     1f0: 32 00 5f 5f  	<unknown>
+     1f4: 75 6e 6e 61  	<unknown>
+     1f8: 6d 65 64 5f  	<unknown>
+     1fc: 31 33 00 24  	<unknown>
+     200: 64 2e 34 00  	<unknown>
+     204: 24 64 2e 35  	cbnz	w4, 0x5ce88 <$d.7+0x5ce88>
+     208: 00 24 64 2e  	uhsub	v0.4h, v0.4h, v4.4h
+     20c: 36 00 24 64  	<unknown>
+     210: 2e 37 00 24  	<unknown>
+     214: 64 2e 38 00  	<unknown>
+     218: 24 64 2e 39  	strb	w4, [x1, #2969]
+     21c: 00 24 64 2e  	uhsub	v0.4h, v0.4h, v4.4h
+     220: 31 30 00 24  	<unknown>
+     224: 64 2e 31 31  	adds	w4, w19, #3147          // =3147
+     228: 00 63 00 24  	<unknown>
+     22c: 78 2e 36 00  	<unknown>
+     230: 63 6f 6d 70  	adr	x3, #896495
+     234: 69 6c 65 72  	<unknown>
+     238: 5f 72 74 00  	<unknown>
+     23c: 5f 73 74 61  	<unknown>
+     240: 72 74 00 6d  	stp	d18, d29, [x3]
+     244: 61 69 6e 00  	<unknown>
+     248: 6d 65 6d 63  	<unknown>
+     24c: 70           	<unknown>
+     24d: 79           	<unknown>
+     24e: 00           	<unknown>
+---------SECTION SUMMARY/SYMBOL TABLE---------
+
+/home/emily/Documents/Programs/Zig/OperatingSystem/run/../zig-out/kernel.elf:	file format elf64-littleaarch64
+architecture: aarch64
+start address: 0x000000000021030d
+
+Program Header:
+    PHDR off    0x0000000000000040 vaddr 0x0000000000200040 paddr 0x0000000000200040 align 2**3
+         filesz 0x00000000000000e0 memsz 0x00000000000000e0 flags r--
+    LOAD off    0x0000000000000000 vaddr 0x0000000000200000 paddr 0x0000000000200000 align 2**16
+         filesz 0x000000000000030d memsz 0x000000000000030d flags r--
+    LOAD off    0x000000000000030d vaddr 0x000000000021030d paddr 0x000000000021030d align 2**16
+         filesz 0x0000000000000507 memsz 0x0000000000000507 flags r-x
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**64
+         filesz 0x0000000000000000 memsz 0x0000000001000000 flags rw-
+
+Dynamic Section:
+
+Sections:
+Idx Name            Size     VMA              Type
+  0                 00000000 0000000000000000 
+  1 .rodata         000001ed 0000000000200120 DATA
+  2 .init           0000001c 000000000021030d TEXT
+  3 .text           000004e4 0000000000210330 TEXT
+  4 .debug_loc      00000025 0000000000000000 DEBUG
+  5 .debug_abbrev   00000202 0000000000000000 DEBUG
+  6 .debug_info     00000eb1 0000000000000000 DEBUG
+  7 .debug_str      0000104e 0000000000000000 DEBUG
+  8 .debug_pubnames 0000104a 0000000000000000 DEBUG
+  9 .debug_pubtypes 000003bf 0000000000000000 DEBUG
+ 10 .debug_frame    00000120 0000000000000000 DEBUG
+ 11 .debug_line     0000035e 0000000000000000 DEBUG
+ 12 .comment        00000067 0000000000000000 
+ 13 .symtab         000004c8 0000000000000000 
+ 14 .shstrtab       000000a1 0000000000000000 
+ 15 .strtab         0000024f 0000000000000000 
+
+SYMBOL TABLE:
+000000000021030d l       .init	0000000000000000 $x.0
+0000000000210321 l       .init	0000000000000000 _doNothing
+0000000000000000 l    df *ABS*	0000000000000000 kernel.elf
+0000000000210330 l     F .text	0000000000000018 std.builtin.default_panic
+0000000000210330 l       .text	0000000000000000 $x.0
+0000000000210350 l     F .text	0000000000000094 std.target.Feature.feature_set_fns(std.target.aarch64.Feature).featureSet
+00000000002105c0 l     F .text	0000000000000028 std.target.Set.empty_workaround
+00000000002105f0 l     F .text	0000000000000100 std.target.Set.addFeature
+0000000000210450 l     F .text	0000000000000140 drivers.uart.init
+00000000002001f8 l     O .rodata	0000000000000010 __unnamed_1
+0000000000210590 l     F .text	000000000000002c drivers.uart.putchar
+0000000000200208 l     O .rodata	0000000000000028 __unnamed_2
+0000000000200230 l     O .rodata	0000000000000010 __unnamed_3
+0000000000200240 l     O .rodata	0000000000000010 __unnamed_4
+0000000000200250 l     O .rodata	0000000000000010 __unnamed_5
+0000000000200260 l     O .rodata	0000000000000010 __unnamed_6
+00000000002106f0 l     F .text	0000000000000068 std.target.Arch.isWasm
+0000000000200120 l     O .rodata	0000000000000008 panic
+0000000000200120 l       .rodata	0000000000000000 $d.1
+0000000000200128 l     O .rodata	0000000000000001 zig_is_stage2
+0000000000200129 l     O .rodata	0000000000000001 output_mode
+000000000020012a l     O .rodata	0000000000000001 link_libc
+000000000020012c l     O .rodata	000000000000002c os
+0000000000200158 l     O .rodata	0000000000000001 native_os
+0000000000200160 l     O .rodata	0000000000000008 featureSet
+0000000000200270 l     O .rodata	000000000000000b __unnamed_7
+0000000000200270 l       .rodata	0000000000000000 $d.2
+000000000020027b l     O .rodata	000000000000000b __unnamed_8
+0000000000200168 l     O .rodata	0000000000000050 cortex_a53
+00000000002001b8 l     O .rodata	0000000000000038 cpu
+00000000002001f0 l     O .rodata	0000000000000001 native_arch
+0000000000200286 l     O .rodata	0000000000000019 __unnamed_9
+000000000020029f l     O .rodata	0000000000000011 __unnamed_10
+00000000002002b0 l     O .rodata	000000000000002d __unnamed_11
+00000000002002dd l     O .rodata	000000000000001c __unnamed_12
+00000000002002f9 l     O .rodata	0000000000000014 __unnamed_13
+0000000000000000 l       .debug_loc	0000000000000000 $d.4
+0000000000000000 l       .debug_abbrev	0000000000000000 $d.5
+0000000000000000 l       .debug_info	0000000000000000 $d.6
+0000000000000000 l       .debug_str	0000000000000000 $d.7
+0000000000000000 l       .debug_pubnames	0000000000000000 $d.8
+0000000000000000 l       .debug_pubtypes	0000000000000000 $d.9
+0000000000000000 l       .debug_frame	0000000000000000 $d.10
+0000000000000000 l       .debug_line	0000000000000000 $d.11
+0000000000000000 l    df *ABS*	0000000000000000 c
+0000000000210760 l       .text	0000000000000000 $x.6
+0000000000000000 l    df *ABS*	0000000000000000 compiler_rt
+000000000021030d g       .init	0000000000000000 _start
+00000000002103f0 g     F .text	0000000000000058 main
+0000000000210760 g     F .text	00000000000000b4 memcpy
+--------------SECTION SIZES-------------------
+   text	   data	    bss	    dec	    hex	filename
+   1773	      0	      0	   1773	    6ed	/home/emily/Documents/Programs/Zig/OperatingSystem/run/../zig-out/kernel.elf

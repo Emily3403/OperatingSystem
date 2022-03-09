@@ -1,6 +1,4 @@
-.section .init
 .global _start
-.global main
 
 _start:
     // Disable all but the 0th core

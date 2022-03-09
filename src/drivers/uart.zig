@@ -1,4 +1,8 @@
-// TODO: Do we want parity / stop bit checking?
+const std = @import("std");
+
+// Discuss: Do we want parity / stop bit checking?
+//
+// Discuss: How to implement the buffer? Does a simple ring buffer suffice or do we want more?
 
 const LineBits = packed struct {
     _res0: u27,
@@ -43,19 +47,52 @@ const Uart = packed struct {
 const UartError = error{
     Busy,
 };
+const uart: *volatile Uart = @intToPtr(*volatile Uart, 0x7E201000 - 0x3F000000);
 
-const uart = @intToPtr(*volatile Uart, 0x7E201000 - 0x3F000000);
+// Constants for configuration
+const max_time_to_wait = 10000;
+const uart_clock = 24_000_000; // TODO: Validate that this is correct
+const baudrate = 9600;
+
+fn waitBusy() UartError!void {
+    var i: u8 = 0;
+    while (uart.flags.busy) {
+        if (i > max_time_to_wait) {
+            return UartError.Busy;
+        }
+        i += 1;
+    }
+}
 
 pub fn init() UartError!void {
+    try waitBusy();
+
     uart.control.uart_en = false;
-    if (uart.flags.busy) {
-        return UartError.Busy;
-    }
     uart.line_control.fifo_en = true;
     uart.control.receive_en = true;
     uart.control.trans_en = true;
+
+    // Configure the baudrate:
+    // TODO: Why does this work?
+    const bauddiv = 4 * uart_clock / baudrate;
+    const baud_frac_mask = 0x3f;
+    const baud_int_mask = 0xffff;
+
+    uart.baudrate_int = (bauddiv >> 6) & baud_int_mask;
+    uart.baudrate_float = bauddiv & baud_frac_mask;
+
+    uart.control.uart_en = true;
 }
 
-pub fn putchar(char: u8) void {
+pub fn putchar(char: u8) UartError!void {
+    try waitBusy();
+
     uart.data = char;
+}
+
+// TODO: Make this a writer
+pub fn write(str: []const u8) UartError!void {
+    for (str) |c| {
+        try putchar(c);
+    }
 }

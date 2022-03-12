@@ -2,9 +2,9 @@
 
 _start:
     // Run init phase only on 1 core
-    mrs x0, MPIDR_EL1
-    and x0, x0, #0b11
-    cbnz x0, _doNothing
+    mrc p15, 0, r0, c0, c0, 5
+    tst r0, #0b11
+    bne _doNothing
 
     mov sp, 0x100000
     b main
@@ -13,5 +13,4 @@ _start:
 _doNothing:
     WFI
     b _doNothing
-
 

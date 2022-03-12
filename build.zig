@@ -4,19 +4,30 @@ const build_mode = std.builtin.Mode;
 const CrossTarget = std.zig.CrossTarget;
 const Target = std.Target;
 
-const target = CrossTarget{
+const raspi_2b = CrossTarget{
+    .cpu_arch = Target.Cpu.Arch.arm,
+    .cpu_model = CrossTarget.CpuModel{ .explicit = &Target.arm.cpu.cortex_a7 },
+    .os_tag = Target.Os.Tag.freestanding,
+    .abi = Target.Abi.eabi,
+};
+
+const raspi_3b = CrossTarget{
     .cpu_arch = Target.Cpu.Arch.aarch64,
     .cpu_model = CrossTarget.CpuModel{ .explicit = &Target.aarch64.cpu.cortex_a53 },
     .os_tag = Target.Os.Tag.freestanding,
     .abi = Target.Abi.eabi,
 };
 
+const target = raspi_3b;
+const target_qemu_machine_name = "raspi3b";
+const max_ram = "1G";
+
 const cflags = [_][]const u8{
     "-Wall",
     "-Wextra",
     "-ffreestanding",
-    "-mcpu=cortex-a53", // TODO: Figure out how to do this dynamically
-    "-ggdb",
+    //"-mcpu=cortex-a53", // TODO: Figure out how to do this dynamically
+    //"-ggdb",
     "-std=c11",
 };
 
@@ -32,7 +43,7 @@ fn addFilesRecursive(path: []const u8, kernel: *std.build.LibExeObjStep, allocat
         const ext = std.fs.path.extension(entry.basename);
         const file_path = try std.mem.concat(allocator, u8, &.{ path, "/", entry.path }); // TODO: Make this cross-platform
 
-        // Unfortunately we can't use a switch here, since the directory is not a compile-time constant.
+        // TODO: Figure out how to switch
         if (std.mem.eql(u8, ext, ".c")) {
             kernel.addCSourceFile(file_path, &cflags);
         } else if (std.mem.eql(u8, ext, ".s") or std.mem.eql(u8, ext, ".S")) {
@@ -40,7 +51,7 @@ fn addFilesRecursive(path: []const u8, kernel: *std.build.LibExeObjStep, allocat
         } else if (std.mem.eql(u8, ext, ".zig")) {
             // This will get handled by the zig import system
         } else {
-            unreachable;
+            std.log.err("Unhandled file: {s}", .{file_path});
         }
     }
 }
@@ -51,6 +62,7 @@ pub fn build(b: *std.build.Builder) !void {
 
     const arch = switch (target.getCpuArch()) {
         .aarch64 => "arm64",
+        .arm => "arm",
         else => unreachable,
     };
 
@@ -87,16 +99,26 @@ pub fn build(b: *std.build.Builder) !void {
     const run_qemu = b.step("qemu", "Runs the kernel with QEMU.");
     const run_step = std.build.RunStep.create(b, "Run!");
 
+    // Get which qemu to run
+    var qemu_args = std.ArrayList([]const u8).init(b.allocator);
+    defer qemu_args.deinit();
+
+    const target_qemu = switch (target.getCpuArch()) {
+        .arm => "qemu-system-arm",
+        .aarch64 => "qemu-system-aarch64",
+        else => unreachable,
+    };
+
     run_step.step.dependOn(&kernel.step);
     run_qemu.dependOn(&run_step.step);
     run_qemu.dependOn(&kernel.step);
 
     run_step.addArgs(&.{
-        "qemu-system-aarch64",
+        target_qemu,
         "-M",
-        "raspi3b",
+        target_qemu_machine_name,
         "-m",
-        "1G",
+        max_ram,
         "-kernel",
         try std.mem.concat(b.allocator, u8, &.{ b.install_path, "/", output_name }),
         "-nographic",

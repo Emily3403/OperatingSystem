@@ -15,6 +15,7 @@ pub fn panic(message: []const u8, trace: ?*std.builtin.StackTrace) noreturn {
 }
 
 export fn main() callconv(.C) noreturn {
+
     uart.init() catch {
         @panic("Uart initization failed");
     };

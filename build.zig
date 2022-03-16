@@ -18,8 +18,8 @@ const raspi_3b = CrossTarget{
     .abi = Target.Abi.eabi,
 };
 
-const target = raspi_3b;
-const target_qemu_machine_name = "raspi3b";
+const target = raspi_2b;
+const target_qemu_machine_name = "raspi2b";
 const max_ram = "1G";
 
 const cflags = [_][]const u8{

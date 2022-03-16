@@ -1,4 +1,7 @@
 const std = @import("std");
+const old_uart = @cImport({
+    @cInclude("michel.h");
+});
 
 // Discuss: Do we want parity / stop bit checking?
 //
@@ -64,24 +67,30 @@ fn waitBusy() UartError!void {
     }
 }
 
-pub fn init() UartError!void {
+pub fn initt() UartError!void {
     try waitBusy();
 
     uart.control.uart_en = false;
-    uart.line_control.fifo_en = true;
+    //    uart.line_control.fifo_en = true;
     uart.control.receive_en = true;
     uart.control.trans_en = true;
 
     // Configure the baudrate:
     // TODO: Why does this work?
-    const bauddiv = 4 * uart_clock / baudrate;
-    const baud_frac_mask = 0x3f;
-    const baud_int_mask = 0xffff;
+    //    const bauddiv = 4 * uart_clock / baudrate;
+    //    const baud_frac_mask = 0x3f;
+    //    const baud_int_mask = 0xffff;
 
-    uart.baudrate_int = (bauddiv >> 6) & baud_int_mask;
-    uart.baudrate_float = bauddiv & baud_frac_mask;
+    //    uart.baudrate_int = (bauddiv >> 6) & baud_int_mask;
+    //    uart.baudrate_float = bauddiv & baud_frac_mask;
 
     uart.control.uart_en = true;
+
+    uart.data = 'a';
+}
+
+pub fn init() UartError!void {
+    old_uart.uart_start();
 }
 
 pub fn putchar(char: u8) UartError!void {

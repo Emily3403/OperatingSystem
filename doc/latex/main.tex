@@ -26,6 +26,7 @@
 \begin{document}
     \maketitle
 
+
     \section{Installing the toolchain}
 
     First of all I am assuming you are running linux.
@@ -65,7 +66,6 @@
     In the linked git repository you will find a up-to-date version of the zig compiler, which is used in our toolchain.
     This may or may not be better for your usecase.
 
-
     \subsubsection{Clang}
 
     % TODO: Document clang
@@ -78,9 +78,18 @@
     \subsection{Installing mkimage and UBoot}
 
 
-    
     \section{First contact}
-    
+
+
+    \newpage
+
+\begin{tikzpicture}[node distance = 5em]
+    \node (1) {$\{X,\neg Y\}$};
+    \node (3) [below right of=1] {$\{X,Z\}$};
+    \node (2) [above right of=3] {$\{Y,Z\}$};
+    \draw[bend left] (1) to (3);
+    \draw[bend right=40] (2) to (3);
+\end{tikzpicture}
 
 
 \end{document}
